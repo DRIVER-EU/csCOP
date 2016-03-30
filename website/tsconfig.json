@@ -17,6 +17,7 @@
   ],
   "files": [
     "server.ts",
+    "crowdtasker.ts",
     "public/app/app.ts",
     "public/app/m.ts",
     "typings/main.d.ts",

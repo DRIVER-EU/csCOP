@@ -1,4 +1,6 @@
 import Winston = require('winston');
+import path = require('path');
+import cors = require('cors');
 import * as csweb from "csweb";
 
 Winston.remove(Winston.transports.Console);
@@ -12,28 +14,43 @@ var startDatabaseConnection = false;
 
 var cs = new csweb.csServer(__dirname, <csweb.csServerOptions>{
     port: 3003,
-    swagger : false,
+    swagger: false
     //connectors: { mqtt: { server: 'localhost', port: 1883 }, mongo: { server : '127.0.0.1', port: 27017} }
 });
+
+cs.server.use(cors());
+
 cs.start(() => {
-
-    if (startDatabaseConnection) {
-        this.config = new csweb.ConfigurationService('./configuration.json');
-        this.config.add('server', 'http://localhost:' + cs.options.port);
-        var bagDatabase = new csweb.BagDatabase(this.config);
-        var mapLayerFactory = new csweb.MapLayerFactory(<any>bagDatabase, cs.messageBus, cs.api);
-        cs.server.post('/bagcontours', (req, res) => {
-            mapLayerFactory.processBagContours(req, res);
-        });
-
-        cs.server.post('/bagsearchaddress', (req, res) => {
-            mapLayerFactory.processBagSearchQuery(req, res);
-        });
-
-        cs.server.post('/bagbuurten', (req, res) => {
-            mapLayerFactory.processBagBuurten(req, res);
-        });
+    
+    var cisOptions: csweb.ICISOptions = {
+        cisNotifyUrl: 'http://172.16.1.68:9001/notify'
     }
+    
+    var cisSource = new csweb.CISDataSource(cs.server, cs.api, '/cis');
+    cisSource.init(cisOptions, (msg: string) => {
+        Winston.info('CISDataSource: ' + msg);
+    });
+    
+    var restSourceOptions: csweb.IRestDataSourceSettings = {
+        converterFile: path.join(__dirname, './crowdtasker.js'),
+        pollIntervalSeconds: 60,
+        pruneIntervalSeconds: 300,
+        diffIgnoreGeometry: false,
+        diffPropertiesBlacklist: [],
+        url: "http://crowdtasker.ait.ac.at/be/api/",
+        urlParams: {
+            api_key: "9319559c3102d1b0205a6f52e854707da076e7de",
+            attachmentPath: "public\\data\\api\\attachments",
+            baseUrl: "http://localhost:4567"
+        }
+    }
+
+    setTimeout(() => {
+        var restSource = new csweb.RestDataSource(cs.server, cs.api, 'crowdtasker', '/crowdtasker');
+        restSource.init(restSourceOptions, (msg: string) => {
+            Winston.info('RestDataSource: ' + msg);
+        });
+    }, 4000);
 
     console.log('really started');
     //    //{ key: "imb", s: new ImbAPI.ImbAPI("app-usdebug01.tsn.tno.nl", 4000),options: {} }

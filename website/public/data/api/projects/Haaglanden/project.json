@@ -83,30 +83,39 @@
     "propertyTypeData": {},
     "groups": [
         {
-            "id": "ce07ca55-11d3-4a11-ec57-8010e9497ada",
-            "title": "Knoppen",
+            "id": "8cc47763-7f29-4fa7-05af-901a08bc4569",
+            "title": "Crowdtasker",
+            "languages": {
+                "en": {
+                    "description": "Crowdtasker allows volunteers to help in crisis situations."
+                },
+                "nl": {
+                    "description": "Crowdtasker biedt vrijwilligers de mogelijkheid om te helpen tijdens crisis situaties."
+                }
+            },
+            "clustering": true,
+            "clusterLevel": 10,
             "layers": [
                 {
-                    "id": "0e9345e8-1830-418e-2d09-c0d83198d3f1",
-                    "title": "HIN",
-                    "tags": "presentation",
+                    "id": "crowdtasker",
+                    "title": "Crowdtasker",
+                    "languages": {
+                        "en": {
+                            "description": "Crowdtasker allows volunteers to help in crisis situations."
+                        },
+                        "nl": {
+                            "description": "Crowdtasker biedt vrijwilligers de mogelijkheid om te helpen tijdens crisis situaties."
+                        }
+                    },
                     "type": "dynamicgeojson",
                     "renderType": "geojson",
-                    "url": "api/layers/hin",
-                    "typeUrl": "data/resourceTypes/SGBO_Resources.json",
+                    "showFeatureNotifications": true,
+                    "url": "/crowdtasker",
+                    "typeUrl": "/data/resourceTypes/crowdtaskertypes.json",
+                    "opacity": 90,
                     "isDynamic": true,
-                    "timeAware": true
-                },
-                {
-                    "id": "d09858f9-8096-4bb6-ec5e-c6791ed055fd",
-                    "title": "HON",
-                    "tags": "presentation",
-                    "type": "dynamicgeojson",
-                    "renderType": "dynamicgeojson",
-                    "url": "api/layers/hon",
-                    "typeUrl": "data/resourceTypes/SGBO_Resources.json",
-                    "isDynamic": true,
-                    "timeAware": true
+                    "gui": {},
+                    "tags": []
                 }
             ]
         },
@@ -231,5 +240,5 @@
     "useOnlineSearch": true,
     "onlineSearchUrl": "bagsearchaddress",
     "storage": "file",
-    "_localFile": "c:\\dev\\web\\cs\\apps\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json"
+    "_localFile": "C:\\dev\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json"
 }
