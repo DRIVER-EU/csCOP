@@ -1,0 +1,1002 @@
+{
+    "type": "FeatureCollection",
+    "name": "Camera's openbare orde",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Poffertjekraam Malieveld",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                4.318721294403076,
+                                52.08412457669429
+                            ],
+                            [
+                                4.31787371635437,
+                                52.083818005294475
+                            ],
+                            [
+                                4.317723512649535,
+                                52.08391525128914
+                            ],
+                            [
+                                4.317492842674255,
+                                52.084116335555194
+                            ],
+                            [
+                                4.317087829113007,
+                                52.08453992813471
+                            ],
+                            [
+                                4.3170395493507385,
+                                52.084594319108504
+                            ],
+                            [
+                                4.316661357879639,
+                                52.084983295049575
+                            ],
+                            [
+                                4.316360950469971,
+                                52.08537391578191
+                            ],
+                            [
+                                4.3182384967803955,
+                                52.0860381279958
+                            ],
+                            [
+                                4.318804442882538,
+                                52.08623755454719
+                            ],
+                            [
+                                4.319405257701874,
+                                52.08644851720172
+                            ],
+                            [
+                                4.320075809955597,
+                                52.08668749712904
+                            ],
+                            [
+                                4.320706129074097,
+                                52.086909994531624
+                            ],
+                            [
+                                4.3206846714019775,
+                                52.08716050879789
+                            ],
+                            [
+                                4.320942163467407,
+                                52.08702206687724
+                            ],
+                            [
+                                4.321132600307465,
+                                52.08706162175554
+                            ],
+                            [
+                                4.3224334716796875,
+                                52.0856574021048
+                            ],
+                            [
+                                4.320641756057738,
+                                52.084892644179845
+                            ],
+                            [
+                                4.318721294403076,
+                                52.08412457669429
+                            ]
+                        ]
+                    ]
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.318710565567017,
+                    52.08412787314951
+                ],
+                "heigth": 0
+            },
+            "id": 1700
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Koningskade",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                4.318796396255493,
+                                52.08366636704945
+                            ],
+                            [
+                                4.319450855255127,
+                                52.083409240152115
+                            ],
+                            [
+                                4.320319890975952,
+                                52.08342901919682
+                            ],
+                            [
+                                4.320480823516846,
+                                52.08338286807887
+                            ],
+                            [
+                                4.320620298385619,
+                                52.08342242618289
+                            ],
+                            [
+                                4.320931434631348,
+                                52.083488356278295
+                            ],
+                            [
+                                4.320942163467407,
+                                52.08340264713528
+                            ],
+                            [
+                                4.320781230926514,
+                                52.08336308901373
+                            ],
+                            [
+                                4.320663213729858,
+                                52.08327737963014
+                            ],
+                            [
+                                4.320727586746216,
+                                52.08317189093205
+                            ],
+                            [
+                                4.320813417434692,
+                                52.08312573954823
+                            ],
+                            [
+                                4.320963621139526,
+                                52.08294772662076
+                            ],
+                            [
+                                4.321006536483765,
+                                52.08283564404289
+                            ],
+                            [
+                                4.321135282516479,
+                                52.08249280146919
+                            ],
+                            [
+                                4.320899248123169,
+                                52.0823147860172
+                            ],
+                            [
+                                4.320577383041382,
+                                52.08211039703006
+                            ],
+                            [
+                                4.3199121952056885,
+                                52.081938973286874
+                            ],
+                            [
+                                4.319579601287842,
+                                52.08185326116839
+                            ],
+                            [
+                                4.319289922714233,
+                                52.08183348142536
+                            ],
+                            [
+                                4.31888222694397,
+                                52.08214995626192
+                            ],
+                            [
+                                4.318807125091553,
+                                52.08211039703006
+                            ],
+                            [
+                                4.318807125091553,
+                                52.082215888237066
+                            ],
+                            [
+                                4.317809343338013,
+                                52.082993878188645
+                            ],
+                            [
+                                4.315856695175171,
+                                52.08209061740099
+                            ],
+                            [
+                                4.315448999404907,
+                                52.08253236036209
+                            ],
+                            [
+                                4.317433834075928,
+                                52.08333671691324
+                            ],
+                            [
+                                4.316897392272949,
+                                52.08384437711058
+                            ],
+                            [
+                                4.316757917404175,
+                                52.08387074891109
+                            ],
+                            [
+                                4.316854476928711,
+                                52.08389712069603
+                            ],
+                            [
+                                4.31612491607666,
+                                52.08469485982495
+                            ],
+                            [
+                                4.3168652057647705,
+                                52.08490582977237
+                            ],
+                            [
+                                4.317798614501953,
+                                52.083857563012785
+                            ],
+                            [
+                                4.318335056304932,
+                                52.08402238646168
+                            ],
+                            [
+                                4.318796396255493,
+                                52.08366636704945
+                            ]
+                        ]
+                    ]
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.318554997444153,
+                    52.08339935062648
+                ]
+            },
+            "id": 1701
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Herengracht/Zwarteweg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.3201857805252075,
+                    52.081091734734066
+                ]
+            },
+            "id": 1702
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Heerenbrug"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.320346713066101,
+                    52.08138184157442
+                ]
+            },
+            "id": 1703
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Bezuidenhoutseweg/Rijnstraat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.321671724319458,
+                    52.08169172634379
+                ]
+            },
+            "id": 1704
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Rijnstraat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.322175979614258,
+                    52.08172139604931
+                ]
+            },
+            "id": 1705
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Koningin Julianaplein"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.323441982269287,
+                    52.082262040561744
+                ]
+            },
+            "id": 1706
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Koningin&nbsp;Julianaplein"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.323887228965759,
+                    52.08191589696347
+                ]
+            },
+            "id": 1707
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Koningin&nbsp;Julianaplein"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.322395920753479,
+                    52.08192578681783
+                ]
+            },
+            "id": 1708
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Koningin&nbsp;Julianaplein"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.3228679895401,
+                    52.0814642579465
+                ]
+            },
+            "id": 1709
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Rijnstraat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.322642683982849,
+                    52.0811675582948
+                ]
+            },
+            "id": 1710
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Rijnstraat taxistandplaats"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.323951601982117,
+                    52.08031041488865
+                ]
+            },
+            "id": 1711
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.324815273284912,
+                    52.07966095296237
+                ]
+            },
+            "id": 1712
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.323838949203491,
+                    52.08058404322614
+                ]
+            },
+            "id": 1713
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "15"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.323329329490662,
+                    52.080330195306644
+                ]
+            },
+            "id": 1714
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.320164322853088,
+                    52.078777405829456
+                ]
+            },
+            "id": 1715
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.316586256027222,
+                    52.076993774189205
+                ]
+            },
+            "id": 1716
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "18"            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.315019845962524,
+                    52.07743556759411
+                ]
+            },
+            "id": 1717
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.314773082733154,
+                    52.077771855165565
+                ]
+            },
+            "id": 1718
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "20"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.313976466655731,
+                    52.07839991487523
+                ]
+            },
+            "id": 1719
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "21"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.313614368438721,
+                    52.07852519606986
+                ]
+            },
+            "id": 1720
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.314397573471069,
+                    52.077376222465574
+                ]
+            },
+            "id": 1721
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.307305812835693,
+                    52.0756683677404
+                ]
+            },
+            "id": 1722
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.310170412063599,
+                    52.07587278622689
+                ]
+            },
+            "id": 1723
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "25"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.3086254596710205,
+                    52.07609039197428
+                ]
+            },
+            "id": 1724
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "26"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.309462308883667,
+                    52.0763739372657
+                ]
+            },
+            "id": 1725
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.31288480758667,
+                    52.07673001484817
+                ]
+            },
+            "id": 1726
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.311554431915283,
+                    52.076453065862815
+                ]
+            },
+            "id": 1727
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.310470819473267,
+                    52.077006962115334
+                ]
+            },
+            "id": 1728
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "30"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.313434660434723,
+                    52.08020986429498
+                ]
+            },
+            "id": 1729
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.311712682247162,
+                    52.07940874819497
+                ]
+            },
+            "id": 1730
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "32"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.311833381652832,
+                    52.078530141372966
+                ]
+            },
+            "id": 1731
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "33"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.309832453727722,
+                    52.08005986216868
+                ]
+            },
+            "id": 1732
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "34"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.308719336986542,
+                    52.08106700963206
+                ]
+            },
+            "id": 1733
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "35"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.307509660720825,
+                    52.08064173573378
+                ]
+            },
+            "id": 1734
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "36"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.309706389904021,
+                    52.08137689658729
+                ]
+            },
+            "id": 1735
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "37"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.313485622406006,
+                    52.0814642579465
+                ]
+            },
+            "id": 1736
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "38"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.316087365150452,
+                    52.08036810774996
+                ]
+            },
+            "id": 1737
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "39"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.316548705101013,
+                    52.07988183701297
+                ]
+            },
+            "id": 1738
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "40"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.3167418241500854,
+                    52.07962468831229
+                ]
+            },
+            "id": 1739
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "41"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.315658211708069,
+                    52.07938402216068
+                ]
+            },
+            "id": 1740
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "42"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.3157172203063965,
+                    52.07956534609409
+                ]
+            },
+            "id": 1741
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "43"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.317562580108643,
+                    52.07997414644161
+                ]
+            },
+            "id": 1742
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "44"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.317718148231506,
+                    52.080768658988084
+                ]
+            },
+            "id": 1743
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "45"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.318034648895264,
+                    52.08057744979194
+                ]
+            },
+            "id": 1744
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "46"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.318453073501587,
+                    52.08032689857093
+                ]
+            },
+            "id": 1745
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "47"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.319214820861816,
+                    52.08081810950893
+                ]
+            },
+            "id": 1746
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "48"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.314638972282409,
+                    52.078708171919715
+                ]
+            },
+            "id": 1747
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "49"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.309473037719727,
+                    52.07560902026253
+                ]
+            },
+            "id": 1748
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "50"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.308110475540161,
+                    52.075945321593885
+                ]
+            },
+            "id": 1749
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "51"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.3085503578186035,
+                    52.07586619209678
+                ]
+            },
+            "id": 1750
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "52"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.310781955718994,
+                    52.0768750826786
+                ]
+            },
+            "id": 1751
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "53"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.3103742599487305,
+                    52.076815736804924
+                ]
+            },
+            "id": 1752
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "54"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.311758279800415,
+                    52.0774751309693
+                ]
+            },
+            "id": 1753
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "55"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.312466382980347,
+                    52.07773229205335
+                ]
+            },
+            "id": 1754
+        }
+    ]
+}

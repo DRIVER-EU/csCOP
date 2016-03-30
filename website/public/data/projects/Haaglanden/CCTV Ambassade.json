@@ -1,0 +1,661 @@
+{
+    "type": "FeatureCollection",
+    "name": "Camera's ambassades",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.314362704753876,
+                52.08210545212363
+            ]
+        },
+        "id": 469
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315577745437622,
+                52.08344550172736
+            ]
+        },
+        "id": 470
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315950572490692,
+                52.082913112913516
+            ]
+        },
+        "id": 471
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.317125380039215,
+                52.083087829447244
+            ]
+        },
+        "id": 472
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.316360950469971,
+                52.082688947302444
+            ]
+        },
+        "id": 473
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.316218793392181,
+                52.08258345721354
+            ]
+        },
+        "id": 474
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315612614154816,
+                52.08236588311775
+            ]
+        },
+        "id": 475
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315344393253326,
+                52.08245818740914
+            ]
+        },
+        "id": 476
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.3155160546302795,
+                52.08252741550243
+            ]
+        },
+        "id": 477
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315078854560852,
+                52.082360938239596
+            ]
+        },
+        "id": 478
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.314735531806946,
+                52.0827103749463
+            ]
+        },
+        "id": 479
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.314330518245697,
+                52.082550491509636
+            ]
+        },
+        "id": 480
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Amerika"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.314660429954528,
+                52.08222742632272
+            ]
+        },
+        "id": 481
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.309872686862946,
+                52.082769712983236
+            ]
+        },
+        "id": 21
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310218691825867,
+                52.082393904083524
+            ]
+        },
+        "id": 22
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310562,
+                52.081980
+            ]
+        },
+        "id": 23
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.311042129993439,
+                52.08230654454389
+            ]
+        },
+        "id": 24
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.31175023317337,
+                52.082547194937916
+            ]
+        },
+        "id": 25
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland",
+            "icon": "tv.png"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310629069805145,
+                52.081995015736894
+            ]
+        },
+        "id": 461
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland",
+            "style": {
+                "color": "red",
+                "weight": 4
+            }
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    4.310631752014159,
+                    52.0819966640432
+                ],
+                [
+                    4.310476183891296,
+                    52.082126880047596
+                ]
+            ]
+        },
+        "id": 462
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland",
+            "icon": "tv.png"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310159683227538,
+                52.08244335280375
+            ]
+        },
+        "id": 463
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    4.310162365436554,
+                    52.082441704513954
+                ],
+                [
+                    4.310065805912018,
+                    52.08256038122338
+                ]
+            ]
+        },
+        "id": 464
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland",
+            "icon": "tv.png"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310980439186096,
+                52.08230324795415
+            ]
+        },
+        "id": 465
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    4.310983121395111,
+                    52.082304896249056
+                ],
+                [
+                    4.310870468616486,
+                    52.08226039226526
+                ]
+            ]
+        },
+        "id": 466
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland",
+            "icon": "tv.png"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.312050640583037,
+                52.08285047851788
+            ]
+        },
+        "id": 467
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    4.312047958374023,
+                    52.08285212679258
+                ],
+                [
+                    4.311999678611755,
+                    52.0827169680654
+                ]
+            ]
+        },
+        "id": 468
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland",
+            "icon": "tv.png"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310438632965088,
+                52.08206918945962
+            ]
+        },
+        "id": 15
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Engeland"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    4.310441315174103,
+                    52.08207248606663
+                ],
+                [
+                    4.310602247714996,
+                    52.08213841815625
+                ]
+            ]
+        },
+        "id": 16
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Israël",
+            "icon": "tv.png"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.309652745723724,
+                52.07911368329225
+            ]
+        },
+        "id": 5
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Israël",
+            "icon": "tv.png"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.309714436531067,
+                52.078812022744074
+            ]
+        },
+        "id": 6
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Israël"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.309596419334412,
+                52.079125222179854
+            ]
+        },
+        "id": 7
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Israël"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.30976539850235,
+                52.07887301438546
+            ]
+        },
+        "id": 8
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Israël"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310014843940734,
+                52.078441125833315
+            ]
+        },
+        "id": 9
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Israël"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310712218284607,
+                52.0792175331732
+            ]
+        },
+        "id": 10
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Israël"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    4.309714436531067,
+                    52.07881531959169
+                ],
+                [
+                    4.309537410736084,
+                    52.07888125649275
+                ]
+            ]
+        },
+        "id": 11
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Israël"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    4.309652745723724,
+                    52.079116980117576
+                ],
+                [
+                    4.309526681900024,
+                    52.079084011853325
+                ]
+            ]
+        },
+        "id": 12
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Turkijë"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.3154168128967285,
+                52.08429599204295
+            ]
+        },
+        "id": 482
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Turkijë"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315212965011597,
+                52.08451850136925
+            ]
+        },
+        "id": 483
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Turkijë",
+            "icon": "tv.png"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315159320831299,
+                52.08456465131282
+            ]
+        },
+        "id": 484
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Turkijë"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.316098093986511,
+                52.08472947215033
+            ]
+        },
+        "id": 485
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Turkijë"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.316146373748779,
+                52.08471958291725
+            ]
+        },
+        "id": 486
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Turkijë"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315862059593201,
+                52.08499318422423
+            ]
+        },
+        "id": 487
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Turkijë",
+            "icon": "tv.png"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315913021564484,
+                52.08497505406904
+            ]
+        },
+        "id": 488
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "",
+            "style": {
+                "color": "red",
+                "weight": 4
+            }
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    4.315913021564484,
+                    52.084978350461434
+                ],
+                [
+                    4.315988123416901,
+                    52.08488769958166
+                ]
+            ]
+        },
+        "id": 489
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "id: 490"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    4.315159320831299,
+                    52.08456465131282
+                ],
+                [
+                    4.315081536769867,
+                    52.08464211718227
+                ]
+            ]
+        },
+        "id": 490
+    }]
+}

@@ -1,0 +1,2909 @@
+{
+    "type": "FeatureCollection",
+    "name": "Ambassades",
+    "features": [{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.292057,
+                52.086408
+            ]
+        },
+        "properties": {
+            "Name": "Koeweit",
+            "straatnaam": "Carnegielaan",
+            "huisnummer": 9,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160309133733e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 1
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.308311,
+                52.086423
+            ]
+        },
+        "properties": {
+            "Name": "Luxemburg",
+            "straatnaam": "Nassaulaan",
+            "huisnummer": 8,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.014110509124e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 2
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.3053,
+                52.088472
+            ]
+        },
+        "properties": {
+            "Name": "Handelsdelegatie Taiwan",
+            "straatnaam": "Javastraat",
+            "huisnummer": 58,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.009100609083e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 3
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.302647,
+                52.087737
+            ]
+        },
+        "properties": {
+            "Name": "Argentinie",
+            "straatnaam": "Javastraat",
+            "huisnummer": 20,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150716084118e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 4
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.287821,
+                52.101461
+            ]
+        },
+        "properties": {
+            "Name": "Iran",
+            "straatnaam": "Duinweg",
+            "huisnummer": 22,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "Telefoon residentie Wassenaar 01751-78554. Post 470 doorlopend.Kantoortijden van 08.00 tot 18.00 uur",
+            "laatste mutatie": 2.0151112090543e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 5
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.304576,
+                52.090658
+            ]
+        },
+        "properties": {
+            "Name": "Handelsbureau Spanje",
+            "straatnaam": "Burgemeester Patijnlaan",
+            "huisnummer": 67,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0140303093802e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 6
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.307457,
+                52.091593
+            ]
+        },
+        "properties": {
+            "Name": "Thailand",
+            "straatnaam": "Laan Copes van Cattenburch",
+            "huisnummer": 123,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150202105044e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 7
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.307602,
+                52.09163
+            ]
+        },
+        "properties": {
+            "Name": "Filippijnen",
+            "straatnaam": "Laan Copes van Cattenburch",
+            "huisnummer": 125,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141103135552e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 8
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.306624,
+                52.083163
+            ]
+        },
+        "properties": {
+            "Name": "Griekenland",
+            "straatnaam": "Amaliastraat",
+            "huisnummer": 1,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160210115007e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 9
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.304795,
+                52.093654
+            ]
+        },
+        "properties": {
+            "Name": "El Salvador",
+            "straatnaam": "Riouwstraat",
+            "huisnummer": 137,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141103123601e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 10
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.312798,
+                52.08854
+            ]
+        },
+        "properties": {
+            "Name": "Saoedi-Arabie",
+            "straatnaam": "Koninginnegracht",
+            "huisnummer": 26,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160201101254e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 11
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.303791,
+                52.087496
+            ]
+        },
+        "properties": {
+            "Name": "Polen",
+            "straatnaam": "Alexanderstraat",
+            "huisnummer": 25,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150527133735e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 12
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.305581,
+                52.085283
+            ]
+        },
+        "properties": {
+            "Name": "Italie",
+            "straatnaam": "Alexanderstraat",
+            "huisnummer": 12,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150527133432e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 13
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.303565,
+                52.085382
+            ]
+        },
+        "properties": {
+            "Name": "Canada",
+            "straatnaam": "Sophialaan",
+            "huisnummer": 7,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030084842e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 14
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.307707,
+                52.084862
+            ]
+        },
+        "properties": {
+            "Name": "Uruguay",
+            "straatnaam": "Mauritskade",
+            "huisnummer": 33,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150202105752e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 15
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.293746,
+                52.085363
+            ]
+        },
+        "properties": {
+            "Name": "Australie",
+            "straatnaam": "Carnegielaan",
+            "huisnummer": 4,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151111081321e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 16
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.312453,
+                52.08896
+            ]
+        },
+        "properties": {
+            "Name": "Denemarken",
+            "straatnaam": "Koninginnegracht",
+            "huisnummer": 30,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030115241e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 17
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.289162,
+                52.084871
+            ]
+        },
+        "properties": {
+            "Name": "Duitsland",
+            "straatnaam": "Groot Hertoginnelaan",
+            "huisnummer": 18,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030115651e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 18
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.298966,
+                52.088512
+            ]
+        },
+        "properties": {
+            "Name": "Servie en Montenegro",
+            "straatnaam": "Burgemeester van Karnebeeklaan",
+            "huisnummer": 19,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217121032e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 19
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.299901,
+                52.087263
+            ]
+        },
+        "properties": {
+            "Name": "Cuba",
+            "straatnaam": "Scheveningseweg",
+            "huisnummer": 9,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "Tevens handelsbureau.",
+            "laatste mutatie": 2.0141030093031e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 20
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.286456,
+                52.087498
+            ]
+        },
+        "properties": {
+            "Name": "Suriname",
+            "straatnaam": "Alexander Gogelweg",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.015052713354e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 21
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.291225,
+                52.087012
+            ]
+        },
+        "properties": {
+            "Name": "India",
+            "straatnaam": "Buitenrustweg",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "aanvalsplan 1290",
+            "laatste mutatie": 2.0141105083729e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 22
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.291571,
+                52.085999
+            ]
+        },
+        "properties": {
+            "Name": "Japan",
+            "straatnaam": "Tobias Asserlaan",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141105085226e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 23
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.288707,
+                52.086143
+            ]
+        },
+        "properties": {
+            "Name": "Indonesie",
+            "straatnaam": "Tobias Asserlaan",
+            "huisnummer": 8,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141105083819e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 24
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.287273,
+                52.093447
+            ]
+        },
+        "properties": {
+            "Name": "Zuid Korea",
+            "straatnaam": "Verlengde Tolweg",
+            "huisnummer": 8,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151015124011e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 25
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.286777,
+                52.086314
+            ]
+        },
+        "properties": {
+            "Name": "Rusland",
+            "straatnaam": "Andries Bickerweg",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160210122828e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 26
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.289569,
+                52.08492
+            ]
+        },
+        "properties": {
+            "Name": "Finland (Suomi)",
+            "straatnaam": "Groot Hertoginnelaan",
+            "huisnummer": 16,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141103135754e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 27
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.292808,
+                52.087907
+            ]
+        },
+        "properties": {
+            "Name": "Heilige Stoel (vaticaanstad)",
+            "straatnaam": "Carnegielaan",
+            "huisnummer": 5,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151111081331e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 28
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.285889,
+                52.088005
+            ]
+        },
+        "properties": {
+            "Name": "Irak",
+            "straatnaam": "Johan de Wittlaan",
+            "huisnummer": 16,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "aanvalsplan 1327!~bij onraad: 070-5176914 of 0626-986949",
+            "laatste mutatie": 2.0160201145115e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 29
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.300797,
+                52.083406
+            ]
+        },
+        "properties": {
+            "Name": "Slovenie",
+            "straatnaam": "Anna Paulownastraat",
+            "huisnummer": 11,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151126082525e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 30
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.307323,
+                52.082621
+            ]
+        },
+        "properties": {
+            "Name": "Netherlands Helsinki Comite",
+            "straatnaam": "Paleisstraat",
+            "huisnummer": 9,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217104951e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 31
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.29691,
+                52.085464
+            ]
+        },
+        "properties": {
+            "Name": "Macedonie",
+            "straatnaam": "Laan van Meerdervoort",
+            "huisnummer": 50,
+            "huisletter": "C",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150415121127e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 32
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.283087,
+                52.0981
+            ]
+        },
+        "properties": {
+            "Name": "Jemen",
+            "straatnaam": "Scheveningseweg",
+            "huisnummer": 68,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "beveiligd bij teleguard Sleutelhouder tel. 01751 - 77692 (ambassadeur)",
+            "laatste mutatie": 2.0160113104709e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 33
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.307104,
+                52.091706
+            ]
+        },
+        "properties": {
+            "Name": "Ghana",
+            "straatnaam": "Laan Copes van Cattenburch",
+            "huisnummer": 70,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141103141106e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 34
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.309587,
+                52.080089
+            ]
+        },
+        "properties": {
+            "Name": "Handelsbureau Mexico",
+            "straatnaam": "Kneuterdijk",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0091007130431e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 35
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.30516,
+                52.090026
+            ]
+        },
+        "properties": {
+            "Name": "Vietnam",
+            "straatnaam": "Nassauplein",
+            "huisnummer": 12,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150202110409e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 36
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.3131,
+                52.086907
+            ]
+        },
+        "properties": {
+            "Name": "Consulaat Ethiopie",
+            "straatnaam": "Dr. Kuyperstraat",
+            "huisnummer": 11,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.009100609083e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 37
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.306624,
+                52.082569
+            ]
+        },
+        "properties": {
+            "Name": "Marokko",
+            "straatnaam": "Oranjestraat",
+            "huisnummer": 9,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217100334e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 38
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.301222,
+                52.086322
+            ]
+        },
+        "properties": {
+            "Name": "Estland",
+            "straatnaam": "Zeestraat",
+            "huisnummer": 92,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "gevestigd in kantoor hofstaete",
+            "laatste mutatie": 2.0141103123729e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 39
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.301759,
+                52.085851
+            ]
+        },
+        "properties": {
+            "Name": "Oekraine",
+            "straatnaam": "Zeestraat",
+            "huisnummer": 78,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217105738e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 40
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.307792,
+                52.089825
+            ]
+        },
+        "properties": {
+            "Name": "Cyprus",
+            "straatnaam": "Surinamestraat",
+            "huisnummer": 15,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030093122e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 41
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.308969,
+                52.085755
+            ]
+        },
+        "properties": {
+            "Name": "Dependance Ambassade Uruguay",
+            "straatnaam": "Nassaulaan",
+            "huisnummer": 1,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.009100609083e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 42
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.308071,
+                52.092156
+            ]
+        },
+        "properties": {
+            "Name": "Letland",
+            "straatnaam": "Balistraat",
+            "huisnummer": 88,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151111143244e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 43
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.296445,
+                52.103339
+            ]
+        },
+        "properties": {
+            "Name": "Kazachstan",
+            "straatnaam": "Nieuwe Parklaan",
+            "huisnummer": 69,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160106103142e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 44
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.3059,
+                52.083569
+            ]
+        },
+        "properties": {
+            "Name": "Kameroen",
+            "straatnaam": "Amaliastraat",
+            "huisnummer": 14,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "aanvalsplan 225",
+            "laatste mutatie": 2.0160210115019e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 45
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.306138,
+                52.083347
+            ]
+        },
+        "properties": {
+            "Name": "Pakistan",
+            "straatnaam": "Amaliastraat",
+            "huisnummer": 8,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "aanvalsplan 226",
+            "laatste mutatie": 2.0160210115056e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 46
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.305672,
+                52.089374
+            ]
+        },
+        "properties": {
+            "Name": "Bolivia",
+            "straatnaam": "Nassauplein",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141119144806e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 47
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.309455,
+                52.07891
+            ]
+        },
+        "properties": {
+            "Name": "Israel",
+            "straatnaam": "Buitenhof",
+            "huisnummer": 47,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "Bijzonderheden zie aanvalsplan.",
+            "laatste mutatie": 2.0141105084934e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 48
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.308983,
+                52.09309
+            ]
+        },
+        "properties": {
+            "Name": "Belgie",
+            "straatnaam": "Koninginnegracht",
+            "huisnummer": 86,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0140109122023e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 49
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.298291,
+                52.086268
+            ]
+        },
+        "properties": {
+            "Name": "Frankrijk",
+            "straatnaam": "Anna Paulownastraat",
+            "huisnummer": 76,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151126082736e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 50
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.285884,
+                52.100688
+            ]
+        },
+        "properties": {
+            "Name": "Consulaat Libie",
+            "straatnaam": "Parkweg",
+            "huisnummer": 15,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150326084436e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 51
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.283226,
+                52.086533
+            ]
+        },
+        "properties": {
+            "Name": "Sri Lanka",
+            "straatnaam": "Jacob de Graefflaan",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217121629e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 52
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.27528,
+                52.09275
+            ]
+        },
+        "properties": {
+            "Name": "Nicaragua",
+            "straatnaam": "Statenlaan",
+            "huisnummer": 52,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "aanvalsplan 2880",
+            "laatste mutatie": 2.0141217105127e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 53
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310587,
+                52.08221
+            ]
+        },
+        "properties": {
+            "Name": "Verenigd Koninkrijk",
+            "straatnaam": "Lange Voorhout",
+            "huisnummer": 10,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151006085146e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 54
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315028,
+                52.082574
+            ]
+        },
+        "properties": {
+            "Name": "Amerika",
+            "straatnaam": "Lange Voorhout",
+            "huisnummer": 102,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "07.00-19.00 uur van Ma.tm\/Vr Na 19.00 regelt Jan Hen de beveiliging.",
+            "laatste mutatie": 2.0151006085153e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 55
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.312645,
+                52.083361
+            ]
+        },
+        "properties": {
+            "Name": "Zwitserland",
+            "straatnaam": "Lange Voorhout",
+            "huisnummer": 42,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151006100241e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 56
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.313062,
+                52.083635
+            ]
+        },
+        "properties": {
+            "Name": "Spanje",
+            "straatnaam": "Lange Voorhout",
+            "huisnummer": 50,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.015100610045e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 57
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.308983,
+                52.09309
+            ]
+        },
+        "properties": {
+            "Name": "Ecuador",
+            "straatnaam": "Koninginnegracht",
+            "huisnummer": 84,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141103123336e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 58
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.293911,
+                52.109086
+            ]
+        },
+        "properties": {
+            "Name": "Tunesie",
+            "straatnaam": "Gentsestraat",
+            "huisnummer": 98,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "aanvalsplan 3369",
+            "laatste mutatie": 2.0150202105226e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 59
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.306811,
+                52.084513
+            ]
+        },
+        "properties": {
+            "Name": "Brazilie",
+            "straatnaam": "Mauritskade",
+            "huisnummer": 19,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030084103e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 60
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310106,
+                52.08581
+            ]
+        },
+        "properties": {
+            "Name": "Chili",
+            "straatnaam": "Mauritskade",
+            "huisnummer": 51,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030084938e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 61
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.281839,
+                52.093666
+            ]
+        },
+        "properties": {
+            "Name": "Afdeling Amerikaanse Ambassade",
+            "straatnaam": "Eisenhowerlaan",
+            "huisnummer": 77,
+            "huisletter": "G",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141029132108e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 62
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.302359,
+                52.104454
+            ]
+        },
+        "properties": {
+            "Name": "Bulgarije",
+            "straatnaam": "Duinroosweg",
+            "huisnummer": 9,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.014103008415e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 63
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.290286,
+                52.108675
+            ]
+        },
+        "properties": {
+            "Name": "Egypte",
+            "straatnaam": "Badhuisweg",
+            "huisnummer": 92,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151111100128e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 64
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.298549,
+                52.102648
+            ]
+        },
+        "properties": {
+            "Name": "Handelsbureau Polen",
+            "straatnaam": "Van Lennepweg",
+            "huisnummer": 51,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "gebouw is afgesloten dmv hek. aanvalsplan 3538",
+            "laatste mutatie": 2.016021809252e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 65
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.299749,
+                52.101949
+            ]
+        },
+        "properties": {
+            "Name": "Nigeria",
+            "straatnaam": "Wagenaarweg",
+            "huisnummer": 5,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217105627e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 66
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.311181,
+                52.086611
+            ]
+        },
+        "properties": {
+            "Name": "Libanon",
+            "straatnaam": "Frederikstraat",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151112142551e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 67
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.281187,
+                52.091134
+            ]
+        },
+        "properties": {
+            "Name": "Roemenie",
+            "straatnaam": "Catsheuvel",
+            "huisnummer": 55,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "aanvalsplan 3790",
+            "laatste mutatie": 2.0151111092457e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 68
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.280532,
+                52.091047
+            ]
+        },
+        "properties": {
+            "Name": "Consulaat Argentinie",
+            "straatnaam": "Catsheuvel",
+            "huisnummer": 85,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151111092512e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 69
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.305978,
+                52.089979
+            ]
+        },
+        "properties": {
+            "Name": "Mexico",
+            "straatnaam": "Nassauplein",
+            "huisnummer": 28,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "aanvalspln 3792.",
+            "laatste mutatie": 2.014121710042e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 70
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.305613,
+                52.091225
+            ]
+        },
+        "properties": {
+            "Name": "Costa Rica",
+            "straatnaam": "Laan Copes van Cattenburch",
+            "huisnummer": 46,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030092932e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 71
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.287541,
+                52.099786
+            ]
+        },
+        "properties": {
+            "Name": "Hongarije",
+            "straatnaam": "Hogeweg",
+            "huisnummer": 14,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "aanvalsplan 3883.",
+            "laatste mutatie": 2.0141105081453e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 72
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.282621,
+                52.100415
+            ]
+        },
+        "properties": {
+            "Name": "Algerije",
+            "straatnaam": "Van Stolklaan",
+            "huisnummer": 1,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030073728e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 73
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.341846,
+                52.081871
+            ]
+        },
+        "properties": {
+            "Name": "Handelsbureau Hongarije",
+            "straatnaam": "Laan van Nieuw-Oost-Indie",
+            "huisnummer": 271,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0131212130741e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 74
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.312701,
+                52.081654
+            ]
+        },
+        "properties": {
+            "Name": "Albanie",
+            "straatnaam": "Hoge Nieuwstraat",
+            "huisnummer": 22,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.015081908361e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 75
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.305626,
+                52.089455
+            ]
+        },
+        "properties": {
+            "Name": "Peru",
+            "straatnaam": "Nassauplein",
+            "huisnummer": 4,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150414121127e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 76
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.321812,
+                52.099777
+            ]
+        },
+        "properties": {
+            "Name": "Oostenrijk",
+            "straatnaam": "Van Alkemadelaan",
+            "huisnummer": 342,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "vluchtweg via brandgang sonderdankstraat 46.",
+            "laatste mutatie": 2.0141217105929e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 77
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.314924,
+                52.091175
+            ]
+        },
+        "properties": {
+            "Name": "Zuid-Afrika",
+            "straatnaam": "Wassenaarseweg",
+            "huisnummer": 36,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "vluchtweg via tuin naar emantsstraat en oostduinlaan",
+            "laatste mutatie": 2.0150202110533e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 78
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.287414,
+                52.094275
+            ]
+        },
+        "properties": {
+            "Name": "Zweden",
+            "straatnaam": "Jan Willem Frisolaan",
+            "huisnummer": 3,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.015020211071e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 79
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.318764,
+                52.075803
+            ]
+        },
+        "properties": {
+            "Name": "Consulaat Vietnam",
+            "straatnaam": "Spui",
+            "huisnummer": 202,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "Consulaat voor vietnam, laos en cambodja.",
+            "laatste mutatie": 2.009100609083e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 80
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.291687,
+                52.087807
+            ]
+        },
+        "properties": {
+            "Name": "Maleisie",
+            "straatnaam": "Rustenburgweg",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217100235e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 81
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.298299,
+                52.101531
+            ]
+        },
+        "properties": {
+            "Name": "Kenia",
+            "straatnaam": "Nieuwe Parklaan",
+            "huisnummer": 21,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160106102913e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 82
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.298723,
+                52.101508
+            ]
+        },
+        "properties": {
+            "Name": "Kenia",
+            "straatnaam": "Wagenaarweg",
+            "huisnummer": 20,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160106102913e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 83
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.283896,
+                52.096058
+            ]
+        },
+        "properties": {
+            "Name": "Belgie",
+            "straatnaam": "Johan van Oldenbarneveltlaan",
+            "huisnummer": 11,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.013062407523e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 84
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.313359,
+                52.086442
+            ]
+        },
+        "properties": {
+            "Name": "Landbouwraad",
+            "straatnaam": "Laan van Roos en Doorn",
+            "huisnummer": 39,
+            "huisletter": "P",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160203093922e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 85
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.280587,
+                52.098283
+            ]
+        },
+        "properties": {
+            "Name": "Kanselarij Honduras",
+            "straatnaam": "Johan van Oldenbarneveltlaan",
+            "huisnummer": 85,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "Tevens woonhuis kanselier",
+            "laatste mutatie": 2.009100609083e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 86
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.307281,
+                52.081946
+            ]
+        },
+        "properties": {
+            "Name": "Tsjechie",
+            "straatnaam": "Paleisstraat",
+            "huisnummer": 4,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150218140106e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 87
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.293746,
+                52.085363
+            ]
+        },
+        "properties": {
+            "Name": "Malta",
+            "straatnaam": "Carnegielaan",
+            "huisnummer": 6,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.015111108134e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 88
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.289877,
+                52.084878
+            ]
+        },
+        "properties": {
+            "Name": "Colombia",
+            "straatnaam": "Groot Hertoginnelaan",
+            "huisnummer": 14,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030092704e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 89
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.289427,
+                52.108604
+            ]
+        },
+        "properties": {
+            "Name": "Jordanie",
+            "straatnaam": "Badhuisweg",
+            "huisnummer": 79,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "beveiligd bij residentie",
+            "laatste mutatie": 2.0151111100055e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 90
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.30581,
+                52.08365
+            ]
+        },
+        "properties": {
+            "Name": "Kroatie",
+            "straatnaam": "Amaliastraat",
+            "huisnummer": 16,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160210115025e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 91
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.301733,
+                52.085724
+            ]
+        },
+        "properties": {
+            "Name": "Portugal",
+            "straatnaam": "Zeestraat",
+            "huisnummer": 74,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "Ook beveiligd bij Pac 46 Meldkamer Alert Services",
+            "laatste mutatie": 2.0150518104332e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 92
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.300366,
+                52.086737
+            ]
+        },
+        "properties": {
+            "Name": "Bijgebouw Consulaat Rusland",
+            "straatnaam": "Laan van Meerdervoort",
+            "huisnummer": 1,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150415110318e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 93
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.300318,
+                52.086898
+            ]
+        },
+        "properties": {
+            "Name": "Bijgebouw Consulaat Rusland",
+            "straatnaam": "Scheveningseweg",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150415110318e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 94
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.335934,
+                52.088236
+            ]
+        },
+        "properties": {
+            "Name": "Bosnie Herzegowina",
+            "straatnaam": "Bezuidenhoutseweg",
+            "huisnummer": 223,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030083944e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 95
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315094,
+                52.084669
+            ]
+        },
+        "properties": {
+            "Name": "Turkije",
+            "straatnaam": "Jan Evertstraat",
+            "huisnummer": 15,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150202105501e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 96
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.304413,
+                52.08832
+            ]
+        },
+        "properties": {
+            "Name": "Guatemala",
+            "straatnaam": "Javastraat",
+            "huisnummer": 44,
+            "huisletter": "A",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150716083449e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 97
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.285798,
+                52.092912
+            ]
+        },
+        "properties": {
+            "Name": "China",
+            "straatnaam": "Willem Lodewijklaan",
+            "huisnummer": 10,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150527130237e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 98
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.286644,
+                52.092344
+            ]
+        },
+        "properties": {
+            "Name": "China",
+            "straatnaam": "Adriaan Goekooplaan",
+            "huisnummer": 7,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150527130237e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 99
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.299155,
+                52.100541
+            ]
+        },
+        "properties": {
+            "Name": "Oman",
+            "straatnaam": "Nieuwe Parklaan",
+            "huisnummer": 9,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160106103347e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 100
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.281354,
+                52.093796
+            ]
+        },
+        "properties": {
+            "Name": "Verenigde Arabische Emiraten",
+            "straatnaam": "Eisenhowerlaan",
+            "huisnummer": 130,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150202110311e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 101
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.29434,
+                52.084919
+            ]
+        },
+        "properties": {
+            "Name": "Syrie",
+            "straatnaam": "Laan van Meerdervoort",
+            "huisnummer": 53,
+            "huisletter": "D",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150415121201e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 102
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.315038,
+                52.090664
+            ]
+        },
+        "properties": {
+            "Name": "Bangladesh",
+            "straatnaam": "Wassenaarseweg",
+            "huisnummer": 39,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030075635e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 103
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.288472,
+                52.085018
+            ]
+        },
+        "properties": {
+            "Name": "Belarus (Wit-Rusland)",
+            "straatnaam": "Groot Hertoginnelaan",
+            "huisnummer": 26,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141204122602e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 104
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.305115,
+                52.090088
+            ]
+        },
+        "properties": {
+            "Name": "Eritrea",
+            "straatnaam": "Nassauplein",
+            "huisnummer": 13,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141103123639e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 105
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.298199,
+                52.102051
+            ]
+        },
+        "properties": {
+            "Name": "Palestijnse Vertegenwoordiging",
+            "straatnaam": "Nieuwe Parklaan",
+            "huisnummer": 23,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160106102907e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 106
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.311139,
+                52.092022
+            ]
+        },
+        "properties": {
+            "Name": "Dominicaanse Republiek",
+            "straatnaam": "Raamweg",
+            "huisnummer": 21,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141030115446e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 107
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.298937,
+                52.086076
+            ]
+        },
+        "properties": {
+            "Name": "Litouwen",
+            "straatnaam": "Laan van Meerdervoort",
+            "huisnummer": 20,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150415120412e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 108
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.294979,
+                52.08506
+            ]
+        },
+        "properties": {
+            "Name": "Afghanistan",
+            "straatnaam": "Laan van Meerdervoort",
+            "huisnummer": 51,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150415121137e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 109
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.285261,
+                52.088062
+            ]
+        },
+        "properties": {
+            "Name": "Azerbeidjan",
+            "straatnaam": "Andries Bickerweg",
+            "huisnummer": 6,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160210122851e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 110
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.299665,
+                52.102379
+            ]
+        },
+        "properties": {
+            "Name": "Qatar",
+            "straatnaam": "Borweg",
+            "huisnummer": 7,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217112007e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 111
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.288282,
+                52.085034
+            ]
+        },
+        "properties": {
+            "Name": "Georgie",
+            "straatnaam": "Groot Hertoginnelaan",
+            "huisnummer": 28,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141103140859e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 112
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.300318,
+                52.086898
+            ]
+        },
+        "properties": {
+            "Name": "Consulaat Rusland",
+            "straatnaam": "Scheveningseweg",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.015041511252e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 113
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.300366,
+                52.086737
+            ]
+        },
+        "properties": {
+            "Name": "Consulaat Rusland",
+            "straatnaam": "Laan van Meerdervoort",
+            "huisnummer": 1,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.015041511252e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 114
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.299169,
+                52.08615
+            ]
+        },
+        "properties": {
+            "Name": "Ivoorkust",
+            "straatnaam": "Laan van Meerdervoort",
+            "huisnummer": 16,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150415120322e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 115
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.278709,
+                52.101609
+            ]
+        },
+        "properties": {
+            "Name": "Ierland",
+            "straatnaam": "Scheveningseweg",
+            "huisnummer": 112,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150513113201e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 116
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.299135,
+                52.085134
+            ]
+        },
+        "properties": {
+            "Name": "Kosovo",
+            "straatnaam": "Anna Paulownastraat",
+            "huisnummer": 56,
+            "huisletter": "A",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151126082709e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 117
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.29306,
+                52.084152
+            ]
+        },
+        "properties": {
+            "Name": "Armenie",
+            "straatnaam": "Laan van Meerdervoort",
+            "huisnummer": 90,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150415121504e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 118
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.309518,
+                52.08176
+            ]
+        },
+        "properties": {
+            "Name": "Slowakije",
+            "straatnaam": "Parkstraat",
+            "huisnummer": 1,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217121449e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 119
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.298821,
+                52.086048
+            ]
+        },
+        "properties": {
+            "Name": "Senegal",
+            "straatnaam": "Laan van Meerdervoort",
+            "huisnummer": 22,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150415120504e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 120
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.310109,
+                52.091743
+            ]
+        },
+        "properties": {
+            "Name": "Sudan (Noord)",
+            "straatnaam": "Koninginnegracht",
+            "huisnummer": 63,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217121812e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 121
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.306445,
+                52.08335
+            ]
+        },
+        "properties": {
+            "Name": "Panama",
+            "straatnaam": "Amaliastraat",
+            "huisnummer": 5,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0160210115043e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 122
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.484926,
+                52.160801
+            ]
+        },
+        "properties": {
+            "Name": "Consulaat Turkije",
+            "straatnaam": "Kort Rapenburg",
+            "huisnummer": 1,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "Leiden",
+            "gemeentenaam": "Leiden",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150219150037e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 123
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.343876,
+                52.099309
+            ]
+        },
+        "properties": {
+            "Name": "Nieuwb. Amerikaanse Ambassade",
+            "straatnaam": "John Adams Park",
+            "huisnummer": 1,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "Wassenaar",
+            "gemeentenaam": "Wassenaar",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150209133041e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 124
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.312875,
+                52.083507
+            ]
+        },
+        "properties": {
+            "Name": "Angola",
+            "straatnaam": "Lange Voorhout",
+            "huisnummer": 46,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151006100254e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 125
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.30891,
+                52.085808
+            ]
+        },
+        "properties": {
+            "Name": "Archiefgebouw Venezuela",
+            "straatnaam": "Nassaulaan",
+            "huisnummer": 2,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.014102913331e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 126
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.293746,
+                52.085363
+            ]
+        },
+        "properties": {
+            "Name": "Burundi",
+            "straatnaam": "Carnegielaan",
+            "huisnummer": 4,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0151111081326e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 127
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.285884,
+                52.100688
+            ]
+        },
+        "properties": {
+            "Name": "Libie",
+            "straatnaam": "Parkweg",
+            "huisnummer": 15,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150326084444e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 128
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.28409,
+                52.095889
+            ]
+        },
+        "properties": {
+            "Name": "Rwanda",
+            "straatnaam": "Johan van Oldenbarneveltlaan",
+            "huisnummer": 9,
+            "huisletter": "B",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217120642e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 129
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.335996,
+                52.087446
+            ]
+        },
+        "properties": {
+            "Name": "Niger",
+            "straatnaam": "Laan van Nieuw-Oost-Indie",
+            "huisnummer": 14,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0141217105458e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 130
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.295944,
+                52.081374
+            ]
+        },
+        "properties": {
+            "Name": "Sierra Leone (Cons-Generaal)",
+            "straatnaam": "Zoutmanstraat",
+            "huisnummer": 23,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "In pand PH gebouw",
+            "laatste mutatie": 2.0141217121254e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 131
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.300989,
+                52.089331
+            ]
+        },
+        "properties": {
+            "Name": "Tanzania",
+            "straatnaam": "Alexanderveld",
+            "huisnummer": 87,
+            "huisletter": "",
+            "huisnrtoev": "",
+            "plaatsnaam": "'s-Gravenhage",
+            "gemeentenaam": "'s-Gravenhage",
+            "bijzonderheden": "",
+            "laatste mutatie": 2.0150527133836e+16,
+            "objectfunctie": "Ambassade/Consulaat"
+        },
+        "id": 132
+    }]
+}

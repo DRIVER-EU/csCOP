@@ -1,0 +1,20 @@
+{
+    "featureTypes": {
+        "cctv": {
+            "name": "cctv",
+            "contourProperty": "geometry",
+            "style": {
+                "drawingMode": "Point",
+                "strokeWidth": 0,
+                "fillOpacity": 0,
+                "fillColor": "transparent",
+                "selectedStrokeColor": "blue",
+                "selectedFillColor": "transparent",
+                "iconWidth": 24,
+                "iconHeight": 24,
+                "iconUri": "images/cctv.png"
+            }
+        }
+    },
+    "id": "cctv"
+}

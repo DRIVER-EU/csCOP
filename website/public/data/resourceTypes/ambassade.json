@@ -1,0 +1,56 @@
+{
+    "featureTypes": {
+        "ambassade": {
+            "name": "ambassade",
+            "style": {
+                "drawingMode": "Point",
+                "strokeWidth": 0,
+                "fillOpacity": 0,
+                "fillColor": "transparent",
+                "selectedStrokeColor": "blue",
+                "selectedFillColor": "transparent",
+                "iconWidth": 24,
+                "iconHeight": 24,
+                "iconUri": "images/8006 ambassade - consulaat.png"
+            },
+            "propertyTypeKeys": "adres;plaatsnaam;bijzonderheden;objectfunctie"
+        }
+    },
+    "propertyTypeData": {
+        "adres": {
+            "type": "text",
+            "title": "Adres",
+            "expression": "properties.straatnaam + ' ' + properties.huisnummer + properties.huisletter + properties.huisnrtoev"
+        },
+        "straatnaam": {
+            "type": "text",
+            "title": "Straatnaam"
+        },
+        "huisnummer": {
+            "type": "number",
+            "title": "Huisnummer",
+            "stringFormat": "{0:0}"
+        },
+        "huisletter": {
+            "type": "text",
+            "title": "Huisletter"
+        },
+        "huisnrtoev": {
+            "type": "text",
+            "title": "Huisnummer toevoeging"
+        },
+        "plaatsnaam": {
+            "type": "text",
+            "title": "Plaatsnaam"
+        },
+        "bijzonderheden": {
+            "type": "textarea",
+            "title": "Bijzonderheden"
+        },
+        "objectfunctie": {
+            "type": "text",
+            "title": "Functie"
+        }
+    },
+    "id": "ambassade"
+}

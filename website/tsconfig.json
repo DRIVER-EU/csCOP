@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "noLib": false,
+    "sourceMap": true
+  },
+  "filesGlob": [
+    "./**/*.ts",
+    "!./node_modules/**/*.ts",
+    "!./node_modules/**/*.d.ts",
+    "!./dist/**/*.*",
+    "!./public/bower_components/**/*.d.ts"
+  ],
+  "files": [
+    "server.ts",
+    "public/app/app.ts",
+    "public/app/m.ts",
+    "typings/main.d.ts",
+    "typings/leaflet/leaflet.d.ts",
+    "typings/leaflet/L.Polyline.extended.d.ts",
+    "typings/leaflet/control-sidebar.d.ts",
+    "typings/mqtt/mqtt-router.d.ts",
+    "typings/hypertimer/hypertimer.d.ts"
+  ],
+  "exclude": [
+    "typings/browser.d.ts",
+    "typings/browser",
+    "node_modules"
+  ]
+}

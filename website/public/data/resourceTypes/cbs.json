@@ -1,0 +1,667 @@
+{
+    "featureTypes": {
+        "wijk": {
+            "name": "wijk",
+            "style": {
+                "fillColor": "#ff9900",
+                "strokeColor": "#000000",
+                "drawingMode": "MultiPolygon",
+                "strokeWidth": 1,
+                "iconWidth": 32,
+                "iconHeight": 32,
+                "iconUri": "images/gemeente.png",
+                "nameLabel": "WK_NAAM",
+                "maxTitleResolution": -1
+            },
+            "propertyTypeKeys": "AANT_INW;AANT_MAN;AANT_VROUW;P_00_14_JR;NR_KIDS;P_15_24_JR;P_25_44_JR;P_45_64_JR;P_65_EO_JR;NR_OUDJES;P_ONGEHUWD;P_GEHUWD;P_GESCHEID;P_VERWEDUW;P_WEST_AL;P_N_W_AL;P_MAROKKO;P_ANT_ARU;P_SURINAM;P_TURKIJE;P_OVER_NW;AUTO_TOT;AUTO_HH;AUTO_LAND;BEDR_AUTO;MOTOR_2W;OPP_TOT;OPP_LAND;OPP_WATER;GM_NAAM;WATER;BEV_DICHTH;AANTAL_HH;P_EENP_HH;P_HH_Z_K;P_HH_M_K;GEM_HH_GR;A_BST_B;A_BST_NB;A_LFTJ6J;A_LFTO6J;AF_ZIEK_I;AV5_ZIEK_I;AV10ZIEK_I;AV20ZIEK_I;AF_ZIEK_E;AV5_ZIEK_E;AV10ZIEK_E;AV20ZIEK_E;AF_KDV;AV1_KDV;AV3_KDV;AV5_KDV;AF_BSO;AV1_BSO;AV3_BSO;AV5_BSO;AF_OPRITH;AF_TREINST;AF_OVERST;AF_BIBLIO;AF_IJSBAAN",
+            "legendExpr": [
+                {
+                    "title": "#Inwoners",
+                    "type": "number",
+                    "stringFormat": "{0:#,#}",
+                    "expression": "sum(features, 'AANT_INW')"
+                },
+                {
+                    "title": "#Kinderen <15",
+                    "type": "number",
+                    "stringFormat": "{0:#,#}",
+                    "expression": "sum(features, 'nr_oudjes')"
+                },
+                {
+                    "title": "#Ouderen >64",
+                    "type": "number",
+                    "stringFormat": "{0:#,#}",
+                    "expression": "sum(features, 'nr_kids')"
+                }
+            ]
+        },
+        "buurt": {
+            "name": "buurt",
+            "style": {
+                "fillColor": "#ff9900",
+                "strokeColor": "#000000",
+                "drawingMode": "MultiPolygon",
+                "strokeWidth": 1,
+                "iconWidth": 32,
+                "iconHeight": 32,
+                "iconUri": "images/gemeente.png",
+                "nameLabel": "BU_NAAM",
+                "maxTitleResolution": -1
+            },
+            "propertyTypeKeys": "AANT_INW;AANT_MAN;AANT_VROUW;P_00_14_JR;NR_KIDS;P_15_24_JR;P_25_44_JR;P_45_64_JR;P_65_EO_JR;NR_OUDJES;P_ONGEHUWD;P_GEHUWD;P_GESCHEID;P_VERWEDUW;P_WEST_AL;P_N_W_AL;P_MAROKKO;P_ANT_ARU;P_SURINAM;P_TURKIJE;P_OVER_NW;AUTO_TOT;AUTO_HH;AUTO_LAND;BEDR_AUTO;MOTOR_2W;OPP_TOT;OPP_LAND;OPP_WATER;GM_NAAM;WATER;BEV_DICHTH;AANTAL_HH;P_EENP_HH;P_HH_Z_K;P_HH_M_K;GEM_HH_GR;A_BST_B;A_BST_NB;A_LFTJ6J;A_LFTO6J;AF_ZIEK_I;AV5_ZIEK_I;AV10ZIEK_I;AV20ZIEK_I;AF_ZIEK_E;AV5_ZIEK_E;AV10ZIEK_E;AV20ZIEK_E;AF_KDV;AV1_KDV;AV3_KDV;AV5_KDV;AF_BSO;AV1_BSO;AV3_BSO;AV5_BSO;AF_OPRITH;AF_TREINST;AF_OVERST;AF_BIBLIO;AF_IJSBAAN",
+            "legendExpr": [
+                {
+                    "title": "#Inwoners",
+                    "type": "number",
+                    "stringFormat": "{0:#,#}",
+                    "expression": "sum(features, 'AANT_INW')"
+                },
+                {
+                    "title": "#Kinderen <15",
+                    "type": "number",
+                    "stringFormat": "{0:#,#}",
+                    "expression": "sum(features, 'nr_oudjes')"
+                },
+                {
+                    "title": "#Ouderen >64",
+                    "type": "number",
+                    "stringFormat": "{0:#,#}",
+                    "expression": "sum(features, 'nr_kids')"
+                }
+            ]
+        }
+    },
+    "propertyTypeData": {
+        "nr_kids": {
+            "type": "number",
+            "title": "Aantal kinderen <15",
+            "section": "CBS",
+            "stringFormat": "{0:#,#}",
+            "expression": "properties.p_00_14_jr * properties.aant_inw / 100",
+            "visibleInCallOut": true,
+            "label": "nr_kids"
+        },
+        "nr_oudjes": {
+            "type": "number",
+            "title": "Aantal ouderen >64",
+            "section": "CBS",
+            "stringFormat": "{0:#,#}",
+            "expression": "properties.p_65_eo_jr * properties.aant_inw / 100",
+            "visibleInCallOut": true,
+            "label": "nr_oudjes"
+        },
+        "AANT_GEM": {
+            "type": "number",
+            "title": "Aantal gemeentes",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AANT_INW": {
+            "type": "number",
+            "title": "Aantal inwoners",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AANT_MAN": {
+            "type": "number",
+            "title": "Aantal mannen",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AANT_VROUW": {
+            "type": "number",
+            "title": "Aantal vrouwen",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_00_14_JR": {
+            "type": "number",
+            "title": "Leeftijd jonger dan 15 jaar",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_15_24_JR": {
+            "type": "number",
+            "title": "Leeftijd 15 tot en met 24 jaar",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_25_44_JR": {
+            "type": "number",
+            "title": "Leeftijd 25 tot en met 44 jaar",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_45_64_JR": {
+            "label": "p_45_64_jr",
+            "type": "number",
+            "title": "Leeftijd 45 tot en met 64 jaar",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_65_EO_JR": {
+            "type": "number",
+            "title": "Leeftijd 65 jaar en ouder",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_ONGEHUWD": {
+            "type": "number",
+            "title": "Ongehuwd",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_GEHUWD": {
+            "type": "number",
+            "title": "Gehuwd",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_GESCHEID": {
+            "type": "number",
+            "title": "Gescheiden",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_VERWEDUW": {
+            "type": "number",
+            "title": "Verweduwd",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_WEST_AL": {
+            "type": "number",
+            "title": "Westerse allochtonen",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_N_W_AL": {
+            "type": "number",
+            "title": "Niet-Westerse allochtonen",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_MAROKKO": {
+            "type": "number",
+            "title": "Marokkaans",
+            "description": "Percentage allochtonen van Marokkaanse afkomst",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_ANT_ARU": {
+            "type": "number",
+            "title": "Antilliaans/Arubaans",
+            "description": "Percentage allochtonen van Antilliaans/Arubaanse afkomst",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_SURINAM": {
+            "type": "number",
+            "title": "Surinaams",
+            "description": "Percentage allochtonen van Surinaamse afkomst",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_TURKIJE": {
+            "type": "number",
+            "title": "Turks",
+            "description": "Percentage allochtonen van Turkse afkomst",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_OVER_NW": {
+            "type": "number",
+            "title": "Overig niet-Westers",
+            "description": "Percentage allochtonen van niet-Westerse afkomst",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AUTO_TOT": {
+            "type": "number",
+            "title": "Auto tot",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AUTO_HH": {
+            "type": "number",
+            "title": "Auto hh",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AUTO_LAND": {
+            "type": "number",
+            "title": "Auto land",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "BEDR_AUTO": {
+            "type": "number",
+            "title": "Bedr auto",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "MOTOR_2W": {
+            "type": "number",
+            "title": "Motor 2w",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "OPP_TOT": {
+            "type": "number",
+            "title": "Totale oppervlakte",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "OPP_LAND": {
+            "type": "number",
+            "title": "Landoppervlakte",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "OPP_WATER": {
+            "type": "number",
+            "title": "Wateroppervlakte",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "GM_NAAM": {
+            "type": "text",
+            "title": "Gemeentenaam",
+            "section": "CBS",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "BU_NAAM": {
+            "type": "textarea",
+            "title": "Buurtnaam",
+            "section": "CBS"
+        },
+        "WK_NAAM": {
+            "type": "textarea",
+            "title": "Wijknaam",
+            "section": "CBS"
+        },
+        "WATER": {
+            "type": "boolean",
+            "title": "Water",
+            "section": "CBS",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "BEV_DICHTH": {
+            "type": "number",
+            "title": "Bevolkingsdichtheid",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AANTAL_HH": {
+            "type": "number",
+            "title": "Aantal huishoudens",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_EENP_HH": {
+            "type": "number",
+            "title": "Eénpersoonshuishoudens",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_HH_Z_K": {
+            "type": "number",
+            "title": "Huishoudens zonder kinderen",
+            "section": "CBS",
+            "stringFormat": "{0}%",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "P_HH_M_K": {
+            "type": "number",
+            "title": "Huishoudens met kinderen",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "GEM_HH_GR": {
+            "type": "number",
+            "title": "Gemiddelde grootte huishouden",
+            "section": "CBS",
+            "stringFormat": "{0:0,0.##}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "A_BST_B": {
+            "type": "number",
+            "title": "A bst b",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "A_BST_NB": {
+            "type": "number",
+            "title": "A bst nb",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "A_LFTJ6J": {
+            "type": "number",
+            "title": "A lftj6j",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "A_LFTO6J": {
+            "type": "number",
+            "title": "A lfto6j",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AF_ZIEK_I": {
+            "type": "number",
+            "title": "Afstand ziekenhuis/poli",
+            "description": "Gemiddelde afstand tot ziekenhuis incl. Buitenpolikliniek",
+            "section": "CBS",
+            "stringFormat": "{0:0,0.#}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV5_ZIEK_I": {
+            "type": "number",
+            "title": "Ziekenhuizen/poli's binnen 5km",
+            "description": "Aantal ziekenhuizen incl. Buitenpolikliniek (gemiddelde, binnen 5km over de openbare weg)",
+            "section": "CBS",
+            "stringFormat": "{0:0,0.#}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV10ZIEK_I": {
+            "type": "number",
+            "title": "Ziekenhuizen/poli's binnen 10km",
+            "description": "Aantal ziekenhuizen incl. Buitenpolikliniek (gemiddelde, binnen 10 km over de openbare weg)",
+            "section": "CBS",
+            "stringFormat": "{0:0,0.#}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV20ZIEK_I": {
+            "type": "number",
+            "title": "Ziekenhuizen/poli's binnen 20km",
+            "description": "Aantal ziekenhuizen incl. Buitenpolikliniek (gemiddelde, binnen 20 km over de openbare weg)",
+            "section": "CBS",
+            "stringFormat": "{0:0,0.#}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AF_ZIEK_E": {
+            "type": "number",
+            "title": "Afstand ziekenhuis",
+            "description": "Gemiddelde afstand tot ziekenhuis excl. Buitenpolikliniek",
+            "section": "CBS",
+            "stringFormat": "{0:0,0.#}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV5_ZIEK_E": {
+            "type": "number",
+            "title": "Ziekenhuizen binnen 5km",
+            "description": "Aantal ziekenhuizen excl. Buitenpolikliniek (gemiddelde, binnen 5km over de openbare weg)",
+            "section": "CBS",
+            "stringFormat": "{0:0,0.#}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV10ZIEK_E": {
+            "type": "number",
+            "title": "Ziekenhuizen binnen 10km",
+            "description": "Aantal ziekenhuizen excl. Buitenpolikliniek (gemiddelde, binnen 10 km over de openbare weg)",
+            "section": "CBS",
+            "stringFormat": "{0:0,0.#}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV20ZIEK_E": {
+            "type": "number",
+            "title": "Ziekenhuizen binnen 20km",
+            "description": "Aantal ziekenhuizen excl. Buitenpolikliniek (gemiddelde, binnen 20 km over de openbare weg)",
+            "section": "CBS",
+            "stringFormat": "{0:0,0.#}",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AF_KDV": {
+            "type": "number",
+            "title": "Af kdv",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV1_KDV": {
+            "type": "number",
+            "title": "Av1 kdv",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV3_KDV": {
+            "type": "number",
+            "title": "Av3 kdv",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV5_KDV": {
+            "type": "number",
+            "title": "Av5 kdv",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AF_BSO": {
+            "type": "number",
+            "title": "Af bso",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV1_BSO": {
+            "type": "number",
+            "title": "Av1 bso",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV3_BSO": {
+            "type": "number",
+            "title": "Av3 bso",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AV5_BSO": {
+            "type": "number",
+            "title": "Av5 bso",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AF_OPRITH": {
+            "type": "number",
+            "title": "Af oprith",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AF_TREINST": {
+            "type": "number",
+            "title": "Af treinst",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AF_OVERST": {
+            "type": "number",
+            "title": "Af overst",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AF_BIBLIO": {
+            "type": "number",
+            "title": "Af biblio",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        },
+        "AF_IJSBAAN": {
+            "type": "number",
+            "title": "Af ijsbaan",
+            "section": "CBS",
+            "stringFormat": "{0:0,0}",
+            "visibleInCallOut": false,
+            "canEdit": true,
+            "isSearchable": false
+        }
+    },
+    "id": "cbs",
+    "propertyTypes": {}
+}

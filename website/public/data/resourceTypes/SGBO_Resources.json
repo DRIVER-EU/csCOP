@@ -1,0 +1,815 @@
+{
+    "featureTypes" : {
+        "Bureau" : {
+            "languages" : {
+                "nl" : {
+                    "name" : "Politiebureau"
+                },
+                "en" : {
+                    "name" : "Police office"
+                }
+            },
+            "showAllProperties" : false,
+            "style" : {
+                "fillColor" : "#ffffff",
+                "strokeColor" : "#000088",
+                "strokeWidth" : 2,
+                "stroke" : true,
+                "fillOpacity" : 0.9,
+                "opacity" : 0.9,
+                "iconWidth" : 26,
+                "iconHeight" : 26,
+                "nameLabel" : "LOC_NAAM",
+                "iconUri" : "images/politie_zwart.png"
+            },
+            "isInitialized" : false,
+            "propertyTypeKeys" : "Name;OBJECTID;LOC_NAAM;LOC_TYPE;"
+        },
+         "District" : {
+            "languages" : {
+                "nl" : {
+                    "name" : "District"
+                },
+                "en" : {
+                    "name" : "District"
+                }
+            },
+            "showAllProperties" : false,
+            "style" : {
+                "fillColor" : "#ffff99",
+                "strokeColor" : "#000000",
+                "strokeWidth" : 2,
+                "stroke" : true,
+                "fillOpacity" : 0.4,
+                "opacity" : 0.4,
+                "iconWidth" : 26,
+                "iconHeight" : 26,
+                "nameLabel" : "DISTR_NAAM",
+                "iconUri" : "images/7010 politie.png"
+            },
+            "isInitialized" : false,
+            "propertyTypeKeys" : "Name;OBJECTID;DISTR_CODE;DISTR_NAAM;"
+        },
+        "Eenheid" : {
+            "languages" : {
+                "nl" : {
+                    "name" : "Politie-eenheid"
+                },
+                "en" : {
+                    "name" : "Police unit"
+                }
+            },
+            "showAllProperties" : false,
+            "style" : {
+                "fillColor" : "#5555ff",
+                "strokeColor" : "#000000",
+                "strokeWidth" : 2,
+                "stroke" : true,
+                "fillOpacity" : 0.9,
+                "opacity" : 0.9,
+                "iconWidth" : 16,
+                "iconHeight" : 16,
+                "nameLabel" : "meldkamer roepnummer",
+                "iconUri" : "images/policecar.png"
+            },
+            "isInitialized" : false,
+            "propertyTypeKeys" : "Name;OBJECTID;SHAPE;IncidentID;Discipline;IncidentNR;RitNr;Afhandeling;Datum;Tijd;XCoord;YCoord;Straatnaam;Huisnummer;Toevoeging;Aanduiding;Plaats;PlaatsID;Prioriteit;Urgentie;Gebeurtenis;District;Bureau;Extra1;Extra2;Breng_XCoord;Breng_YCoord;Breng_Straatnaam;Breng_Huisnummer;Breng_Toevoeging;Breng_Plaats;Symbol;Key_;Mobile ID;X-Coordinaat;Y-Coordinaat;TCS_Status;Symbool;Naam;meldkamer roepnummer;Datum positie wijziging;Tijd positie wijziging;Polling aan/uit;Snelheid;Meldkamer key;Netwerk ID;Aanrijtijd;Filterstatus;Incident ID;Gms_Status;Kanaal;Portofoon;Standplaats;Voertuigsoort;Vervoerder;Eigenaar;Nationaal nummer;Bereikbaar;Bereikbaar Tekst;Blauw licht;Blauw licht Tekst;2 Tonige Hoorn;2 Tonige Hoorn Tekst;Amber licht;Amber Tekst;Contact;Contact Tekst"
+        },
+        "Ambulance" : {
+            "languages" : {
+                "nl" : {
+                    "name" : "Ambulance"
+                },
+                "en" : {
+                    "name" : "Ambulance"
+                }
+            },
+            "showAllProperties" : false,
+            "style" : {
+                "fillColor" : "#ffffff",
+                "strokeColor" : "#ffff00",
+                "strokeWidth" : 2,
+                "stroke" : true,
+                "fillOpacity" : 0.9,
+                "opacity" : 0.9,
+                "iconWidth" : 16,
+                "iconHeight" : 16,
+                "nameLabel" : "meldkamer roepnummer",
+                "iconUri" : "images/4048 ambulancediensten.png"
+            },
+            "isInitialized" : false,
+            "propertyTypeKeys" : "Name;OBJECTID;SHAPE;IncidentID;Discipline;IncidentNR;RitNr;Afhandeling;Datum;Tijd;XCoord;YCoord;Straatnaam;Huisnummer;Toevoeging;Aanduiding;Plaats;PlaatsID;Prioriteit;Urgentie;Gebeurtenis;District;Bureau;Extra1;Extra2;Breng_XCoord;Breng_YCoord;Breng_Straatnaam;Breng_Huisnummer;Breng_Toevoeging;Breng_Plaats;Symbol;Key_;Mobile ID;X-Coordinaat;Y-Coordinaat;TCS_Status;Symbool;Naam;meldkamer roepnummer;Datum positie wijziging;Tijd positie wijziging;Polling aan/uit;Snelheid;Meldkamer key;Netwerk ID;Aanrijtijd;Filterstatus;Incident ID;Gms_Status;Kanaal;Portofoon;Standplaats;Voertuigsoort;Vervoerder;Eigenaar;Nationaal nummer;Bereikbaar;Bereikbaar Tekst;Blauw licht;Blauw licht Tekst;2 Tonige Hoorn;2 Tonige Hoorn Tekst;Amber licht;Amber Tekst;Contact;Contact Tekst"
+        },
+        "Brandweer" : {
+            "languages" : {
+                "nl" : {
+                    "name" : "Brandweerwagen"
+                },
+                "en" : {
+                    "name" : "Fire truck"
+                }
+            },
+            "showAllProperties" : false,
+            "style" : {
+                "fillColor" : "#ff3333",
+                "strokeColor" : "#00aa33",
+                "strokeWidth" : 2,
+                "stroke" : true,
+                "fillOpacity" : 0.9,
+                "opacity" : 0.9,
+                "iconWidth" : 16,
+                "iconHeight" : 16,
+                "nameLabel" : "meldkamer roepnummer",
+                "iconUri" : "images/Bedrijfsbrandweerkazerne.png"
+            },
+            "isInitialized" : false,
+            "propertyTypeKeys" : "Name;OBJECTID;SHAPE;IncidentID;Discipline;IncidentNR;RitNr;Afhandeling;Datum;Tijd;XCoord;YCoord;Straatnaam;Huisnummer;Toevoeging;Aanduiding;Plaats;PlaatsID;Prioriteit;Urgentie;Gebeurtenis;District;Bureau;Extra1;Extra2;Breng_XCoord;Breng_YCoord;Breng_Straatnaam;Breng_Huisnummer;Breng_Toevoeging;Breng_Plaats;Symbol;Key_;Mobile ID;X-Coordinaat;Y-Coordinaat;TCS_Status;Symbool;Naam;meldkamer roepnummer;Datum positie wijziging;Tijd positie wijziging;Polling aan/uit;Snelheid;Meldkamer key;Netwerk ID;Aanrijtijd;Filterstatus;Incident ID;Gms_Status;Kanaal;Portofoon;Standplaats;Voertuigsoort;Vervoerder;Eigenaar;Nationaal nummer;Bereikbaar;Bereikbaar Tekst;Blauw licht;Blauw licht Tekst;2 Tonige Hoorn;2 Tonige Hoorn Tekst;Amber licht;Amber Tekst;Contact;Contact Tekst"
+        },
+        "Incident" : {
+            "languages" : {
+                "nl" : {
+                    "name" : "Incident"
+                },
+                "en" : {
+                    "name" : "Incident"
+                }
+            },
+            "showAllProperties" : false,
+            "style" : {
+                "fillColor" : "#ff33ff",
+                "strokeColor" : "#00ffff",
+                "strokeWidth" : 2,
+                "stroke" : true,
+                "fillOpacity" : 0.9,
+                "opacity" : 0.9,
+                "iconWidth" : 16,
+                "iconHeight" : 16,
+                "nameLabel" : "IncidentID",
+                "iconUri" : "images/5088 wegwerkzaamheden.png"
+            },
+            "isInitialized" : false,
+            "propertyTypeKeys" : "Name;OBJECTID;SHAPE;IncidentID;Discipline;IncidentNR;RitNr;Afhandeling;Datum;Tijd;XCoord;YCoord;Straatnaam;Huisnummer;Toevoeging;Aanduiding;Plaats;PlaatsID;Prioriteit;Urgentie;Gebeurtenis;District;Bureau;Extra1;Extra2;Breng_XCoord;Breng_YCoord;Breng_Straatnaam;Breng_Huisnummer;Breng_Toevoeging;Breng_Plaats;Symbol;Key_;Mobile ID;X - Coordinaat;Y - Coordinaat;TCS_Status;Symbool;Naam;meldkamer roepnummer;Datum positie wijziging;Tijd positie wijziging;Polling aan / uit;Snelheid;Meldkamer key;Netwerk ID;Aanrijtijd;Filterstatus;Incident ID;Gms_Status;Kanaal;Portofoon;Standplaats;Voertuigsoort;Vervoerder;Eigenaar;Nationaal nummer;Bereikbaar;Bereikbaar Tekst;Blauw licht;Blauw licht Tekst;2 Tonige Hoorn;2 Tonige Hoorn Tekst;Amber licht;Amber Tekst;Contact;Contact Tekst;"
+        }
+    },
+    "propertyTypeData" : {
+        "Name" : {
+            "label" : "Name",
+            "title" : "Name",
+            "description" : "Name",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "OBJECTID" : {
+            "label" : "OBJECTID",
+            "title" : "OBJECTID",
+            "description" : "OBJECTID",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "SHAPE" : {
+            "label" : "SHAPE",
+            "title" : "SHAPE",
+            "description" : "SHAPE",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "IncidentID" : {
+            "label" : "IncidentID",
+            "title" : "IncidentID",
+            "description" : "IncidentID",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Discipline" : {
+            "label" : "Discipline",
+            "title" : "Discipline",
+            "description" : "Discipline",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "IncidentNR" : {
+            "label" : "IncidentNR",
+            "title" : "IncidentNR",
+            "description" : "IncidentNR",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "RitNr" : {
+            "label" : "RitNr",
+            "title" : "RitNr",
+            "description" : "RitNr",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Afhandeling" : {
+            "label" : "Afhandeling",
+            "title" : "Afhandeling",
+            "description" : "Afhandeling",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Datum" : {
+            "label" : "Datum",
+            "title" : "Datum",
+            "description" : "Datum",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Tijd" : {
+            "label" : "Tijd",
+            "title" : "Tijd",
+            "description" : "Tijd",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "XCoord" : {
+            "label" : "XCoord",
+            "title" : "XCoord",
+            "description" : "XCoord",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "YCoord" : {
+            "label" : "YCoord",
+            "title" : "YCoord",
+            "description" : "YCoord",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Straatnaam" : {
+            "label" : "Straatnaam",
+            "title" : "Straatnaam",
+            "description" : "Straatnaam",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Huisnummer" : {
+            "label" : "Huisnummer",
+            "title" : "Huisnummer",
+            "description" : "Huisnummer",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Toevoeging" : {
+            "label" : "Toevoeging",
+            "title" : "Toevoeging",
+            "description" : "Toevoeging",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Aanduiding" : {
+            "label" : "Aanduiding",
+            "title" : "Aanduiding",
+            "description" : "Aanduiding",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Plaats" : {
+            "label" : "Plaats",
+            "title" : "Plaats",
+            "description" : "Plaats",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "PlaatsID" : {
+            "label" : "PlaatsID",
+            "title" : "PlaatsID",
+            "description" : "PlaatsID",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Prioriteit" : {
+            "label" : "Prioriteit",
+            "title" : "Prioriteit",
+            "description" : "Prioriteit",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Urgentie" : {
+            "label" : "Urgentie",
+            "title" : "Urgentie",
+            "description" : "Urgentie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Gebeurtenis" : {
+            "label" : "Gebeurtenis",
+            "title" : "Gebeurtenis",
+            "description" : "Gebeurtenis",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "District" : {
+            "label" : "District",
+            "title" : "District",
+            "description" : "District",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Bureau" : {
+            "label" : "Bureau",
+            "title" : "Bureau",
+            "description" : "Bureau",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Extra1" : {
+            "label" : "Extra1",
+            "title" : "Extra1",
+            "description" : "Extra1",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Extra2" : {
+            "label" : "Extra2",
+            "title" : "Extra2",
+            "description" : "Extra2",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Breng_XCoord" : {
+            "label" : "Breng_XCoord",
+            "title" : "Breng_XCoord",
+            "description" : "Breng_XCoord",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Breng_YCoord" : {
+            "label" : "Breng_YCoord",
+            "title" : "Breng_YCoord",
+            "description" : "Breng_YCoord",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Breng_Straatnaam" : {
+            "label" : "Breng_Straatnaam",
+            "title" : "Breng_Straatnaam",
+            "description" : "Breng_Straatnaam",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Breng_Huisnummer" : {
+            "label" : "Breng_Huisnummer",
+            "title" : "Breng_Huisnummer",
+            "description" : "Breng_Huisnummer",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Breng_Toevoeging" : {
+            "label" : "Breng_Toevoeging",
+            "title" : "Breng_Toevoeging",
+            "description" : "Breng_Toevoeging",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Breng_Plaats" : {
+            "label" : "Breng_Plaats",
+            "title" : "Breng_Plaats",
+            "description" : "Breng_Plaats",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Symbol" : {
+            "label" : "Symbol",
+            "title" : "Symbol",
+            "description" : "Symbol",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Key_" : {
+            "label" : "Key_",
+            "title" : "Key_",
+            "description" : "Key_",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Mobile ID" : {
+            "label" : "Mobile ID",
+            "title" : "Mobile ID",
+            "description" : "Mobile ID",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "X - Coordinaat" : {
+            "label" : "X - Coordinaat",
+            "title" : "X - Coordinaat",
+            "description" : "X - Coordinaat",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Y - Coordinaat" : {
+            "label" : "Y - Coordinaat",
+            "title" : "Y - Coordinaat",
+            "description" : "Y - Coordinaat",
+            "section" : "Locatie",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "TCS_Status" : {
+            "label" : "TCS_Status",
+            "title" : "TCS_Status",
+            "description" : "TCS_Status",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Symbool" : {
+            "label" : "Symbool",
+            "title" : "Symbool",
+            "description" : "Symbool",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Naam" : {
+            "label" : "Naam",
+            "title" : "Naam",
+            "description" : "Naam",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "meldkamer roepnummer" : {
+            "label" : "meldkamer roepnummer",
+            "title" : "meldkamer roepnummer",
+            "description" : "meldkamer roepnummer",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Datum positie wijziging" : {
+            "label" : "Datum positie wijziging",
+            "title" : "Datum positie wijziging",
+            "description" : "Datum positie wijziging",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Tijd positie wijziging" : {
+            "label" : "Tijd positie wijziging",
+            "title" : "Tijd positie wijziging",
+            "description" : "Tijd positie wijziging",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Polling aan / uit" : {
+            "label" : "Polling aan / uit",
+            "title" : "Polling aan / uit",
+            "description" : "Polling aan / uit",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Snelheid" : {
+            "label" : "Snelheid",
+            "title" : "Snelheid",
+            "description" : "Snelheid",
+            "type" : "number",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Meldkamer key" : {
+            "label" : "Meldkamer key",
+            "title" : "Meldkamer key",
+            "description" : "Meldkamer key",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Netwerk ID" : {
+            "label" : "Netwerk ID",
+            "title" : "Netwerk ID",
+            "description" : "Netwerk ID",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Aanrijtijd" : {
+            "label" : "Aanrijtijd",
+            "title" : "Aanrijtijd",
+            "description" : "Aanrijtijd",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Filterstatus" : {
+            "label" : "Filterstatus",
+            "title" : "Filterstatus",
+            "description" : "Filterstatus",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Incident ID" : {
+            "label" : "Incident ID",
+            "title" : "Incident ID",
+            "description" : "Incident ID",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Gms_Status" : {
+            "label" : "Gms_Status",
+            "title" : "Gms_Status",
+            "description" : "Gms_Status",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Kanaal" : {
+            "label" : "Kanaal",
+            "title" : "Kanaal",
+            "description" : "Kanaal",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Portofoon" : {
+            "label" : "Portofoon",
+            "title" : "Portofoon",
+            "description" : "Portofoon",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Standplaats" : {
+            "label" : "Standplaats",
+            "title" : "Standplaats",
+            "description" : "Standplaats",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Voertuigsoort" : {
+            "label" : "Voertuigsoort",
+            "title" : "Voertuigsoort",
+            "description" : "Voertuigsoort",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Vervoerder" : {
+            "label" : "Vervoerder",
+            "title" : "Vervoerder",
+            "description" : "Vervoerder",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Eigenaar" : {
+            "label" : "Eigenaar",
+            "title" : "Eigenaar",
+            "description" : "Eigenaar",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Nationaal nummer" : {
+            "label" : "Nationaal nummer",
+            "title" : "Nationaal nummer",
+            "description" : "Nationaal nummer",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Bereikbaar" : {
+            "label" : "Bereikbaar",
+            "title" : "Bereikbaar",
+            "description" : "Bereikbaar",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Bereikbaar Tekst" : {
+            "label" : "Bereikbaar Tekst",
+            "title" : "Bereikbaar Tekst",
+            "description" : "Bereikbaar Tekst",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Blauw licht" : {
+            "label" : "Blauw licht",
+            "title" : "Blauw licht",
+            "description" : "Blauw licht",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Blauw licht Tekst" : {
+            "label" : "Blauw licht Tekst",
+            "title" : "Blauw licht Tekst",
+            "description" : "Blauw licht Tekst",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "2 Tonige Hoorn" : {
+            "label" : "2 Tonige Hoorn",
+            "title" : "2 Tonige Hoorn",
+            "description" : "2 Tonige Hoorn",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "2 Tonige Hoorn Tekst" : {
+            "label" : "2 Tonige Hoorn Tekst",
+            "title" : "2 Tonige Hoorn Tekst",
+            "description" : "2 Tonige Hoorn Tekst",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Amber licht" : {
+            "label" : "Amber licht",
+            "title" : "Amber licht",
+            "description" : "Amber licht",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Amber Tekst" : {
+            "label" : "Amber Tekst",
+            "title" : "Amber Tekst",
+            "description" : "Amber Tekst",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Contact" : {
+            "label" : "Contact",
+            "title" : "Contact",
+            "description" : "Contact",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "Contact Tekst" : {
+            "label" : "Contact Tekst",
+            "title" : "Contact Tekst",
+            "description" : "Contact Tekst",
+            "section" : "Signalen",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "LOC_NAAM" : {
+            "label" : "LOC_NAAM",
+            "title" : "Locatienaam",
+            "description" : "Locatienaam",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "LOC_TYPE" : {
+            "label" : "LOC_TYPE",
+            "title" : "Locatietype",
+            "description" : "Locatietype",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "DISTR_NAAM" : {
+            "label" : "DISTR_NAAM",
+            "title" : "District naam",
+            "description" : "District naam",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "DISTR_CODE" : {
+            "label" : "DISTR_CODE",
+            "title" : "District code",
+            "description" : "District code",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        }
+    }
+}

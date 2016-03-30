@@ -1,0 +1,235 @@
+{
+    "id": "sgbo",
+    "title": "SGBO",
+    "logo": "images/brandweer48.png",
+    "url": "/api/projects/sgbo",
+    "isDynamic": true,
+    "timeLine": {
+        "enableLive": true,
+        "enablePlay": true,
+        "enableEvents": true,
+        "focus": 1457982630000,
+        "start": 1457478000000,
+        "end": 1458082800000,
+        "range": 604800000,
+        "zoomLevel": 3600000,
+        "zoomLevelName": "hours"
+    },
+    "mcas": [
+        {
+            "userWeight": 1,
+            "criteria": [],
+            "isPlaUpdated": false,
+            "isPlaScaled": false,
+            "id": "99344f36-f75a-4fa7-26c0-6b68a159c7ca",
+            "userWeightMax": 5,
+            "featureIds": [
+                "api/resources/mcs#Default"
+            ],
+            "stringFormat": "{0:0.0}",
+            "title": "test",
+            "label": "mca_test",
+            "weight": 1
+        }
+    ],
+    "datasources": null,
+    "dashboards": [
+        {
+            "id": "map",
+            "name": "Home",
+            "editMode": true,
+            "showMap": true,
+            "mapWidth": "100%",
+            "alignMapRight": false,
+            "showTimeline": true,
+            "showLeftmenu": true,
+            "showLegend": false,
+            "showRightmenu": false,
+            "showBackgroundImage": false,
+            "widgets": [],
+            "mobile": true
+        },
+        {
+            "id": "datatable",
+            "name": "Table",
+            "editMode": false,
+            "showMap": false,
+            "mapWidth": "100%",
+            "alignMapRight": false,
+            "showTimeline": false,
+            "showLeftmenu": false,
+            "showLegend": false,
+            "showRightmenu": false,
+            "showBackgroundImage": false,
+            "widgets": [
+                {
+                    "id": "datatable_id",
+                    "directive": "datatable",
+                    "enabled": true,
+                    "width": "100%",
+                    "height": "100%"
+                }
+            ],
+            "mobile": true
+        }
+    ],
+    "userPrivileges": {
+        "mca": {
+            "expertMode": true
+        }
+    },
+    "modeSelection": true,
+    "expertMode": 3,
+    "propertyTypeData": {},
+    "groups": [
+        {
+            "id": "ce07ca55-11d3-4a11-ec57-8010e9497ada",
+            "title": "Knoppen",
+            "layers": [
+                {
+                    "id": "0e9345e8-1830-418e-2d09-c0d83198d3f1",
+                    "title": "HIN",
+                    "tags": "presentation",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "url": "api/layers/hin",
+                    "typeUrl": "data/resourceTypes/SGBO_Resources.json",
+                    "isDynamic": true,
+                    "timeAware": true
+                },
+                {
+                    "id": "d09858f9-8096-4bb6-ec5e-c6791ed055fd",
+                    "title": "HON",
+                    "tags": "presentation",
+                    "type": "dynamicgeojson",
+                    "renderType": "dynamicgeojson",
+                    "url": "api/layers/hon",
+                    "typeUrl": "data/resourceTypes/SGBO_Resources.json",
+                    "isDynamic": true,
+                    "timeAware": true
+                }
+            ]
+        },
+        {
+            "id": "staticlayers",
+            "title": "Haaglanden",
+            "description": "",
+            "clustering": true,
+            "clusterLevel": 11,
+            "layers": [
+                {
+                    "id": "bureaus",
+                    "title": "Politiebureaus",
+                    "description": "",
+                    "type": "esrijson",
+                    "renderType": "geojson",
+                    "url": "data/projects/Generic/alle-politiebureaus.json",
+                    "typeUrl": "data/resourceTypes/SGBO_Resources.json",
+                    "opacity": 75,
+                    "dataSourceParameters": {
+                        "convertFromRD": true
+                    },
+                    "defaultFeatureType": "Bureau",
+                    "isDynamic": false,
+                    "timeDependent": false,
+                    "timeAware": false
+                },
+                {
+                    "id": "cctv",
+                    "title": "CCTV",
+                    "description": "",
+                    "url": "data/projects/Haaglanden/CCTV.json",
+                    "typeUrl": "data/resourceTypes/cctv.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "cctv",
+                    "isDynamic": false,
+                    "timeDependent": false,
+                    "timeAware": false
+                },
+                {
+                    "id": "ambassade",
+                    "title": "Ambassades en consulaten",
+                    "description": "Updated 20.03.2016",
+                    "url": "data/projects/Haaglanden/Ambassades.json",
+                    "typeUrl": "data/resourceTypes/ambassade.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "ambassade",
+                    "isDynamic": false,
+                    "timeDependent": false,
+                    "timeAware": false
+                },
+                {
+                    "id": "cctv_ambassade",
+                    "title": "CCTV Ambassades",
+                    "description": "",
+                    "url": "data/projects/Haaglanden/CCTV Ambassade.json",
+                    "typeUrl": "data/resourceTypes/cctv.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "cctv",
+                    "isDynamic": false,
+                    "timeDependent": false,
+                    "timeAware": false
+                },
+                {
+                    "id": "districten",
+                    "title": "Districten",
+                    "description": "",
+                    "type": "esrijson",
+                    "renderType": "geojson",
+                    "url": "data/projects/Generic/alle-districten.json",
+                    "typeUrl": "data/resourceTypes/SGBO_Resources.json",
+                    "opacity": 75,
+                    "dataSourceParameters": {
+                        "convertFromRD": true
+                    },
+                    "defaultFeatureType": "District",
+                    "isDynamic": false,
+                    "timeDependent": false,
+                    "timeAware": false
+                }
+            ]
+        },
+        {
+            "id": "census",
+            "title": "CBS gegevens",
+            "description": "",
+            "clustering": true,
+            "clusterLevel": 11,
+            "layers": [
+                {
+                    "id": "buurten",
+                    "title": "Buurten",
+                    "description": "",
+                    "renderType": "geojson",
+                    "url": "data/projects/Haaglanden/capped_Buurt_2015.json",
+                    "typeUrl": "data/resourceTypes/cbs.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "buurt",
+                    "isDynamic": false,
+                    "timeDependent": false,
+                    "timeAware": false
+                },
+                {
+                    "id": "wijken",
+                    "title": "Wijken",
+                    "description": "",
+                    "renderType": "geojson",
+                    "url": "data/projects/Haaglanden/capped_Wijk_2015.json",
+                    "typeUrl": "data/resourceTypes/cbs.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "buurt",
+                    "isDynamic": false,
+                    "timeDependent": false,
+                    "timeAware": false
+                }
+            ]
+        }
+    ],
+    "layerDirectory": "/api/layers",
+    "eventTab": true,
+    "useOfflineSearch": true,
+    "useOnlineSearch": true,
+    "onlineSearchUrl": "bagsearchaddress",
+    "storage": "file",
+    "_localFile": "c:\\dev\\web\\cs\\apps\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json"
+}
