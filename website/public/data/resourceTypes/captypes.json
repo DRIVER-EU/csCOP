@@ -16,13 +16,14 @@
                 "fillOpacity": 0.9,
                 "nameLabel": "name"
             },
-            "propertyTypeKeys": "Name;status;sender;severity;certainty;urgency;event;category;"
+            "propertyTypeKeys": "Name;event;status;sender;severity;certainty;urgency;category;areaDesc;"
         }
     },
     "propertyTypeData": {
         "status": {
             "label": "status",
             "title": "Status",
+            "description": "Actual, Exercise, System, Test, Draft",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": false
@@ -37,6 +38,7 @@
         "sender": {
             "label": "sender",
             "title": "Sender",
+            "description": "Name of the sender",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
@@ -62,7 +64,7 @@
             "title": "Certainty",
             "description": "Observed, Likely, Possible, Unlikely, Unknown",
             "options": ["Observed", "Likely", "Possible", "Unlikely", "Unknown"],
-            "type": "options",
+            "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
         },
@@ -80,16 +82,17 @@
             "visibleInCallOut": true,
             "canEdit": false
         },
-        "area": {
-            "label": "area",
-            "title": "Area",
+        "areaDesc": {
+            "label": "areaDesc",
+            "title": "Area description",
             "type": "text",
-            "visibleInCallOut": false,
+            "visibleInCallOut": true,
             "canEdit": true
         },
         "event": {
             "label": "event",
             "title": "Event",
+            "description": "Description of the event",
             "type": "textarea",
             "visibleInCallOut": true,
             "canEdit": true
@@ -97,13 +100,7 @@
         "category": {
             "label": "category",
             "title": "Category",
-            "type": "text",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "template": {
-            "label": "template",
-            "title": "Template",
+            "description": "Geo, Met, Safety, Security, Rescue, Fire, Health, Env, Transport, Infra, CBRNE, Other",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
