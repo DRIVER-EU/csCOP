@@ -1,8 +1,12 @@
 {
+    "viewBounds": {
+        "southWest": [52.0147717, 4.1967104],
+        "northEast": [52.1285368, 4.4230263]
+    },
     "id": "csWeb",
     "title": "csWeb",
     "logo": "images/brandweer48.png",
-    "url": "/api/projects/sgbo",
+    "url": "/api/projects/csWeb",
     "isDynamic": true,
     "timeLine": {
         "enableLive": true,
@@ -147,12 +151,11 @@
                     "type": "dynamicgeojson",
                     "renderType": "geojson",
                     "showFeatureNotifications": true,
-                    "url": "/CIS",
-                    "typeUrl": "/data/resourceTypes/captypes.json",
+                    "url": "data/api/layers/cap.json",
+                    "typeUrl": "data/resourceTypes/captypes.json",
                     "defaultFeatureType": "Alert",
                     "opacity": 90,
                     "isDynamic": true,
-                    "gui": {},
                     "tags": []
                 }
             ]
@@ -529,5 +532,5 @@
     "useOnlineSearch": true,
     "onlineSearchUrl": "bagsearchaddress",
     "storage": "file",
-    "_localFile": "C:\\Users\\rbruining\\Documents\\TNO\\csMaster\\apps\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json"
+    "_localFile": "c:\\dev\\web\\cs\\apps\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json"
 }
