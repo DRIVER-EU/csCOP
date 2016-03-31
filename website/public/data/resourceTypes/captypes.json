@@ -14,8 +14,7 @@
                 "opacity": 0.9,
                 "fillOpacity": 0.9,
                 "nameLabel": "name"
-            },
-            "propertyTypeKeys": "Name;name;id;status;date_start;date_end;stat_TOTAL;stat_OPEN;stat_ACCEPTED;stat_DECLINED;type;description;area;eventtasks;"
+            }
         }
     },
     "propertyTypeData": {

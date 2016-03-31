@@ -1,6 +1,6 @@
 {
-    "id": "sgbo",
-    "title": "SGBO",
+    "id": "csWeb",
+    "title": "csWeb",
     "logo": "images/brandweer48.png",
     "url": "/api/projects/sgbo",
     "isDynamic": true,
@@ -144,14 +144,14 @@
                             "description": "CAP."
                         }
                     },
-                    "type": "geojson",
+                    "type": "dynamicgeojson",
                     "renderType": "geojson",
                     "showFeatureNotifications": true,
                     "url": "/CIS",
                     "typeUrl": "/data/resourceTypes/captypes.json",
                     "defaultFeatureType": "Alert",
                     "opacity": 90,
-                    "isDynamic": false,
+                    "isDynamic": true,
                     "gui": {},
                     "tags": []
                 }
