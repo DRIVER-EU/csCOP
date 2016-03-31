@@ -22,6 +22,7 @@
     "public/app/m.ts",
     "public/app/CISAction.ts",
     "typings/main.d.ts",
+    "typings/csweb/csComp.d.ts",
     "typings/leaflet/leaflet.d.ts",
     "typings/leaflet/L.Polyline.extended.d.ts",
     "typings/leaflet/control-sidebar.d.ts",

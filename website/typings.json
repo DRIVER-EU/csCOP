@@ -1,6 +1,7 @@
 {
   "name": "csCOP",
   "version": false,
+  "csComp": "github:TNOCS/csWeb-dist/dist-bower/csComp.d.ts#5d30b564c3a557321dce6c8f7a2dd2be4d83c04e",
   "ambientDependencies": {
     "JSONStream": "github:DefinitelyTyped/DefinitelyTyped/JSONStream/JSONStream.d.ts#708609e0764daeb5eb64104af7aca50c520c4e6e",
     "Q": "github:DefinitelyTyped/DefinitelyTyped/q/Q.d.ts#62eedc3121a5e28c50473d2e4a9cefbcb9c3957f",
