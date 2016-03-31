@@ -66,8 +66,7 @@
                 }
             },
             "type": "date",
-            "visibleInCallOut": true,
-            "canEdit": false
+            "visibleInCallOut": true
         },
         "date_end": {
             "label": "date_end",
@@ -80,8 +79,7 @@
                 }
             },
             "type": "date",
-            "visibleInCallOut": true,
-            "canEdit": false
+            "visibleInCallOut": true
         },
         "date_deadline": {
             "label": "date_deadline",

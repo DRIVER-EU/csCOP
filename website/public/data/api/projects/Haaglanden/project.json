@@ -1,8 +1,4 @@
 {
-    "viewBounds": {
-        "southWest": [52.0147717, 4.1967104],
-        "northEast": [52.1285368, 4.4230263]
-    },
     "id": "csWeb",
     "title": "csWeb",
     "logo": "images/brandweer48.png",
@@ -12,9 +8,9 @@
         "enableLive": true,
         "enablePlay": true,
         "enableEvents": true,
-        "focus": 1457982630000,
-        "start": 1457478000000,
-        "end": 1458082800000,
+        "focus": 1459547676000,
+        "start": 1459116000000,
+        "end": 1459720800000,
         "range": 604800000,
         "zoomLevel": 3600000,
         "zoomLevelName": "hours"
@@ -36,6 +32,9 @@
             "weight": 1
         }
     ],
+    "profile": {
+        "authenticationMethod": 1
+    },
     "datasources": null,
     "dashboards": [
         {
@@ -50,7 +49,7 @@
             "showLegend": false,
             "showRightmenu": false,
             "showBackgroundImage": false,
-            "widgets": [],
+            "widgets": null,
             "mobile": true
         },
         {
@@ -77,6 +76,16 @@
             "mobile": true
         }
     ],
+    "viewBounds": {
+        "southWest": [
+            52.0147717,
+            4.1967104
+        ],
+        "northEast": [
+            52.1285368,
+            4.4230263
+        ]
+    },
     "userPrivileges": {
         "mca": {
             "expertMode": true
@@ -89,6 +98,9 @@
         {
             "id": "8cc47763-7f29-4fa7-05af-901a08bc4569",
             "title": "Crowdtasker",
+            "description": "Crowdtasker allows volunteers to help in crisis situations.",
+            "clustering": true,
+            "clusterLevel": 10,
             "languages": {
                 "en": {
                     "description": "Crowdtasker allows volunteers to help in crisis situations."
@@ -97,12 +109,17 @@
                     "description": "Crowdtasker biedt vrijwilligers de mogelijkheid om te helpen tijdens crisis situaties."
                 }
             },
-            "clustering": true,
-            "clusterLevel": 10,
             "layers": [
                 {
                     "id": "crowdtasker",
                     "title": "Crowdtasker",
+                    "description": "Crowdtasker allows volunteers to help in crisis situations.",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "/crowdtasker",
+                    "typeUrl": "/data/resourceTypes/crowdtaskertypes.json",
+                    "opacity": 90,
                     "languages": {
                         "en": {
                             "description": "Crowdtasker allows volunteers to help in crisis situations."
@@ -111,14 +128,7 @@
                             "description": "Crowdtasker biedt vrijwilligers de mogelijkheid om te helpen tijdens crisis situaties."
                         }
                     },
-                    "type": "geojson",
-                    "renderType": "geojson",
-                    "showFeatureNotifications": true,
-                    "url": "/crowdtasker",
-                    "typeUrl": "/data/resourceTypes/crowdtaskertypes.json",
-                    "opacity": 90,
                     "isDynamic": false,
-                    "gui": {},
                     "tags": []
                 }
             ]
@@ -126,6 +136,9 @@
         {
             "id": "84527763-7f29-4fa7-05af-901a08bc4569",
             "title": "CAP",
+            "description": "Send CAP messages through CIS",
+            "clustering": true,
+            "clusterLevel": 10,
             "languages": {
                 "en": {
                     "description": "Send CAP messages through CIS"
@@ -134,34 +147,25 @@
                     "description": "Stuur CAP berichten via CIS"
                 }
             },
-            "clustering": true,
-            "clusterLevel": 10,
             "layers": [
                 {
-                    "id": "CAP",
+                    "id": "c154aab7-a144-4ac0-4f1f-fafdaa2ef211",
                     "title": "CAP",
-                    "languages": {
-                        "en": {
-                            "description": "CAP."
-                        },
-                        "nl": {
-                            "description": "CAP."
-                        }
-                    },
+                    "description": "CAP messages",
                     "type": "dynamicgeojson",
                     "renderType": "geojson",
-                    "showFeatureNotifications": true,
-                    "url": "data/api/layers/cap.json",
+                    "heatmapItems": null,
+                    "url": "api/layers/c154aab7-a144-4ac0-4f1f-fafdaa2ef211",
                     "typeUrl": "data/resourceTypes/captypes.json",
-                    "defaultFeatureType": "Alert",
-                    "opacity": 90,
+                    "opacity": 100,
                     "isDynamic": true,
-                    "tags": []
+                    "timeAware": true
                 }
             ]
         },
         {
             "id": "76947763-7f29-4fa7-05af-901a08bc506d",
+            "title": "Causes",
             "languages": {
                 "en": {
                     "title": "Causes"
@@ -173,6 +177,13 @@
             "layers": [
                 {
                     "id": "floodsim",
+                    "title": "Flooding",
+                    "type": "grid",
+                    "renderType": "gridlayer",
+                    "heatmapItems": null,
+                    "url": "/api/layers/floodsim",
+                    "typeUrl": "/api/resources/floodsimtypes",
+                    "opacity": 75,
                     "languages": {
                         "en": {
                             "title": "Flooding"
@@ -181,12 +192,6 @@
                             "title": "Overstroming"
                         }
                     },
-                    "type": "grid",
-                    "renderType": "gridlayer",
-                    "heatmapItems": null,
-                    "url": "/api/layers/floodsim",
-                    "typeUrl": "/api/resources/floodsimtypes",
-                    "opacity": 75,
                     "dataSourceParameters": {
                         "propertyName": "h",
                         "gridType": "esri",
@@ -214,13 +219,15 @@
                     "defaultFeatureType": "flooding",
                     "defaultLegendProperty": "h",
                     "isDynamic": false,
-                    "gui": {},
                     "tags": []
                 }
             ]
         },
         {
             "id": "76947763-7f29-4fa7-05af-901a08bc4444",
+            "title": "Public utilities",
+            "clustering": true,
+            "clusterLevel": 8,
             "languages": {
                 "en": {
                     "title": "Public utilities"
@@ -229,11 +236,16 @@
                     "title": "Nutsvoorziening"
                 }
             },
-            "clustering": true,
-            "clusterLevel": 8,
             "layers": [
                 {
                     "id": "powerstations",
+                    "title": "Power stations",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "/data/projects/Haaglanden/power_stations.json",
+                    "typeUrl": "/data/resourceTypes/electrical_network.json",
+                    "opacity": 90,
                     "languages": {
                         "en": {
                             "title": "Power stations"
@@ -242,20 +254,17 @@
                             "title": "Stroomstations"
                         }
                     },
-                    "type": "geojson",
-                    "renderType": "geojson",
-                    "showFeatureNotifications": true,
-                    "url": "/data/projects/Haaglanden/power_stations.json",
-                    "typeUrl": "/data/resourceTypes/electrical_network.json",
-                    "opacity": 90,
                     "isDynamic": false,
-                    "gui": {},
                     "tags": []
                 }
             ]
         },
         {
             "id": "77947763-7f29-4fa7-05af-901a08bc6243",
+            "title": "Vulnerable objects",
+            "description": "Hospitals and nursing homes",
+            "clustering": true,
+            "clusterLevel": 12,
             "languages": {
                 "en": {
                     "title": "Vulnerable objects",
@@ -266,12 +275,17 @@
                     "description": "Ziekenhuizen en verpleeghuizen"
                 }
             },
-            "clustering": true,
-            "clusterLevel": 12,
             "layers": [
                 {
                     "id": "criticalobjects",
-                    "reference": "criticalobjects",
+                    "title": "Vulnerable objects",
+                    "description": "Hospitals and nursing homes",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "/data/projects/Haaglanden/critical_objects.json",
+                    "typeUrl": "/data/resourceTypes/critical_objects.json",
+                    "opacity": 90,
                     "languages": {
                         "en": {
                             "title": "Vulnerable objects",
@@ -282,18 +296,19 @@
                             "description": "Ziekenhuizen en verpleeghuizen"
                         }
                     },
-                    "type": "geojson",
-                    "renderType": "geojson",
-                    "showFeatureNotifications": true,
-                    "url": "/data/projects/Haaglanden/critical_objects.json",
-                    "typeUrl": "/data/resourceTypes/critical_objects.json",
-                    "opacity": 90,
                     "isDynamic": false,
-                    "gui": {},
                     "tags": []
                 },
                 {
                     "id": "hazardousobjects",
+                    "title": "Dangerous objects",
+                    "description": "E.g. gas stations, LPG storages, etc.",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "/data/projects/Haaglanden/hazardous_objects.json",
+                    "typeUrl": "/data/resourceTypes/hazardous_objects.json",
+                    "opacity": 90,
                     "languages": {
                         "en": {
                             "title": "Dangerous objects",
@@ -304,14 +319,7 @@
                             "description": "Bijv. tankstations, LPG-opslagplaatsen, etc."
                         }
                     },
-                    "type": "geojson",
-                    "renderType": "geojson",
-                    "showFeatureNotifications": true,
-                    "url": "/data/projects/Haaglanden/hazardous_objects.json",
-                    "typeUrl": "/data/resourceTypes/hazardous_objects.json",
-                    "opacity": 90,
                     "isDynamic": false,
-                    "gui": {},
                     "tags": []
                 }
             ]
@@ -324,6 +332,13 @@
             "layers": [
                 {
                     "id": "communicationobjects",
+                    "title": "Cell towers (C2000)",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "/data/projects/Haaglanden/comm_objects.json",
+                    "typeUrl": "/data/resourceTypes/comm_objects.json",
+                    "opacity": 90,
                     "languages": {
                         "en": {
                             "title": "Cell towers (C2000)"
@@ -332,18 +347,18 @@
                             "title": "Zendmasten (C2000)"
                         }
                     },
-                    "type": "geojson",
-                    "renderType": "geojson",
-                    "showFeatureNotifications": true,
-                    "url": "/data/projects/Haaglanden/comm_objects.json",
-                    "typeUrl": "/data/resourceTypes/comm_objects.json",
-                    "opacity": 90,
                     "isDynamic": false,
-                    "gui": {},
                     "tags": []
                 },
                 {
                     "id": "cellobjects",
+                    "title": "Cell towers",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "/data/projects/Haaglanden/capped_gsmmasten.json",
+                    "typeUrl": "/data/resourceTypes/comm_objects.json",
+                    "opacity": 90,
                     "languages": {
                         "en": {
                             "title": "Cell towers"
@@ -352,20 +367,16 @@
                             "title": "Zendmasten (telecom)"
                         }
                     },
-                    "type": "geojson",
-                    "renderType": "geojson",
-                    "showFeatureNotifications": true,
-                    "url": "/data/projects/Haaglanden/capped_gsmmasten.json",
-                    "typeUrl": "/data/resourceTypes/comm_objects.json",
-                    "opacity": 90,
                     "isDynamic": false,
-                    "gui": {},
                     "tags": []
                 }
             ]
         },
         {
             "id": "8cc47763-7f29-4fa7-05af-901a08bc62b9",
+            "title": "Infrastructure",
+            "clustering": true,
+            "clusterLevel": 10,
             "languages": {
                 "en": {
                     "title": "Infrastructure"
@@ -374,12 +385,16 @@
                     "title": "Infrastructuur"
                 }
             },
-            "clustering": true,
-            "clusterLevel": 10,
             "layers": [
                 {
                     "id": "roadobjects",
-                    "title": "Wegen",
+                    "title": "Roads",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "/data/projects/Haaglanden/road_objects.json",
+                    "typeUrl": "data/resourceTypes/road.json",
+                    "opacity": 90,
                     "languages": {
                         "en": {
                             "title": "Roads"
@@ -388,14 +403,7 @@
                             "title": "Wegen"
                         }
                     },
-                    "type": "geojson",
-                    "renderType": "geojson",
-                    "showFeatureNotifications": true,
-                    "url": "/data/projects/Haaglanden/road_objects.json",
-                    "typeUrl": "data/resourceTypes/road.json",
-                    "opacity": 90,
                     "isDynamic": false,
-                    "gui": {},
                     "tags": []
                 }
             ]
@@ -411,32 +419,36 @@
                     "id": "buurten",
                     "title": "Buurten",
                     "description": "",
+                    "type": "geojson",
                     "renderType": "geojson",
+                    "heatmapItems": null,
                     "url": "data/projects/Haaglanden/capped_Buurt_2015.json",
                     "typeUrl": "data/resourceTypes/cbs.json",
                     "opacity": 75,
                     "defaultFeatureType": "buurt",
                     "isDynamic": false,
-                    "timeDependent": false,
                     "timeAware": false
                 },
                 {
                     "id": "wijken",
                     "title": "Wijken",
                     "description": "",
+                    "type": "geojson",
                     "renderType": "geojson",
+                    "heatmapItems": null,
                     "url": "data/projects/Haaglanden/capped_Wijk_2015.json",
                     "typeUrl": "data/resourceTypes/cbs.json",
                     "opacity": 75,
                     "defaultFeatureType": "buurt",
                     "isDynamic": false,
-                    "timeDependent": false,
                     "timeAware": false
                 }
             ]
         },
         {
             "id": "761231565-7f29-4fa7-05af-901a08bc4444",
+            "title": "Additional layers",
+            "clustering": false,
             "languages": {
                 "en": {
                     "title": "Additional layers"
@@ -445,22 +457,20 @@
                     "title": "Overige lagen"
                 }
             },
-            "clustering": false,
             "layers": [
                 {
                     "id": "omtrek",
                     "title": "Omtrek scenario",
                     "type": "geojson",
                     "renderType": "geojson",
-                    "showFeatureNotifications": false,
+                    "heatmapItems": null,
                     "url": "data/projects/Haaglanden/clip.json",
                     "typeUrl": "data/resourceTypes/omtrek.json",
-                    "defaultFeatureType": "omtrek",
                     "opacity": 40,
-                    "fitToMap": true,
+                    "defaultFeatureType": "omtrek",
                     "isDynamic": false,
-                    "gui": {},
-                    "tags": []
+                    "tags": [],
+                    "fitToMap": true
                 },
                 {
                     "id": "bureaus",
@@ -468,6 +478,7 @@
                     "description": "",
                     "type": "esrijson",
                     "renderType": "geojson",
+                    "heatmapItems": null,
                     "url": "data/projects/Generic/alle-politiebureaus.json",
                     "typeUrl": "data/resourceTypes/SGBO_Resources.json",
                     "opacity": 75,
@@ -476,19 +487,20 @@
                     },
                     "defaultFeatureType": "Bureau",
                     "isDynamic": false,
-                    "timeDependent": false,
                     "timeAware": false
                 },
                 {
                     "id": "ambassade",
                     "title": "Ambassades en consulaten",
                     "description": "Updated 20.03.2016",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
                     "url": "data/projects/Haaglanden/Ambassades.json",
                     "typeUrl": "data/resourceTypes/ambassade.json",
                     "opacity": 75,
                     "defaultFeatureType": "ambassade",
                     "isDynamic": false,
-                    "timeDependent": false,
                     "timeAware": false
                 },
                 {
@@ -497,6 +509,7 @@
                     "description": "",
                     "type": "esrijson",
                     "renderType": "geojson",
+                    "heatmapItems": null,
                     "url": "data/projects/Generic/alle-districten.json",
                     "typeUrl": "data/resourceTypes/SGBO_Resources.json",
                     "opacity": 75,
@@ -505,7 +518,6 @@
                     },
                     "defaultFeatureType": "District",
                     "isDynamic": false,
-                    "timeDependent": false,
                     "timeAware": false
                 },
                 {
@@ -513,15 +525,14 @@
                     "title": "Gemeentes",
                     "type": "geojson",
                     "renderType": "geojson",
-                    "showFeatureNotifications": false,
+                    "heatmapItems": null,
                     "url": "data/src/gemeente.json",
                     "typeUrl": "data/resourceTypes/resources.json",
-                    "defaultFeatureType": "gemeente",
                     "opacity": 70,
-                    "fitToMap": false,
+                    "defaultFeatureType": "gemeente",
                     "isDynamic": false,
-                    "gui": {},
-                    "tags": []
+                    "tags": [],
+                    "fitToMap": false
                 }
             ]
         }
@@ -531,6 +542,5 @@
     "useOfflineSearch": true,
     "useOnlineSearch": true,
     "onlineSearchUrl": "bagsearchaddress",
-    "storage": "file",
     "_localFile": "c:\\dev\\web\\cs\\apps\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json"
 }

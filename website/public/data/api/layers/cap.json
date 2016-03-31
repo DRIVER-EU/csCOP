@@ -1,1 +1,13 @@
-{"storage":"file","id":"cap","url":"/api/layers/cap","title":"cap","features":[],"tags":[],"updated":1459423166190,"type":"geojson"}
+{
+    "type": "FeatureCollection",
+    "name": "CAP",
+    "storage": "file",
+    "id": "cap",
+    "url": "/api/layers/cap",
+    "title": "cap",
+    "features": [],
+    "tags": [],
+    "updated": 1459425718962,
+    "type": "geojson",
+    "isDynamic": true
+}
