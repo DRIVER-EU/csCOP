@@ -20,6 +20,7 @@
     "crowdtasker.ts",
     "public/app/app.ts",
     "public/app/m.ts",
+    "public/app/CISAction.ts",
     "typings/main.d.ts",
     "typings/leaflet/leaflet.d.ts",
     "typings/leaflet/L.Polyline.extended.d.ts",

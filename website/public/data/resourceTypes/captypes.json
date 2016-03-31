@@ -16,13 +16,14 @@
                 "fillOpacity": 0.9,
                 "nameLabel": "name"
             },
-            "propertyTypeKeys": "Name;status;type;category;description;data;steps;date_start;date_end;date_deadline;date_completed"
+            "propertyTypeKeys": "Name;event;status;sender;severity;certainty;urgency;category;areaDesc;"
         }
     },
     "propertyTypeData": {
         "status": {
             "label": "status",
             "title": "Status",
+            "description": "Actual, Exercise, System, Test, Draft",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": false
@@ -34,80 +35,38 @@
             "visibleInCallOut": true,
             "canEdit": true
         },
-        "id": {
-            "label": "id",
-            "title": "ID",
+        "sender": {
+            "label": "sender",
+            "title": "Sender",
+            "description": "Name of the sender",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
         },
-        "type": {
-            "label": "type",
-            "title": "Type",
+        "severity": {
+            "label": "severity",
+            "title": "Severity",
+            "description": "Extreme, Severe, Moderate, Minor, Unknown",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
         },
-        "publish_allowed": {
-            "label": "publish_allowed",
-            "title": "Publish allowed",
-            "type": "boolean",
+        "urgency": {
+            "label": "urgency",
+            "title": "Urgency",
+            "description": "Immediate, Expected, Future, Past, Unknown",
+            "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
         },
-        "date_start": {
-            "label": "date_start",
-            "languages": {
-                "nl": {
-                    "title": "Start datum"
-                },
-                "en": {
-                    "title": "Start date"
-                }
-            },
-            "type": "date",
-            "visibleInCallOut": true
-        },
-        "date_end": {
-            "label": "date_end",
-            "languages": {
-                "nl": {
-                    "title": "Eind datum"
-                },
-                "en": {
-                    "title": "Eind date"
-                }
-            },
-            "type": "date",
-            "visibleInCallOut": true
-        },
-        "date_deadline": {
-            "label": "date_deadline",
-            "languages": {
-                "nl": {
-                    "title": "Deadline datum"
-                },
-                "en": {
-                    "title": "Deadline date"
-                }
-            },
-            "type": "date",
+        "certainty": {
+            "label": "certainty",
+            "title": "Certainty",
+            "description": "Observed, Likely, Possible, Unlikely, Unknown",
+            "options": ["Observed", "Likely", "Possible", "Unlikely", "Unknown"],
+            "type": "text",
             "visibleInCallOut": true,
-            "canEdit": false
-        },
-        "date_completed": {
-            "label": "date_completed",
-            "languages": {
-                "nl": {
-                    "title": "Datum voltooid"
-                },
-                "en": {
-                    "title": "Date completed"
-                }
-            },
-            "type": "date",
-            "visibleInCallOut": true,
-            "canEdit": false
+            "canEdit": true
         },
         "description": {
             "label": "description",
@@ -123,73 +82,17 @@
             "visibleInCallOut": true,
             "canEdit": false
         },
-        "steps": {
-            "label": "steps",
-            "languages": {
-                "nl": {
-                    "title": "Stappen"
-                },
-                "en": {
-                    "title": "Steps"
-                }
-            },
-            "type": "textarea",
-            "visibleInCallOut": true,
-            "canEdit": false
-        },
-        "area": {
-            "label": "area",
-            "title": "Area",
+        "areaDesc": {
+            "label": "areaDesc",
+            "title": "Area description",
             "type": "text",
-            "visibleInCallOut": false,
-            "canEdit": true
-        },
-        "event_id": {
-            "label": "event_id",
-            "title": "Event ID",
-            "type": "textarea",
             "visibleInCallOut": true,
             "canEdit": true
         },
-        "step_id": {
-            "label": "step_id",
-            "title": "Step ID",
-            "type": "textarea",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "task_id": {
-            "label": "task_id",
-            "title": "Task ID",
-            "type": "textarea",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "task_id_step": {
-            "label": "task_id_step",
-            "title": "Task ID",
-            "type": "textarea",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "attachment_id": {
-            "label": "attachment_id",
-            "title": "Attachment ID",
-            "type": "textarea",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "attachment_url": {
-            "label": "attachment_url",
-            "title": "Attachment URL",
-            "description": "Link to the attachement",
-            "type": "bbcode",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "data": {
-            "label": "data",
-            "title": "Data",
+        "event": {
+            "label": "event",
+            "title": "Event",
+            "description": "Description of the event",
             "type": "textarea",
             "visibleInCallOut": true,
             "canEdit": true
@@ -197,139 +100,10 @@
         "category": {
             "label": "category",
             "title": "Category",
+            "description": "Geo, Met, Safety, Security, Rescue, Fire, Health, Env, Transport, Infra, CBRNE, Other",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
-        },
-        "template": {
-            "label": "template",
-            "title": "Template",
-            "type": "text",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "choices": {
-            "label": "choices",
-            "title": "Choices",
-            "type": "textarea",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "stat_TOTAL": {
-            "label": "stat_TOTAL",
-            "title": "Total activated requests",
-            "type": "number",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "stat_OPEN": {
-            "label": "stat_OPEN",
-            "title": "Open requests",
-            "type": "number",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "stat_ACCEPTED": {
-            "label": "stat_ACCEPTED",
-            "title": "Accepted requests",
-            "type": "number",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "stat_DECLINED": {
-            "label": "stat_DECLINED",
-            "title": "Declined requests",
-            "type": "number",
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "taskfeedback": {
-            "label": "taskfeedback",
-            "title": "Feedback item",
-            "description": "The feedback items returned for this task",
-            "type": "relation",
-            "target": "task_id",
-            "targetlayers": null,
-            "subject": null,
-            "visibleInCallOut": true,
-            "canEdit": false
-        },
-        "feedbacktask": {
-            "label": "feedbacktask",
-            "title": "Parent task",
-            "description": "The task this feedback belongs to",
-            "type": "relation",
-            "target": null,
-            "targetlayers": null,
-            "subject": "task_id",
-            "visibleInCallOut": true,
-            "canEdit": false
-        },
-        "tasksteps": {
-            "label": "tasksteps",
-            "title": "Task steps",
-            "description": "The steps for this task",
-            "type": "relation",
-            "target": "task_id_step",
-            "targetlayers": null,
-            "subject": null,
-            "visibleInCallOut": true,
-            "canEdit": false
-        },
-        "steptask": {
-            "label": "steptask",
-            "title": "Parent task",
-            "description": "The task this step belongs to",
-            "type": "relation",
-            "target": null,
-            "targetlayers": null,
-            "subject": "task_id_step",
-            "visibleInCallOut": true,
-            "canEdit": false
-        },
-        "eventtasks": {
-            "label": "eventtasks",
-            "title": "Event tasks",
-            "description": "The tasks for this event",
-            "type": "relation",
-            "target": "event_id",
-            "targetlayers": null,
-            "subject": null,
-            "visibleInCallOut": true,
-            "canEdit": false
-        },
-        "taskevent": {
-            "label": "taskevent",
-            "title": "Parent event",
-            "description": "The event this task belongs to",
-            "type": "relation",
-            "target": null,
-            "targetlayers": null,
-            "subject": "event_id",
-            "visibleInCallOut": true,
-            "canEdit": false
-        },
-        "stepfeedbacks": {
-            "label": "stepfeedbacks",
-            "title": "Step feedbacks",
-            "description": "The feedbacks for this step",
-            "type": "relation",
-            "target": "step_id",
-            "targetlayers": null,
-            "subject": null,
-            "visibleInCallOut": true,
-            "canEdit": false
-        },
-        "feedbackstep": {
-            "label": "feedbackstep",
-            "title": "Parent step",
-            "description": "The step this feedback belongs to",
-            "type": "relation",
-            "target": null,
-            "targetlayers": null,
-            "subject": "step_id",
-            "visibleInCallOut": true,
-            "canEdit": false
         }
     },
     "id": "crowdtaskertypes",

@@ -1,4 +1,5 @@
 import Winston = require('winston');
+import express = require('express');
 import path = require('path');
 import cors = require('cors');
 import * as csweb from "csweb";
@@ -23,7 +24,8 @@ cs.server.use(cors());
 cs.start(() => {
     
     var cisOptions: csweb.ICISOptions = {
-        cisNotifyUrl: 'http://172.16.1.68:9001/notify'
+        cisNotifyUrl: 'http://localhost:9001/notify',
+        cisMsgReceivedUrl: '/CISMsgReceived'
     }
     
     var cisSource = new csweb.CISDataSource(cs.server, cs.api, '/cis');
