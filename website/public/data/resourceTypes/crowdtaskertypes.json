@@ -1,1 +1,416 @@
-{"featureTypes":{"Event":{"name":"Event","style":{"iconUri":"images/event.png","iconWidth":26,"iconHeight":26,"strokeWidth":6,"strokeColor":"#00dd00","selectedStrokeColor":"#00ff00","selectedStrokeWidth":7,"fillColor":"#ddee22","opacity":0.9,"fillOpacity":0.9,"nameLabel":"name"},"propertyTypeKeys":"Name;name;id;status;date_start;date_end;stat_TOTAL;stat_OPEN;stat_ACCEPTED;stat_DECLINED;type;description;area;eventtasks;"},"Task":{"name":"Task","style":{"iconUri":"images/task.png","iconWidth":26,"iconHeight":26,"strokeWidth":6,"strokeColor":"#0000dd","selectedStrokeColor":"#0000ff","selectedStrokeWidth":7,"fillColor":"#999922","opacity":0.8,"fillOpacity":0.8,"nameLabel":"name"},"propertyTypeKeys":"Name;name;id;status;event_id;date_deadline;category;description;area;steps;attachment_id;attachment_url;taskevent;tasksteps;taskfeedback;"},"Feedback":{"name":"Feedback","style":{"iconUri":"images/feedback.png","iconWidth":26,"iconHeight":26,"stroke":false,"strokeWidth":0,"strokeColor":"#000000","selectedStrokeColor":"#990000","fillColor":"#ffffff","opacity":0.99,"fillOpacity":0.99,"nameLabel":"featureTypeId"},"propertyTypeKeys":"Name;id;status;task_id;publish_allowed;step_id;date_completed;category;description;area;data;attachment_id;attachment_url;feedbacktask;feedbackstep;"},"Step":{"name":"Step","style":{"iconUri":"images/step.png","iconWidth":26,"iconHeight":26,"strokeWidth":2,"strokeColor":"#000000","selectedStrokeColor":"#990000","fillColor":"#ffffff","opacity":0.8,"fillOpacity":0.8,"nameLabel":"name"},"propertyTypeKeys":"Name;id;name;task_id_step;description;template;choices;steptask;stepfeedbacks;"}},"propertyTypeData":{"status":{"label":"status","title":"Status","type":"text","visibleInCallOut":true,"canEdit":false},"Name":{"label":"Name","title":"Name","type":"text","visibleInCallOut":false,"canEdit":true},"name":{"label":"name","title":"Name","type":"text","visibleInCallOut":true,"canEdit":true},"id":{"label":"id","title":"ID","type":"text","visibleInCallOut":true,"canEdit":true},"type":{"label":"type","title":"Type","type":"text","visibleInCallOut":true,"canEdit":true},"publish_allowed":{"label":"publish_allowed","title":"Publish allowed","type":"boolean","visibleInCallOut":true,"canEdit":true},"date_start":{"label":"date_start","languages":{"nl":{"title":"Start datum"},"en":{"title":"Start date"}},"type":"date","visibleInCallOut":true,"canEdit":false},"date_end":{"label":"date_end","languages":{"nl":{"title":"Eind datum"},"en":{"title":"Eind date"}},"type":"date","visibleInCallOut":true,"canEdit":false},"date_deadline":{"label":"date_deadline","languages":{"nl":{"title":"Deadline datum"},"en":{"title":"Deadline date"}},"type":"date","visibleInCallOut":true,"canEdit":false},"date_completed":{"label":"date_completed","languages":{"nl":{"title":"Datum voltooid"},"en":{"title":"Date completed"}},"type":"date","visibleInCallOut":true,"canEdit":false},"description":{"label":"description","languages":{"nl":{"title":"Omschrijving"},"en":{"title":"Description"}},"type":"textarea","visibleInCallOut":true,"canEdit":false},"steps":{"label":"steps","languages":{"nl":{"title":"Stappen"},"en":{"title":"Steps"}},"type":"textarea","visibleInCallOut":true,"canEdit":false},"area":{"label":"area","title":"Area","type":"text","visibleInCallOut":false,"canEdit":true},"event_id":{"label":"event_id","title":"Event ID","type":"textarea","visibleInCallOut":true,"canEdit":true},"step_id":{"label":"step_id","title":"Step ID","type":"textarea","visibleInCallOut":true,"canEdit":true},"task_id":{"label":"task_id","title":"Task ID","type":"textarea","visibleInCallOut":true,"canEdit":true},"task_id_step":{"label":"task_id_step","title":"Task ID","type":"textarea","visibleInCallOut":true,"canEdit":true},"attachment_id":{"label":"attachment_id","title":"Attachment ID","type":"textarea","visibleInCallOut":true,"canEdit":true},"attachment_url":{"label":"attachment_url","title":"Attachment URL","description":"Link to the attachement","type":"bbcode","visibleInCallOut":true,"canEdit":true},"data":{"label":"data","title":"Data","type":"textarea","visibleInCallOut":true,"canEdit":true},"category":{"label":"category","title":"Category","type":"text","visibleInCallOut":true,"canEdit":true},"template":{"label":"template","title":"Template","type":"text","visibleInCallOut":true,"canEdit":true},"choices":{"label":"choices","title":"Choices","type":"textarea","visibleInCallOut":true,"canEdit":true},"stat_TOTAL":{"label":"stat_TOTAL","title":"Total activated requests","type":"number","visibleInCallOut":true,"canEdit":true},"stat_OPEN":{"label":"stat_OPEN","title":"Open requests","type":"number","visibleInCallOut":true,"canEdit":true},"stat_ACCEPTED":{"label":"stat_ACCEPTED","title":"Accepted requests","type":"number","visibleInCallOut":true,"canEdit":true},"stat_DECLINED":{"label":"stat_DECLINED","title":"Declined requests","type":"number","visibleInCallOut":true,"canEdit":true},"taskfeedback":{"label":"taskfeedback","title":"Feedback item","description":"The feedback items returned for this task","type":"relation","target":"task_id","targetlayers":null,"subject":null,"visibleInCallOut":true,"canEdit":false},"feedbacktask":{"label":"feedbacktask","title":"Parent task","description":"The task this feedback belongs to","type":"relation","target":null,"targetlayers":null,"subject":"task_id","visibleInCallOut":true,"canEdit":false},"tasksteps":{"label":"tasksteps","title":"Task steps","description":"The steps for this task","type":"relation","target":"task_id_step","targetlayers":null,"subject":null,"visibleInCallOut":true,"canEdit":false},"steptask":{"label":"steptask","title":"Parent task","description":"The task this step belongs to","type":"relation","target":null,"targetlayers":null,"subject":"task_id_step","visibleInCallOut":true,"canEdit":false},"eventtasks":{"label":"eventtasks","title":"Event tasks","description":"The tasks for this event","type":"relation","target":"event_id","targetlayers":null,"subject":null,"visibleInCallOut":true,"canEdit":false},"taskevent":{"label":"taskevent","title":"Parent event","description":"The event this task belongs to","type":"relation","target":null,"targetlayers":null,"subject":"event_id","visibleInCallOut":true,"canEdit":false},"stepfeedbacks":{"label":"stepfeedbacks","title":"Step feedbacks","description":"The feedbacks for this step","type":"relation","target":"step_id","targetlayers":null,"subject":null,"visibleInCallOut":true,"canEdit":false},"feedbackstep":{"label":"feedbackstep","title":"Parent step","description":"The step this feedback belongs to","type":"relation","target":null,"targetlayers":null,"subject":"step_id","visibleInCallOut":true,"canEdit":false}},"id":"crowdtaskertypes","propertyTypes":{}}
+{
+    "featureTypes": {
+        "Event": {
+            "name": "Event",
+            "style": {
+                "iconUri": "images/event.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "strokeColor": "#00dd00",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ddee22",
+                "opacity": 0.9,
+                "fillOpacity": 0.9,
+                "nameLabel": "name"
+            },
+            "propertyTypeKeys": "Name;name;id;status;date_start;date_end;stat_TOTAL;stat_OPEN;stat_ACCEPTED;stat_DECLINED;type;description;area;eventtasks;"
+        },
+        "Task": {
+            "name": "Task",
+            "style": {
+                "iconUri": "images/{icon}.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "strokeColor": "#0000dd",
+                "selectedStrokeColor": "#0000ff",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#999922",
+                "opacity": 0.8,
+                "fillOpacity": 0.8,
+                "nameLabel": "name"
+            },
+            "propertyTypeKeys": "Name;name;id;status;event_id;date_deadline;category;description;area;steps;attachment_id;attachment_url;taskevent;tasksteps;taskfeedback;"
+        },
+        "Feedback": {
+            "name": "Feedback",
+            "style": {
+                "iconUri": "images/{icon}.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "stroke": false,
+                "strokeWidth": 0,
+                "strokeColor": "#000000",
+                "selectedStrokeColor": "#990000",
+                "fillColor": "#ffffff",
+                "opacity": 0.99,
+                "fillOpacity": 0.99,
+                "nameLabel": "featureTypeId"
+            },
+            "propertyTypeKeys": "Name;id;status;task_id;publish_allowed;step_id;date_completed;category;description;area;icon;data;data_number;data_string;attachment_id;attachment_url;feedbacktask;feedbackstep;"
+        },
+        "Step": {
+            "name": "Step",
+            "style": {
+                "iconUri": "images/step.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 2,
+                "strokeColor": "#000000",
+                "selectedStrokeColor": "#990000",
+                "fillColor": "#ffffff",
+                "opacity": 0.8,
+                "fillOpacity": 0.8,
+                "nameLabel": "name"
+            },
+            "propertyTypeKeys": "Name;id;name;task_id_step;description;template;choices;steptask;stepfeedbacks;"
+        }
+    },
+    "propertyTypeData": {
+        "status": {
+            "label": "status",
+            "title": "Status",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "Name": {
+            "label": "Name",
+            "title": "Name",
+            "type": "text",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "name": {
+            "label": "name",
+            "title": "Name",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "id": {
+            "label": "id",
+            "title": "ID",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "type": {
+            "label": "type",
+            "title": "Type",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "publish_allowed": {
+            "label": "publish_allowed",
+            "title": "Publish allowed",
+            "type": "boolean",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "date_start": {
+            "label": "date_start",
+            "languages": {
+                "nl": {
+                    "title": "Start datum"
+                },
+                "en": {
+                    "title": "Start date"
+                }
+            },
+            "type": "date",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "date_end": {
+            "label": "date_end",
+            "languages": {
+                "nl": {
+                    "title": "Eind datum"
+                },
+                "en": {
+                    "title": "Eind date"
+                }
+            },
+            "type": "date",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "date_deadline": {
+            "label": "date_deadline",
+            "languages": {
+                "nl": {
+                    "title": "Deadline datum"
+                },
+                "en": {
+                    "title": "Deadline date"
+                }
+            },
+            "type": "date",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "date_completed": {
+            "label": "date_completed",
+            "languages": {
+                "nl": {
+                    "title": "Datum voltooid"
+                },
+                "en": {
+                    "title": "Date completed"
+                }
+            },
+            "type": "date",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "description": {
+            "label": "description",
+            "languages": {
+                "nl": {
+                    "title": "Omschrijving"
+                },
+                "en": {
+                    "title": "Description"
+                }
+            },
+            "type": "textarea",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "steps": {
+            "label": "steps",
+            "languages": {
+                "nl": {
+                    "title": "Stappen"
+                },
+                "en": {
+                    "title": "Steps"
+                }
+            },
+            "type": "textarea",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "area": {
+            "label": "area",
+            "title": "Area",
+            "type": "text",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "icon": {
+            "label": "icon",
+            "title": "Icon",
+            "type": "text",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "event_id": {
+            "label": "event_id",
+            "title": "Event ID",
+            "type": "textarea",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "step_id": {
+            "label": "step_id",
+            "title": "Step ID",
+            "type": "textarea",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "task_id": {
+            "label": "task_id",
+            "title": "Task ID",
+            "type": "textarea",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "task_id_step": {
+            "label": "task_id_step",
+            "title": "Task ID",
+            "type": "textarea",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "attachment_id": {
+            "label": "attachment_id",
+            "title": "Attachment ID",
+            "type": "textarea",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "attachment_url": {
+            "label": "attachment_url",
+            "title": "Attachment URL",
+            "description": "Link to the attachement",
+            "type": "bbcode",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "data": {
+            "label": "data",
+            "title": "Data",
+            "type": "textarea",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "data_number": {
+            "label": "data",
+            "title": "Data",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "data_string": {
+            "label": "data",
+            "title": "Data",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "category": {
+            "label": "category",
+            "title": "Category",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "template": {
+            "label": "template",
+            "title": "Template",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "choices": {
+            "label": "choices",
+            "title": "Choices",
+            "type": "textarea",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "stat_TOTAL": {
+            "label": "stat_TOTAL",
+            "title": "Total activated requests",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "stat_OPEN": {
+            "label": "stat_OPEN",
+            "title": "Open requests",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "stat_ACCEPTED": {
+            "label": "stat_ACCEPTED",
+            "title": "Accepted requests",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "stat_DECLINED": {
+            "label": "stat_DECLINED",
+            "title": "Declined requests",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "taskfeedback": {
+            "label": "taskfeedback",
+            "title": "Feedback item",
+            "description": "The feedback items returned for this task",
+            "type": "relation",
+            "target": "task_id",
+            "targetlayers": null,
+            "subject": null,
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "feedbacktask": {
+            "label": "feedbacktask",
+            "title": "Parent task",
+            "description": "The task this feedback belongs to",
+            "type": "relation",
+            "target": null,
+            "targetlayers": null,
+            "subject": "task_id",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "tasksteps": {
+            "label": "tasksteps",
+            "title": "Task steps",
+            "description": "The steps for this task",
+            "type": "relation",
+            "target": "task_id_step",
+            "targetlayers": null,
+            "subject": null,
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "steptask": {
+            "label": "steptask",
+            "title": "Parent task",
+            "description": "The task this step belongs to",
+            "type": "relation",
+            "target": null,
+            "targetlayers": null,
+            "subject": "task_id_step",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "eventtasks": {
+            "label": "eventtasks",
+            "title": "Event tasks",
+            "description": "The tasks for this event",
+            "type": "relation",
+            "target": "event_id",
+            "targetlayers": null,
+            "subject": null,
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "taskevent": {
+            "label": "taskevent",
+            "title": "Parent event",
+            "description": "The event this task belongs to",
+            "type": "relation",
+            "target": null,
+            "targetlayers": null,
+            "subject": "event_id",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "stepfeedbacks": {
+            "label": "stepfeedbacks",
+            "title": "Step feedbacks",
+            "description": "The feedbacks for this step",
+            "type": "relation",
+            "target": "step_id",
+            "targetlayers": null,
+            "subject": null,
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
+        "feedbackstep": {
+            "label": "feedbackstep",
+            "title": "Parent step",
+            "description": "The step this feedback belongs to",
+            "type": "relation",
+            "target": null,
+            "targetlayers": null,
+            "subject": "step_id",
+            "visibleInCallOut": true,
+            "canEdit": false
+        }
+    },
+    "id": "crowdtaskertypes",
+    "propertyTypes": {}
+}

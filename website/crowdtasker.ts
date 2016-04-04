@@ -50,7 +50,7 @@ export function getData(request: any, dataParameters: any, converterOptions: any
             });
         });
         if (eventFeatures.length === 0) {
-             cb(eventFeatures);
+            cb(eventFeatures);
         }
     });
 }
@@ -66,6 +66,14 @@ function processTasks(request, options, eventFeatures, cb) {
             if (typeof taskFeatures === 'number') {
                 console.log('Error requesting tasks: ' + taskFeatures);
             } else {
+                for (var i = 0; i < taskFeatures.length; i++) {
+                    var task = taskFeatures[i];
+                    if (task.properties.hasOwnProperty('category') && task.properties['category'] !== '') {
+                        task.properties['icon'] = ''.concat('ocha/', task.properties['category'].replace(/[/]/g, '_'), '_32px_icon');
+                    } else {
+                        task.properties['icon'] = 'ocha/unknown';
+                    }
+                }
                 allTaskFeatures = allTaskFeatures.concat(taskFeatures);
             }
             processedEvents += 1;
@@ -92,6 +100,9 @@ function processFeedbacks(request, options, eventFeatures, taskFeatures, cb) {
             if (typeof feedbackFeatures === 'number') {
                 console.log('Error requesting tasks: ' + feedbackFeatures);
             } else {
+                for (var i = 0; i < feedbackFeatures.length; i++) { 
+                    feedbackFeatures[i].properties['icon'] = t.properties['icon'] || 'ocha/unknown';
+                }
                 allFeedbacks = allFeedbacks.concat(feedbackFeatures);
             }
             processedTasks += 1;
@@ -172,7 +183,7 @@ function parseEventData(data: any, callback: Function) {
                 delete f.geometry['crs']; // Should be an object according to GeoJSON specification
             } else if (key === 'id') {
                 f.id = e[key];
-            } else { 
+            } else {
                 f.properties[key] = e[key];
             }
         }
@@ -214,10 +225,10 @@ function parseTaskData(data: any, callback: Function) {
                             fStep.properties[stepKey] = JSON.stringify(step[stepKey], null, 2);
                         } else if (stepKey === 'id') {
                             fStep.id = step[stepKey];
-                        } else { 
+                        } else {
                             fStep.properties[stepKey] = step[stepKey];
                         }
-                    }                
+                    }
                     delete fStep.geometry;
                     fStep.properties['task_id_step'] = t['id'];
                     fStep.properties['featureTypeId'] = 'Step';
@@ -225,7 +236,7 @@ function parseTaskData(data: any, callback: Function) {
                 }
             } else if (key === 'id') {
                 f.id = t[key];
-            } else { 
+            } else {
                 f.properties[key] = t[key];
             }
         }
@@ -261,7 +272,7 @@ function parseFeedbackData(data: any, callback: Function) {
                         continue;
                     } else if (key === 'id') {
                         f.id = tf[key] + '-' + fbCount;
-                    } else { 
+                    } else {
                         f.properties[key] = tf[key];
                     }
                 }
@@ -275,7 +286,7 @@ function parseFeedbackData(data: any, callback: Function) {
                         f.properties[key] = fb[key];
                         f.properties['attachment_url'] = `[url=${_converterOptions.dataParameters.baseUrl}/data/api/attachments/${fb[key]}.jpg]Link[/url]`;
                         getAttachment(fb[key]);
-                    } else { 
+                    } else {
                         f.properties[key] = fb[key];
                     }
                 }
@@ -305,7 +316,7 @@ function getAttachment(id: string) {
     var options = JSON.parse(JSON.stringify(_converterOptions['options']));
     var request = _converterOptions['request'];
     var fs = _converterOptions['fs'];
-    
+
     // Check if file exists
     var file = `${attachmentPath}\\${id}.jpg`;
     fs.access(file, (err) => {

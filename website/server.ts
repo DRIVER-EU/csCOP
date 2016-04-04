@@ -43,7 +43,7 @@ cs.start(() => {
         urlParams: {
             api_key: "{{API_KEY}}",
             attachmentPath: "public\\data\\api\\attachments",
-            baseUrl: "http://localhost:" + cs.options.port;
+            baseUrl: "http://localhost:" + cs.options.port
         }
     }
 

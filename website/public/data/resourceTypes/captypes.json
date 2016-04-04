@@ -23,7 +23,13 @@
         "status": {
             "label": "status",
             "title": "Status",
-            "options": ["Actual", "Exercise", "System", "Test", "Draft"],
+            "options": {
+                "Actual": "Actual",
+                "Exercise": "Exercise",
+                "System": "System",
+                "Test": "Test",
+                "Draft": "Draft"
+            },
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": false
@@ -46,7 +52,13 @@
         "severity": {
             "label": "severity",
             "title": "Severity",
-            "options": ["Extreme", "Severe", "Moderate", "Minor", "Unknown"],
+            "options": {
+                "Extreme": "Extreme",
+                "Severe": "Severe",
+                "Moderate": "Moderate",
+                "Minor": "Minor",
+                "Unknown": "Unknown"
+            },
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
@@ -55,7 +67,13 @@
             "label": "urgency",
             "title": "Urgency",
             "description": "Urgency of the alert",
-            "options": ["Immediate", "Expected", "Future", "Past", "Unknown"],
+            "options": {
+                "Immediate": "Immediate",
+                "Expected": "Expected",
+                "Future": "Future",
+                "Past": "Past",
+                "Unknown": "Unknown"
+            },
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
@@ -64,7 +82,13 @@
             "label": "certainty",
             "title": "Certainty",
             "description": "Certainty that the alert will occur",
-            "options": ["Observed", "Likely", "Possible", "Unlikely", "Unknown"],
+            "options": {
+                "Observed": "Observed",
+                "Likely": "Likely",
+                "Possible": "Possible",
+                "Unlikely": "Unlikely",
+                "Unknown": "Unknown"
+            },
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
@@ -101,7 +125,20 @@
         "category": {
             "label": "category",
             "title": "Category",
-            "options": ["Geo", "Met", "Safety", "Security", "Rescue", "Fire", "Health", "Env", "Transport", "Infra", "CBRNE", "Other"],
+            "options": {
+                "Geo": "Geo",
+                "Met": "Met",
+                "Safety": "Safety",
+                "Security": "Security",
+                "Rescue": "Rescue",
+                "Fire": "Fire",
+                "Health": "Health",
+                "Env": "Env",
+                "Transport": "Transport",
+                "Infra": "Infra",
+                "CBRNE": "CBRNE",
+                "Other": "Other"
+            },
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
