@@ -27,8 +27,8 @@ cs.start(() => {
         cisNotifyUrl: 'http://localhost:9001/notify',
         cisMsgReceivedUrl: '/CISMsgReceived'
     }
-
-    var cisSource = new csweb.CISDataSource(cs.server, cs.api, '/cis');
+    
+    var cisSource = new csweb.CISDataSource(cs.server, cs.api, 'c154aab7-a144-4ac0-4f1f-fafdaa2ef211', '/cis');
     cisSource.init(cisOptions, (msg: string) => {
         Winston.info('CISDataSource: ' + msg);
     });
@@ -41,9 +41,9 @@ cs.start(() => {
         diffPropertiesBlacklist: [],
         url: 'http://crowdtasker.ait.ac.at/be/api/',
         urlParams: {
-            api_key: '9319559c3102d1b0205a6f52e854707da076e7de',
-            attachmentPath: 'public\\data\\api\\attachments',
-            baseUrl: 'http://localhost:4567'
+            api_key: "{{API_KEY}}",
+            attachmentPath: "public\\data\\api\\attachments",
+            baseUrl: "http://localhost:" + cs.options.port;
         }
     }
 

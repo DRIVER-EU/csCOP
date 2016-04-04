@@ -1,0 +1,27 @@
+<div ng-when="!vm.isHidden">
+    <h5>{{data.title}}</h5>
+    <div>
+        <label for="event">Event</label>
+        <select id="event" ng-model="vm.selectedEvent" class="form-control" ng-change="vm.selectEvent()">
+            <option ng-repeat="event in vm.allEvents" value="{{event.id}}">{{event.properties.Name}}</option>
+        </select>
+    </div>
+    <div>
+        <label for="task">Task</label>
+        <select id="task" ng-model="vm.selectedTask" class="form-control" ng-change="vm.selectTask()">
+            <option ng-repeat="task in vm.tasks" value="{{task.id}}">{{task.properties.Name}}</option>
+        </select>
+    </div>
+    <div>
+        <label for="step">Step</label>
+        <select id="step" ng-model="vm.selectedStep" class="form-control" ng-change="vm.selectStep()">
+            <option ng-repeat="step in vm.steps" value="{{step.id}}">{{step.properties.Name}}</option>
+        </select>
+    </div>
+    <div>
+        <label for="feedback">Feedback</label>
+        <select id="feedback" ng-model="vm.selectedFeedback" class="form-control" ng-change="vm.selectFeedback()">
+            <option ng-repeat="feedback in vm.feedbacks" value="{{feedback.id}}">{{feedback.properties.Name}}</option>
+        </select>
+    </div>
+</div>

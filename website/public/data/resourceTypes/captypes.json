@@ -23,8 +23,8 @@
         "status": {
             "label": "status",
             "title": "Status",
-            "description": "Actual, Exercise, System, Test, Draft",
-            "type": "text",
+            "options": ["Actual", "Exercise", "System", "Test", "Draft"],
+            "type": "options",
             "visibleInCallOut": true,
             "canEdit": false
         },
@@ -46,25 +46,26 @@
         "severity": {
             "label": "severity",
             "title": "Severity",
-            "description": "Extreme, Severe, Moderate, Minor, Unknown",
-            "type": "text",
+            "options": ["Extreme", "Severe", "Moderate", "Minor", "Unknown"],
+            "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
         },
         "urgency": {
             "label": "urgency",
             "title": "Urgency",
-            "description": "Immediate, Expected, Future, Past, Unknown",
-            "type": "text",
+            "description": "Urgency of the alert",
+            "options": ["Immediate", "Expected", "Future", "Past", "Unknown"],
+            "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
         },
         "certainty": {
             "label": "certainty",
             "title": "Certainty",
-            "description": "Observed, Likely, Possible, Unlikely, Unknown",
+            "description": "Certainty that the alert will occur",
             "options": ["Observed", "Likely", "Possible", "Unlikely", "Unknown"],
-            "type": "text",
+            "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
         },
@@ -100,8 +101,8 @@
         "category": {
             "label": "category",
             "title": "Category",
-            "description": "Geo, Met, Safety, Security, Rescue, Fire, Health, Env, Transport, Infra, CBRNE, Other",
-            "type": "text",
+            "options": ["Geo", "Met", "Safety", "Security", "Rescue", "Fire", "Health", "Env", "Transport", "Infra", "CBRNE", "Other"],
+            "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
         }

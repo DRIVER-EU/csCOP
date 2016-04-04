@@ -41,13 +41,11 @@ module CISAction {
         }
 
         private sendCISMessage(feature: IFeature, layerService: csComp.Services.LayerService) {
-            var fType = layerService.getFeatureType(feature);
-            var url = fType['cisUrl'] || '/cis/notify';
-            console.log('Send CIS message');
-            console.log(url);
+            var url = '/cis/notify';
+            console.log('Send CIS message to ' + url);
             $.ajax({
                 contentType: 'application/json',
-                data: JSON.stringify({feature: csComp.Services.Feature.serialize(feature), fType: fType}),
+                data: JSON.stringify(csComp.Services.Feature.serialize(feature)),
                 url: url,
                 dataType: 'json',
                 crossDomain: true,

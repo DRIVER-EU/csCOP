@@ -21,6 +21,8 @@
     "public/app/app.ts",
     "public/app/m.ts",
     "public/app/CISAction.ts",
+    "public/app/CrowdtaskerWidget.ts",
+    "public/app/CrowdtaskerWidgetCtrl.ts",
     "typings/main.d.ts",
     "typings/csweb/csComp.d.ts",
     "typings/leaflet/leaflet.d.ts",
