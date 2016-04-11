@@ -1,5 +1,6 @@
-<div ng-when="!vm.isHidden">
-    <h5>{{data.title}}</h5>
+<div style="overflow-y:auto;overflow-x:hidden;height:100%;padding:8px;">
+    <h3>{{data.title}}</h3>
+    <a class="btn fa fa-remove" ng-click="vm.resetFilters()" uib-tooltip="Reset filters" style="float:right;padding:0"/>
     <div>
         <label for="event">Event</label>
         <select id="event" ng-model="vm.selectedEvent" class="form-control" ng-change="vm.selectEvent()">
@@ -20,8 +21,59 @@
     </div>
     <div>
         <label for="feedback">Feedback</label>
-        <select id="feedback" ng-model="vm.selectedFeedback" class="form-control" ng-change="vm.selectFeedback()">
+        <div>
+        <div id="feedback" style="display:inline-block"># Feedbacks received for the selected step: {{vm.getFeedbackLength()}}</div>
+        <a class="btn fa fa-search" ng-click="vm.zoomToFeedbacks()" uib-tooltip="Fit zoom to the selected features" style="float:right;padding:0"/>
+        </div>
+        <!--<select id="feedback" ng-model="vm.selectedFeedback" class="form-control" ng-change="vm.selectFeedback()">
             <option ng-repeat="feedback in vm.feedbacks" value="{{feedback.id}}">{{feedback.properties.Name}}</option>
-        </select>
+        </select>-->
+    </div>
+    <div>
+        <div ng-show="vm.selectedEvent" class="table ct-border">
+            <div class="row">
+                <div class="col-md-12 bold">Event statistics</div>
+            </div>
+            <div class="row" style="margin-top: 4px;">
+                <div class="col-md-2">Total</div>
+                <div class="col-md-2 no-padding-left">Open</div>
+                <div class="col-md-2 no-padding-left">Accepted</div>
+                <div class="col-md-2 no-padding-left">Declined</div>
+                <div class="col-md-4 no-padding-left"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2" style="padding-left: 15px;">{{vm.allEvents[vm.selectedEvent].properties.stat_TOTAL}}</div>
+                <div class="col-md-2">{{vm.allEvents[vm.selectedEvent].properties.stat_OPEN}}</div>
+                <div class="col-md-2">{{vm.allEvents[vm.selectedEvent].properties.stat_ACCEPTED}}</div>
+                <div class="col-md-2">{{vm.allEvents[vm.selectedEvent].properties.stat_DECLINED}}</div>
+            </div>
+        </div>
+        <div ng-show="vm.selectedTask" class="table ct-border" style="margin-top: 10px;">
+            <div class="row">
+                <div class="col-md-12 bold">Task statistics</div>
+            </div>
+            <div class="row" style="margin-top: 4px;">
+                <div class="col-md-2">Total</div>
+                <div class="col-md-2 no-padding-left">Open</div>
+                <div class="col-md-2 no-padding-left">Accepted</div>
+                <div class="col-md-2 no-padding-left">Executing</div>
+                <div class="col-md-2 no-padding-left">Declined</div>
+                <div class="col-md-2 no-padding-left">Finished</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2" style="padding-left: 15px;">{{vm.allTasks[vm.selectedTask].properties.stat_TOTAL}}</div>
+                <div class="col-md-2">{{vm.allTasks[vm.selectedTask].properties.stat_OPEN}}</div>
+                <div class="col-md-2">{{vm.allTasks[vm.selectedTask].properties.stat_ACCEPTED}}</div>
+                <div class="col-md-2">{{vm.allTasks[vm.selectedTask].properties.stat_EXECUTING}}</div>
+                <div class="col-md-2">{{vm.allTasks[vm.selectedTask].properties.stat_DECLINED}}</div>
+                <div class="col-md-2">{{vm.allTasks[vm.selectedTask].properties.stat_FINISHED}}</div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="!equals(vm.feedbacks, {})" style="margin-left:10px">
+        <div id="filtergroup_{{group.id}}" class="collapse in">
+            <row-filter ng-if="filter && filter.filterType=='row'" id="crowdtasker-widget-rowfilter"></row-filter>
+            <bar-filter ng-if="filter && filter.filterType=='bar'" id="crowdtasker-widget-rowfilter"></bar-filter>
+        </div>
     </div>
 </div>

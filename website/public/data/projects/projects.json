@@ -1,8 +1,14 @@
 {
     "title": "csMap",
     "maxBounds": {
-        "southWest": [49.2, 1.0],
-        "northEast": [54.0, 10.0]
+        "southWest": [
+            35.0147717,
+            0.1967104
+        ],
+        "northEast": [
+            70.1285368,
+            35.4230263
+        ]
     },
     "viewBounds": {
         "southWest": [50.7, 3.3],

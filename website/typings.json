@@ -16,7 +16,6 @@
     "chroma-js": "github:DefinitelyTyped/DefinitelyTyped/chroma-js/chroma-js.d.ts#62eedc3121a5e28c50473d2e4a9cefbcb9c3957f",
     "cors": "registry:dt/cors#0.0.0+20160317120654",
     "crossfilter": "github:DefinitelyTyped/DefinitelyTyped/crossfilter/crossfilter.d.ts#62eedc3121a5e28c50473d2e4a9cefbcb9c3957f",
-    "csComp": "github:TNOCS/csWeb-dist/dist-bower/csComp.d.ts#5d30b564c3a557321dce6c8f7a2dd2be4d83c04e",
     "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts#708609e0764daeb5eb64104af7aca50c520c4e6e",
     "form-data": "github:DefinitelyTyped/DefinitelyTyped/form-data/form-data.d.ts#708609e0764daeb5eb64104af7aca50c520c4e6e",
     "fs-extra": "github:DefinitelyTyped/DefinitelyTyped/fs-extra/fs-extra.d.ts#708609e0764daeb5eb64104af7aca50c520c4e6e",

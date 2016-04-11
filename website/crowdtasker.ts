@@ -66,20 +66,29 @@ function processTasks(request, options, eventFeatures, cb) {
             if (typeof taskFeatures === 'number') {
                 console.log('Error requesting tasks: ' + taskFeatures);
             } else {
-                for (var i = 0; i < taskFeatures.length; i++) {
-                    var task = taskFeatures[i];
+                for (let i = 0; i < taskFeatures.length; i++) {
+                    let task = taskFeatures[i];
                     if (task.properties.hasOwnProperty('category') && task.properties['category'] !== '') {
                         task.properties['icon'] = ''.concat('ocha/', task.properties['category'].replace(/[/]/g, '_'), '_32px_icon');
                     } else {
                         task.properties['icon'] = 'ocha/unknown';
                     }
+                    // Get task stats
+                    options['uri'] = ('/stats/feedbacks/' + task['id'] + '?api_key=' + options['api_key']);
+                    console.log(options['uri']);
+                    requestTaskStats(request, options, (taskStats: FStats) => {
+                        let keys = Object.keys(taskStats);
+                        for (let keyIndex = 0; keyIndex < keys.length; keyIndex++) {
+                            let key = keys[keyIndex];
+                            task.properties['stat_' + key] = taskStats[key];
+                        }
+                    });
                 }
                 allTaskFeatures = allTaskFeatures.concat(taskFeatures);
             }
             processedEvents += 1;
             if (processedEvents >= eventFeatures.length) {
                 processFeedbacks(request, options, eventFeatures, allTaskFeatures, cb)
-                // cb(eventFeatures.concat(allTaskFeatures));
             }
         });
     });
@@ -163,6 +172,17 @@ function requestEventStats(request, options, cb) {
     });
 }
 
+function requestTaskStats(request, options, cb) {
+    request.get(options, (err, response, data) => {
+        if (err || response.statusCode !== 200) {
+            cb(response.statusCode);
+            return;
+        }
+        if (!data || typeof data !== 'object') data = {};
+        cb(<FStats>data);
+    });
+}
+
 function parseEventData(data: any, callback: Function) {
     if (!data || !data.forEach) {
         callback([]);
@@ -219,8 +239,9 @@ function parseTaskData(data: any, callback: Function) {
                 for (var c = 0; c < t['steps'].length; c++) {
                     var fStep = JSON.parse(JSON.stringify(fTemplate));
                     var step = t['steps'][c];
-                    for (var propInd = 0; propInd < Object.keys(step).length; propInd++) {
-                        var stepKey = keys[propInd];
+                    var stepKeys = Object.keys(step);
+                    for (var propInd = 0; propInd < stepKeys.length; propInd++) {
+                        var stepKey = stepKeys[propInd];
                         if (stepKey === 'choices') {
                             fStep.properties[stepKey] = JSON.stringify(step[stepKey], null, 2);
                         } else if (stepKey === 'id') {
@@ -285,6 +306,7 @@ function parseFeedbackData(data: any, callback: Function) {
                     } else if (key === 'attachment_id') {
                         f.properties[key] = fb[key];
                         f.properties['attachment_url'] = `[url=${_converterOptions.dataParameters.baseUrl}/data/api/attachments/${fb[key]}.jpg]Link[/url]`;
+                        f.properties['attachment_img'] = [`${_converterOptions.dataParameters.baseUrl}/data/api/attachments/${fb[key]}.jpg`];
                         getAttachment(fb[key]);
                     } else {
                         f.properties[key] = fb[key];
@@ -377,6 +399,15 @@ interface AStats {
     OPEN: number;
     ACCEPTED: number;
     DECLINED: number;
+}
+
+interface FStats {
+    TOTAL: number;
+    OPEN: number;
+    ACCEPTED: number;
+    EXECUTING: number;
+    DECLINED: number;
+    FINISHED: number;
 }
 
 interface Task {

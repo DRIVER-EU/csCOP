@@ -39,3 +39,4 @@ website/**/*.map
 website/public/bower_components
 website/typings
 
+website/public/data/api/attachments/

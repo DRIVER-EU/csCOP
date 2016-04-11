@@ -14,12 +14,24 @@
                 "fillColor": "#ddee22",
                 "opacity": 0.9,
                 "fillOpacity": 0.9,
-                "nameLabel": "name"
+                "nameLabel": "sender"
             },
-            "propertyTypeKeys": "Name;event;status;sender;severity;certainty;urgency;category;areaDesc;"
+            "propertyTypeKeys": "Name;identifier;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;"
         }
     },
     "propertyTypeData": {
+        "scope": {
+            "label": "scope",
+            "title": "Scope",
+            "options": {
+                "Public": "Public",
+                "Restricted": "Restricted",
+                "Private": "Private"
+            },
+            "type": "options",
+            "visibleInCallOut": true,
+            "canEdit": false
+        },
         "status": {
             "label": "status",
             "title": "Status",
@@ -44,10 +56,10 @@
         "sender": {
             "label": "sender",
             "title": "Sender",
-            "description": "Name of the sender",
+            "description": "Name of the sender (will be overwritten with 'csweb' for alerts send by this tool)",
             "type": "text",
             "visibleInCallOut": true,
-            "canEdit": true
+            "canEdit": false
         },
         "severity": {
             "label": "severity",
@@ -119,6 +131,27 @@
             "title": "Event",
             "description": "Description of the event",
             "type": "textarea",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "addresses": {
+            "label": "addresses",
+            "title": "Addresses",
+            "description": "Addresses for which the alert is intended (white-space delimited)",
+            "type": "options",
+            "options": {
+                "": "All",
+                "crowdtasker": "Crowdtasker",
+                "crowdtasker-support": "Crowdtasker-support"
+            },
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "sent": {
+            "label": "sent",
+            "title": "Sent",
+            "description": "Time that the alert was sent (will be filled in automatically)",
+            "type": "date",
             "visibleInCallOut": true,
             "canEdit": true
         },

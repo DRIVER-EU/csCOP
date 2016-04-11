@@ -35,10 +35,11 @@ cs.start(() => {
 
     var restSourceOptions: csweb.IRestDataSourceSettings = {
         converterFile: path.join(__dirname, './crowdtasker.js'),
-        pollIntervalSeconds: 60,
+        pollIntervalSeconds: 90,
         pruneIntervalSeconds: 300,
         diffIgnoreGeometry: false,
         diffPropertiesBlacklist: [],
+        logFile: './log/crowdtasker.log',
         url: 'http://crowdtasker.ait.ac.at/be/api/',
         urlParams: {
             api_key: "{{API_KEY}}",
@@ -52,7 +53,7 @@ cs.start(() => {
         restSource.init(restSourceOptions, (msg: string) => {
             Winston.info('RestDataSource: ' + msg);
         });
-    }, 4000);
+    }, 3000);
 
     console.log('really started');
     //    //{ key: 'imb', s: new ImbAPI.ImbAPI('app-usdebug01.tsn.tno.nl', 4000),options: {} }

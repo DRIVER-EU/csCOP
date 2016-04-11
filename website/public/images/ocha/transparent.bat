@@ -1,0 +1,1 @@
+for %%x in (*.png) do convert %%x -transparent RGB(255,255,255) ../transparent/ocha/%%x

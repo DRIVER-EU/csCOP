@@ -9,6 +9,10 @@ module crowdtasker {
         data: CrowdtaskerWidgetData;
         minimized: boolean;
         test: string;
+        eventFilter: csComp.Services.GroupFilter;
+        taskFilter: csComp.Services.GroupFilter;
+        stepFilter: csComp.Services.GroupFilter;
+        filter: csComp.Services.GroupFilter;
     }
 
     export class CrowdtaskerWidgetCtrl {
@@ -28,6 +32,7 @@ module crowdtasker {
         private selectedTask: string;
         private selectedStep: string;
         private selectedFeedback: string;
+        private isInitialized: boolean;
 
         public static $inject = [
             '$scope',
@@ -49,6 +54,7 @@ module crowdtasker {
             $scope.vm = this;
             var par = <any>$scope.$parent;
             this.widget = par.widget;
+            this.isInitialized = false;
 
             $scope.data = <CrowdtaskerWidgetData>this.widget.data;
 
@@ -67,6 +73,10 @@ module crowdtasker {
                             this.initCrowdtasker(layer);
                             this.isHidden = false;
                             break;
+                        case 'updated':
+                            this.updateCrowdtasker(layer);
+                            this.isHidden = false;
+                            break;
                         default:
                             break;
                     }
@@ -77,15 +87,16 @@ module crowdtasker {
         private init() {
             this.isHidden = true;
         }
-        
+
         private reset() {
+            this.isInitialized = false;
             this.allEvents = {};
             this.allTasks = {};
             this.allSteps = {};
             this.allFeedbacks = {};
             this.clear();
         }
-        
+
         private clear() {
             this.tasks = {};
             this.steps = {};
@@ -97,8 +108,9 @@ module crowdtasker {
         }
 
         private initCrowdtasker(l: csComp.Services.ProjectLayer) {
+            if (this.isInitialized) return;
             this.layer = l;
-            if (!l.data || !l.data.features) return;
+            if (!l || !l.data || !l.data.features) return;
             l.data.features.forEach((f) => {
                 switch (f.properties.featureTypeId.toLowerCase()) {
                     case 'event':
@@ -111,7 +123,41 @@ module crowdtasker {
                         this.allSteps[f.id] = f;
                         break;
                     case 'feedback':
+                        this.setFeedbackDataType(f);
                         this.allFeedbacks[f.id] = f;
+                        break;
+                    default:
+                        break;
+                }
+            });
+            this.isInitialized = true;
+            if (this.$scope.$root.$$phase !== '$apply' && this.$scope.$root.$$phase !== '$digest') {
+                this.$scope.$apply();
+            }
+            console.log('Init crowdtasker widget')
+        }
+
+        private updateCrowdtasker(l: csComp.Services.ProjectLayer) {
+            if (!this.isInitialized) this.initCrowdtasker(l);
+            if (!l || !l.data || !l.data.features) return;
+            console.log('Crowdtasker widget diff: ' + (l.data.features.length - this.layer.data.features.length))
+            this.layer = l;
+            l.data.features.forEach((f) => {
+                switch (f.properties.featureTypeId.toLowerCase()) {
+                    case 'event':
+                        if (!this.allEvents.hasOwnProperty(f.id)) this.allEvents[f.id] = f;
+                        break;
+                    case 'task':
+                        if (!this.allTasks.hasOwnProperty(f.id)) this.allTasks[f.id] = f;
+                        break;
+                    case 'step':
+                        if (!this.allSteps.hasOwnProperty(f.id)) this.allSteps[f.id] = f;
+                        break;
+                    case 'feedback':
+                        if (!this.allFeedbacks.hasOwnProperty(f.id)) {
+                            this.setFeedbackDataType(f);
+                            this.allFeedbacks[f.id] = f;
+                        }
                         break;
                     default:
                         break;
@@ -120,33 +166,131 @@ module crowdtasker {
             if (this.$scope.$root.$$phase !== '$apply' && this.$scope.$root.$$phase !== '$digest') {
                 this.$scope.$apply();
             }
-            console.log('Init crowdtasker widget')
         }
-        
+
         private selectEvent() {
             if (!this.selectedEvent) return;
-            this.tasks = _.indexBy(_.filter(this.allTasks, (t: IFeature) => {return t.properties['event_id'] === this.selectedEvent;}), 'id');
+            this.tasks = _.indexBy(_.filter(this.allTasks, (t: IFeature) => { return t.properties['event_id'] === this.selectedEvent; }), 'id');
             this.selectedTask = null;
             this.selectedStep = null;
             this.selectedFeedback = null;
+            // var gf = new csComp.Services.GroupFilter();
+            // gf.id = 'crowdtasker-event-chart';
+            // gf.group = this.layer.group;
+            // gf.filterType = 'row';
+            // gf.property = 'event_id';
+            // gf.filterLabel = this.selectedEvent;
+            // gf.title = this.allEvents[this.selectedEvent].properties['Name'];
+            // this.$scope.eventFilter = gf;
         }
-        
+
         private selectTask() {
             if (!this.selectedTask) return;
-            this.steps = _.indexBy(_.filter(this.allSteps, (s: IFeature) => {return s.properties['task_id_step'] === this.selectedTask;}), 'id');
+            this.steps = _.indexBy(_.filter(this.allSteps, (s: IFeature) => { return s.properties['task_id_step'] === this.selectedTask; }), 'id');
             this.selectedStep = null;
             this.selectedFeedback = null;
         }
-        
+
         private selectStep() {
             if (!this.selectedStep) return;
-            this.feedbacks = _.indexBy(_.filter(this.allFeedbacks, (f: IFeature) => {return f.properties['step_id'] === this.selectedStep;}), 'id');
-            this.selectedFeedback = null;            
+            this.feedbacks = _.indexBy(_.filter(this.allFeedbacks, (f: IFeature) => { return f.properties['step_id'] === this.selectedStep; }), 'id');
+            this.selectedFeedback = null;
+            this.createFeedbackChart();
         }
-        
+
         private selectFeedback() {
             if (!this.selectedFeedback) return;
-            this.$layerService.selectFeature(this.allFeedbacks[this.selectedFeedback]);           
+            this.$layerService.selectFeature(this.allFeedbacks[this.selectedFeedback]);
+        }
+
+        private createFeedbackChart() {
+            var gf = new csComp.Services.GroupFilter();
+            switch (this.allSteps[this.selectedStep].properties['template'].toLowerCase()) {
+                case 'free_text':
+                case 'choice_single':
+                case 'choice_multiple':
+                    gf.property = "data_string";
+                    break;
+                case 'number':
+                    gf.property = "data_number";
+                    break;
+                default:
+                    gf.property = "data";
+                    break;
+            }
+            gf.id = 'crowdtasker-feedback-chart';
+            gf.group = this.layer.group;
+            gf.group.ndx = crossfilter([]);
+            gf.group.ndx.add(_.values(this.feedbacks));
+            gf.title = this.allSteps[this.selectedStep].properties['Name'];
+            gf.filterLabel = null;
+            gf.filterType = 'row';
+            gf.group.filters = [];
+            gf.group.filters.push(gf);
+            this.$timeout(() => {
+                this.$scope.filter = gf;
+                this.$scope.filter.showInWidget = true;
+                this.updateRowFilterScope(gf);
+            });
+            var propType = this.$layerService.findPropertyTypeById(this.layer.typeUrl + '#' + gf.property);
+            this.$layerService.setGroupStyle(this.layer.group, propType);
+        }
+
+        private setFeedbackDataType(f: IFeature) {
+            if (f.properties && f.properties['step_id']) {
+                if (this.allSteps.hasOwnProperty(f.properties['step_id'])) {
+                    var step = this.allSteps[f.properties['step_id']];
+                    switch (step.properties['template'].toLowerCase()) {
+                        case 'free_text':
+                        case 'choice_single':
+                        case 'choice_multiple':
+                            f.properties['data_string'] = f.properties['data'];
+                            break;
+                        case 'number':
+                            f.properties['data_number'] = f.properties['data'];
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+
+        private resetFilters() {
+            this.clear();
+            if (this.layer) {
+                this.$layerService.removeAllFilters(this.layer.group);
+                this.$layerService.removeAllStyles(this.layer.group);
+                delete this.$scope.eventFilter;
+                delete this.$scope.filter;
+            }
+        }
+
+        private updateRowFilterScope(gf: csComp.Services.GroupFilter) {
+            var rowFilterElm = angular.element($("#filter_crowdtasker-feedback-chart_widget"));
+            if (!rowFilterElm) {
+                console.log('rowFilterElm not found.');
+                return;
+            }
+            var rowFilterScope = <Filters.IRowFilterScope>rowFilterElm.scope();
+            if (!rowFilterScope) {
+                console.log('rowFilterScope not found.');
+                return;
+            } else {
+                rowFilterScope.filter = gf;
+                rowFilterScope.vm.initRowFilter();
+                return;
+            }
+        }
+
+        private zoomToFeedbacks() {
+            var data = { features: _.values(this.feedbacks) };
+            var bb = csComp.Helpers.GeoExtensions.getBoundingBox(data);
+            this.$mapService.map.fitBounds(new L.LatLngBounds(bb.southWest, bb.northEast), { paddingTopLeft: new L.Point(500, 50), paddingBottomRight: new L.Point(100, 75) });
+        }
+
+        private getFeedbackLength() {
+            return Object.keys(this.feedbacks).length;
         }
 
         private getKeysAndValuesOfEnum(e: any): { [key: string]: any } {

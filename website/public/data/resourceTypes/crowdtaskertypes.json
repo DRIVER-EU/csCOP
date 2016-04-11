@@ -4,8 +4,8 @@
             "name": "Event",
             "style": {
                 "iconUri": "images/event.png",
-                "iconWidth": 26,
-                "iconHeight": 26,
+                "iconWidth": 30,
+                "iconHeight": 30,
                 "strokeWidth": 6,
                 "strokeColor": "#00dd00",
                 "selectedStrokeColor": "#00ff00",
@@ -21,8 +21,8 @@
             "name": "Task",
             "style": {
                 "iconUri": "images/{icon}.png",
-                "iconWidth": 26,
-                "iconHeight": 26,
+                "iconWidth": 30,
+                "iconHeight": 30,
                 "strokeWidth": 6,
                 "strokeColor": "#0000dd",
                 "selectedStrokeColor": "#0000ff",
@@ -32,14 +32,14 @@
                 "fillOpacity": 0.8,
                 "nameLabel": "name"
             },
-            "propertyTypeKeys": "Name;name;id;status;event_id;date_deadline;category;description;area;steps;attachment_id;attachment_url;taskevent;tasksteps;taskfeedback;"
+            "propertyTypeKeys": "Name;name;id;status;event_id;date_deadline;category;description;area;steps;attachment_id;attachment_url;attachment_img;taskevent;tasksteps;taskfeedback;"
         },
         "Feedback": {
             "name": "Feedback",
             "style": {
-                "iconUri": "images/{icon}.png",
-                "iconWidth": 26,
-                "iconHeight": 26,
+                "iconUri": "images/transparent/{icon}.png",
+                "iconWidth": 30,
+                "iconHeight": 30,
                 "stroke": false,
                 "strokeWidth": 0,
                 "strokeColor": "#000000",
@@ -49,14 +49,14 @@
                 "fillOpacity": 0.99,
                 "nameLabel": "featureTypeId"
             },
-            "propertyTypeKeys": "Name;id;status;task_id;publish_allowed;step_id;date_completed;category;description;area;icon;data;data_number;data_string;attachment_id;attachment_url;feedbacktask;feedbackstep;"
+            "propertyTypeKeys": "Name;id;status;task_id;publish_allowed;step_id;date_completed;category;description;area;icon;data;data_number;data_string;attachment_id;attachment_url;attachment_img;feedbacktask;feedbackstep;"
         },
         "Step": {
             "name": "Step",
             "style": {
                 "iconUri": "images/step.png",
-                "iconWidth": 26,
-                "iconHeight": 26,
+                "iconWidth": 30,
+                "iconHeight": 30,
                 "strokeWidth": 2,
                 "strokeColor": "#000000",
                 "selectedStrokeColor": "#990000",
@@ -247,8 +247,15 @@
         "attachment_url": {
             "label": "attachment_url",
             "title": "Attachment URL",
-            "description": "Link to the attachement",
+            "description": "Link to the attachment",
             "type": "bbcode",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "attachment_img": {
+            "label": "attachment_img",
+            "title": "Attached image",
+            "type": "media",
             "visibleInCallOut": true,
             "canEdit": true
         },
@@ -260,18 +267,76 @@
             "canEdit": true
         },
         "data_number": {
-            "label": "data",
+            "label": "data_number",
             "title": "Data",
             "type": "number",
             "visibleInCallOut": true,
-            "canEdit": true
+            "canEdit": true,
+            "legend": {
+                "id": "nresults",
+                "visualAspect": "fillColor",
+                "description": "Results",
+                "legendKind": "discrete",
+                "legendEntries": [
+                    {
+                        "label": "0-3",
+                        "interval": {
+                            "min": 0,
+                            "max": 3
+                        },
+                        "color": "#ccccff"
+                    },{
+                        "label": "3-6",
+                        "interval": {
+                            "min": 3,
+                            "max": 6
+                        },
+                        "color": "#4466ff"
+                    },{
+                        "label": "6-10",
+                        "interval": {
+                            "min": 6,
+                            "max": 10
+                        },
+                        "color": "#0000ff"
+                    }
+                ]
+            }
         },
         "data_string": {
-            "label": "data",
+            "label": "data_string",
             "title": "Data",
             "type": "text",
             "visibleInCallOut": true,
-            "canEdit": true
+            "canEdit": true,
+            "legend": {
+                "id": "results",
+                "visualAspect": "fillColor",
+                "description": "Results",
+                "legendKind": "discretestrings",
+                "legendEntries": [
+                    {
+                        "label": "Clear skies",
+                        "stringValue": "Clear skies",
+                        "color": "#55aaff"
+                    },
+                    {
+                        "label": "Overcast",
+                        "stringValue": "Overcast",
+                        "color": "#ff8844"
+                    },
+                    {
+                        "label": "Yes",
+                        "stringValue": "Yes",
+                        "color": "#44ff44"
+                    },
+                    {
+                        "label": "No",
+                        "stringValue": "No",
+                        "color": "#ff4444"
+                    }
+                ]
+            }
         },
         "category": {
             "label": "category",
