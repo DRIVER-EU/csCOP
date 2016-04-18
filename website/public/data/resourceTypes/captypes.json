@@ -16,7 +16,7 @@
                 "fillOpacity": 0.6,
                 "nameLabel": "sender"
             },
-            "propertyTypeKeys": "Name;identifier;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;"
+            "propertyTypeKeys": "Name;identifier;headline;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;"
         },
         "Alert": {
             "name": "Alert",
@@ -34,7 +34,7 @@
                 "fillOpacity": 0.6,
                 "nameLabel": "sender"
             },
-            "propertyTypeKeys": "Name;identifier;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;"
+            "propertyTypeKeys": "Name;identifier;headline;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;"
         }
     },
     "propertyTypeData": {
@@ -81,6 +81,15 @@
             "defaultValue": "csweb",
             "visibleInCallOut": true,
             "canEdit": false
+        },
+        "headline": {
+            "label": "headline",
+            "title": "Headline",
+            "description": "Headline of the event",
+            "type": "textarea",
+            "defaultValue": "Headline",
+            "visibleInCallOut": true,
+            "canEdit": true
         },
         "severity": {
             "label": "severity",

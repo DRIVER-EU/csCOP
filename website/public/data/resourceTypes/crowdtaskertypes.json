@@ -328,12 +328,32 @@
                     {
                         "label": "Yes",
                         "stringValue": "Yes",
-                        "color": "#44ff44"
+                        "color": "#ff4444"
                     },
                     {
                         "label": "No",
                         "stringValue": "No",
+                        "color": "#44ff44"
+                    },
+                    {
+                        "label": "A little",
+                        "stringValue": "A little",
+                        "color": "#ff8844"
+                    },
+                    {
+                        "label": "Ja",
+                        "stringValue": "Ja",
                         "color": "#ff4444"
+                    },
+                    {
+                        "label": "Nee",
+                        "stringValue": "Nee",
+                        "color": "#44ff44"
+                    },
+                    {
+                        "label": "Een beetje",
+                        "stringValue": "beetje",
+                        "color": "#ff8844"
                     }
                 ]
             }

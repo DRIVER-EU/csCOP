@@ -231,7 +231,7 @@ module crowdtasker {
             gf.id = 'crowdtasker-feedback-chart';
             gf.group = this.layer.group;
             gf.group.ndx = crossfilter([]);
-            gf.group.ndx.add(_.values(this.feedbacks).concat([this.allEvents[this.selectedEvent], this.allTasks[this.selectedTask], this.allSteps[this.selectedStep]]));
+            gf.group.ndx.add(_.values(this.feedbacks));
             gf.title = this.allSteps[this.selectedStep].properties['Name'];
             gf.filterLabel = null;
             gf.filterType = 'row';
