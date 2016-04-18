@@ -1,7 +1,7 @@
 {
     "featureTypes": {
-        "Alert": {
-            "name": "Alert",
+        "AlertPoint": {
+            "name": "AlertPoint",
             "style": {
                 "iconUri": "images/event.png",
                 "iconWidth": 26,
@@ -12,8 +12,26 @@
                 "selectedStrokeColor": "#00ff00",
                 "selectedStrokeWidth": 7,
                 "fillColor": "#ddee22",
-                "opacity": 0.9,
-                "fillOpacity": 0.9,
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "sender"
+            },
+            "propertyTypeKeys": "Name;identifier;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;"
+        },
+        "Alert": {
+            "name": "Alert",
+            "style": {
+                "iconUri": "images/event.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Polygon",
+                "strokeColor": "#dd9900",
+                "selectedStrokeColor": "#004400",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ddeeff",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
                 "nameLabel": "sender"
             },
             "propertyTypeKeys": "Name;identifier;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;"
@@ -29,6 +47,7 @@
                 "Private": "Private"
             },
             "type": "options",
+            "defaultValue": "Public",
             "visibleInCallOut": true,
             "canEdit": false
         },
@@ -42,6 +61,7 @@
                 "Test": "Test",
                 "Draft": "Draft"
             },
+            "defaultValue": "Exercise",
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": false
@@ -58,6 +78,7 @@
             "title": "Sender",
             "description": "Name of the sender (will be overwritten with 'csweb' for alerts send by this tool)",
             "type": "text",
+            "defaultValue": "csweb",
             "visibleInCallOut": true,
             "canEdit": false
         },
@@ -71,6 +92,7 @@
                 "Minor": "Minor",
                 "Unknown": "Unknown"
             },
+            "defaultValue": "Unknown",
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
@@ -86,6 +108,7 @@
                 "Past": "Past",
                 "Unknown": "Unknown"
             },
+            "defaultValue": "Unknown",
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
@@ -101,6 +124,7 @@
                 "Unlikely": "Unlikely",
                 "Unknown": "Unknown"
             },
+            "defaultValue": "Unknown",
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": true
@@ -117,7 +141,7 @@
             },
             "type": "textarea",
             "visibleInCallOut": true,
-            "canEdit": false
+            "canEdit": true
         },
         "areaDesc": {
             "label": "areaDesc",
@@ -144,6 +168,7 @@
                 "crowdtasker": "Crowdtasker",
                 "crowdtasker-support": "Crowdtasker-support"
             },
+            "defaultValue": "",
             "visibleInCallOut": true,
             "canEdit": true
         },
@@ -172,6 +197,7 @@
                 "CBRNE": "CBRNE",
                 "Other": "Other"
             },
+            "defaultValue": "Other",
             "type": "options",
             "visibleInCallOut": true,
             "canEdit": true

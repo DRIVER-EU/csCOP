@@ -1,6 +1,6 @@
 <div style="overflow-y:auto;overflow-x:hidden;height:100%;padding:8px;">
     <h3>{{data.title}}</h3>
-    <a class="btn fa fa-remove" ng-click="vm.resetFilters()" uib-tooltip="Reset filters" style="float:right;padding:0"/>
+    <a class="btn fa fa-remove" ng-click="vm.clear();vm.resetFilters()" uib-tooltip="Reset filters" tooltip-append-to-body="true" style="float:right;padding:0"/>
     <div>
         <label for="event">Event</label>
         <select id="event" ng-model="vm.selectedEvent" class="form-control" ng-change="vm.selectEvent()">
@@ -23,7 +23,7 @@
         <label for="feedback">Feedback</label>
         <div>
         <div id="feedback" style="display:inline-block"># Feedbacks received for the selected step: {{vm.getFeedbackLength()}}</div>
-        <a class="btn fa fa-search" ng-click="vm.zoomToFeedbacks()" uib-tooltip="Fit zoom to the selected features" style="float:right;padding:0"/>
+        <a class="btn fa fa-search" ng-click="vm.zoomToFeedbacks()" uib-tooltip="Fit zoom to the selected features" tooltip-append-to-body="true" style="float:right;padding:0"/>
         </div>
         <!--<select id="feedback" ng-model="vm.selectedFeedback" class="form-control" ng-change="vm.selectFeedback()">
             <option ng-repeat="feedback in vm.feedbacks" value="{{feedback.id}}">{{feedback.properties.Name}}</option>
@@ -72,8 +72,9 @@
     </div>
     <div ng-show="!equals(vm.feedbacks, {})" style="margin-left:10px">
         <div id="filtergroup_{{group.id}}" class="collapse in">
+            <h4 ng-bind="filter.title"></h4>
             <row-filter ng-if="filter && filter.filterType=='row'" id="crowdtasker-widget-rowfilter"></row-filter>
-            <bar-filter ng-if="filter && filter.filterType=='bar'" id="crowdtasker-widget-rowfilter"></bar-filter>
+            <bar-filter ng-if="filter && filter.filterType=='bar'" id="crowdtasker-widget-barfilter"></bar-filter>
         </div>
     </div>
 </div>

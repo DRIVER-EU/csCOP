@@ -33,6 +33,7 @@ module crowdtasker {
         private selectedStep: string;
         private selectedFeedback: string;
         private isInitialized: boolean;
+        private msgBusSubscription: csComp.Services.MessageBusHandle;
 
         public static $inject = [
             '$scope',
@@ -62,7 +63,7 @@ module crowdtasker {
 
             this.init();
 
-            this.$messageBus.subscribe('layer', (action: string, layer: csComp.Services.ProjectLayer) => {
+            this.msgBusSubscription = this.$messageBus.subscribe('layer', (action: string, layer: csComp.Services.ProjectLayer) => {
                 if (layer && (layer.id === $scope.data.layerId)) {
                     switch (action) {
                         case 'deactivate':
@@ -86,6 +87,14 @@ module crowdtasker {
 
         private init() {
             this.isHidden = true;
+            var l = this.$layerService.findLoadedLayer(this.$scope.data.layerId);
+            if (l) this.initCrowdtasker(l);
+        }
+        
+        public stop() {
+            if (this.msgBusSubscription) {
+                this.$messageBus.unsubscribe(this.msgBusSubscription);
+            }
         }
 
         private reset() {
@@ -170,6 +179,7 @@ module crowdtasker {
 
         private selectEvent() {
             if (!this.selectedEvent) return;
+            this.resetFilters();
             this.tasks = _.indexBy(_.filter(this.allTasks, (t: IFeature) => { return t.properties['event_id'] === this.selectedEvent; }), 'id');
             this.selectedTask = null;
             this.selectedStep = null;
@@ -221,7 +231,7 @@ module crowdtasker {
             gf.id = 'crowdtasker-feedback-chart';
             gf.group = this.layer.group;
             gf.group.ndx = crossfilter([]);
-            gf.group.ndx.add(_.values(this.feedbacks));
+            gf.group.ndx.add(_.values(this.feedbacks).concat([this.allEvents[this.selectedEvent], this.allTasks[this.selectedTask], this.allSteps[this.selectedStep]]));
             gf.title = this.allSteps[this.selectedStep].properties['Name'];
             gf.filterLabel = null;
             gf.filterType = 'row';
@@ -257,8 +267,9 @@ module crowdtasker {
         }
 
         private resetFilters() {
-            this.clear();
             if (this.layer) {
+                this.layer.group.ndx = crossfilter([]);
+                this.layer.group.ndx.add(this.layer.data.features);
                 this.$layerService.removeAllFilters(this.layer.group);
                 this.$layerService.removeAllStyles(this.layer.group);
                 delete this.$scope.eventFilter;
@@ -267,7 +278,7 @@ module crowdtasker {
         }
 
         private updateRowFilterScope(gf: csComp.Services.GroupFilter) {
-            var rowFilterElm = angular.element($("#filter_crowdtasker-feedback-chart_widget"));
+            var rowFilterElm = angular.element($("#filter_crowdtasker-feedback-chart"));
             if (!rowFilterElm) {
                 console.log('rowFilterElm not found.');
                 return;
@@ -286,7 +297,7 @@ module crowdtasker {
         private zoomToFeedbacks() {
             var data = { features: _.values(this.feedbacks) };
             var bb = csComp.Helpers.GeoExtensions.getBoundingBox(data);
-            this.$mapService.map.fitBounds(new L.LatLngBounds(bb.southWest, bb.northEast), { paddingTopLeft: new L.Point(500, 50), paddingBottomRight: new L.Point(100, 75) });
+            this.$mapService.map.fitBounds(new L.LatLngBounds(bb.southWest, bb.northEast), { paddingTopLeft: new L.Point(500, 50), paddingBottomRight: new L.Point(100, 75), maxZoom: 18 });
         }
 
         private getFeedbackLength() {
