@@ -42,7 +42,7 @@ cs.start(() => {
         logFile: './log/crowdtasker.log',
         url: 'http://crowdtasker.ait.ac.at/be/api/',
         urlParams: {
-            api_key: "9319559c3102d1b0205a6f52e854707da076e7de",
+            api_key: "{API_KEY}",
             attachmentPath: "public\\data\\api\\attachments",
             baseUrl: "http://localhost:" + cs.options.port
         }
