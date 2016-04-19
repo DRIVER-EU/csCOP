@@ -16,7 +16,7 @@
                 "fillOpacity": 0.6,
                 "nameLabel": "sender"
             },
-            "propertyTypeKeys": "Name;identifier;headline;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;"
+            "propertyTypeKeys": "Name;identifier;headline;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;description;"
         },
         "Alert": {
             "name": "Alert",
@@ -34,7 +34,7 @@
                 "fillOpacity": 0.6,
                 "nameLabel": "sender"
             },
-            "propertyTypeKeys": "Name;identifier;headline;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;"
+            "propertyTypeKeys": "Name;identifier;headline;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;description;"
         }
     },
     "propertyTypeData": {
@@ -70,6 +70,14 @@
             "label": "Name",
             "title": "Name",
             "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "description": {
+            "label": "description",
+            "title": "Description",
+            "type": "text",
+            "defaultValue": "Description",            
             "visibleInCallOut": true,
             "canEdit": true
         },
