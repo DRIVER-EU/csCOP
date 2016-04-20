@@ -115,12 +115,12 @@
         }
     </style>
 
-    <script>
+    <!--<script>
         $('.lp-tab').click(function()
         {
             console.log('click');
         });
-    </script>
+    </script>-->
 
 
     <div class="body" style="top:0">
@@ -157,13 +157,13 @@
                     <!-- Nav tabs -->
                     <ul class="nav nav-pills">
                         <!--<li class="lp-tab" data-target="#navigate" data-toggle="tab">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64">
                                     <path d="M61.3 51.2l-16.1-16c1.7-3.3 2.6-7 2.6-10.8 0-6.4-2.5-12.4-7-16.9C36.3 3 30.3.5 23.9.5 17.5.5 11.5 3 7 7.5 2.5 12 0 18 0 24.4c0 6.4 2.5 12.4 7 16.9 4.5 4.5 10.5 7 16.9 7 3.8 0 7.5-.9 10.8-2.6l16 16.1c1.5 1.5 3.4 2.2 5.3 2.2s3.8-.7 5.3-2.2c2.9-3 2.9-7.7 0-10.6zm-48-16.3c-2.8-2.8-4.4-6.6-4.4-10.6s1.6-7.8 4.4-10.6c2.8-2.8 6.6-4.4 10.6-4.4s7.8 1.6 10.6 4.4c2.8 2.8 4.4 6.6 4.4 10.6s-1.6 7.8-4.4 10.6c-2.8 2.8-6.6 4.4-10.6 4.4s-7.7-1.6-10.6-4.4zm0 0"
                                     />
                                 </svg>
                             </li>-->
                         <li class="lp-tab " data-target="#basestyles" data-toggle="tab" data-ng-if="vm.$mapService.isIntermediate">
-                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 64 64">
                                 <style>
                                     .st0 {
                                         clip-path: url(#SVGID_2_)
@@ -182,34 +182,34 @@
                                 <defs>
                                     <path id="SVGID_1_" d="M0 3.3h64V60H0z" />
                                 </defs>
-                                <clipPath id="SVGID_2_">
+                                <clippath id="SVGID_2_">
                                     <use xlink:href="#SVGID_1_" overflow="visible" />
-                                </clipPath>
+                                </clippath>
                                 <path class="st0" d="M58.8 39.6l-1.6-5.7c-.3-.9-1.1-1.6-2.1-1.6H43.6c-.4.6-.9 1.2-1.3 1.9-3.2 4.4-6.5 7.3-6.9 7.6-.9.8-2.1 1.3-3.4 1.3-1.3 0-2.5-.5-3.4-1.3-.4-.3-3.7-3.3-6.9-7.6-.5-.6-.9-1.3-1.3-1.9H8.8c-1 0-1.8.6-2.1 1.6l-1.9 6.8 43.1 7.9 10.9-9z"
                                 />
                                 <g>
                                     <defs>
                                         <path id="SVGID_3_" d="M0 3.3h64V60H0z" />
                                     </defs>
-                                    <clipPath id="SVGID_4_">
+                                    <clippath id="SVGID_4_">
                                         <use xlink:href="#SVGID_3_" overflow="visible" />
-                                    </clipPath>
+                                    </clippath>
                                     <path class="st1" d="M63.8 57.1l-4.1-14.5-20.6 17.2h22.6c.7 0 1.3-.3 1.7-.9.5-.4.6-1.1.4-1.8z" />
                                 </g>
                                 <g>
                                     <defs>
                                         <path id="SVGID_5_" d="M0 3.3h64V60H0z" />
                                     </defs>
-                                    <clipPath id="SVGID_6_">
+                                    <clippath id="SVGID_6_">
                                         <use xlink:href="#SVGID_5_" overflow="visible" />
-                                    </clipPath>
+                                    </clippath>
                                     <path class="st2" d="M10.5 44.8L4 43.6.1 57.1c-.2.7-.1 1.4.3 1.9s1 .9 1.7.9h8.4V44.8z" />
                                 </g>
                                 <path d="M13.5 45.3v14.5h21L45 51l-31.5-5.7z" />
                             </svg>
                         </li>
                         <li class="lp-tab active" data-target="#layers" data-toggle="tab" data-ng-if="vm.$mapService.isIntermediate">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64">
                                 <g fill="#010002">
                                     <path d="M64 19.4L32 2 0 19.4l32 17.4z" />
                                     <path d="M32 42.4L5.9 28.2 0 31.5l32 17.4 32-17.4-5.9-3.3z" />
@@ -218,15 +218,15 @@
                             </svg>
                         </li>
                         <li class="lp-tab" data-target="#styles" data-toggle="tab">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64">
                                 <path d="M25.3 34.5c-1.2 1.3-1.5 2.3-3.1 4.8 1 .7 3 2.4 4.4 5.2 2.7-1.6 4-1.8 5.5-3C41.6 33.5 64.8 4.9 64 4c-.8-.8-30.3 21.4-38.7 30.5zm-5.8 7.1c-4.1-.7-8.2 1.9-10.9 8.4C5.9 56.5 1 59.1.1 59c5.1 1.8 20.5 6.5 24.4-11.3-1.7-4.4-5-6.1-5-6.1z"
                                 />
                             </svg>
                         </li>
 
                         <li class="lp-tab" data-target="#filters" data-toggle="tab">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                            <svg version="1.1" id="Layer_11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewbox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
                                 <g>
                                     <path d="M24.1,30.3c0.7,0.7,1,1.7,1,2.7v29c0,1.7,2.1,2.6,3.4,1.4l8.1-9.3c1.1-1.3,1.7-1.9,1.7-3.2v-18c0-1,0.4-1.9,1-2.7L62.6,5
 		c1.7-1.9,0.4-5-2.2-5H3C0.4,0.1-1,3.1,0.8,5L24.1,30.3z" />
@@ -235,15 +235,11 @@
                         </li>
 
                         <li class="lp-tab" data-target="#mca" data-toggle="tab">
-                           <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 100"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" d="m 4.5679366,963.49535 -0.031482,15.29365 91.0174825,0.36763 0,-15.29366 -90.9859993,-0.36762 z m 28.6810544,4.19104 60.69931,0.44117 0,6.91157 -60.69931,-0.44117 0,-6.91157 z" fill="#000000" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"></path><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" d="m 5.134755,995.23181 0,15.03369 89.295612,0.289 0.0309,-15.0336 -89.32651,-0.28909 z m 48.602767,4.26433 39.055244,0.57826 -0.0309,6.6494 -39.055244,-0.6505 0.03091,-6.57716 z" fill="#000000" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"></path><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" d="m 4.8257736,1026.4367 0,15.2936 89.2956114,0.3676 0.03091,-15.2936 -89.3265105,-0.3676 z m 37.5412354,4.4117 50.085877,0.5147 0,6.8379 -50.085877,-0.5148 0,-6.8378 z" fill="#000000" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"></path><path style="" d="m 19.852016,961.6643 12.714552,0 0,19.17599 -12.714552,0 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="5.59857845" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1"></path><path style="" d="m 38.527528,993.32531 12.714552,0 0,19.17609 -12.714552,0 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="5.59857845" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1"></path><path style="" d="m 27.050334,1024.828 12.714553,0 0,19.176 -12.714553,0 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="5.59857845" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1"></path></g></svg>
+                           <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewbox="0 0 100 100"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" d="m 4.5679366,963.49535 -0.031482,15.29365 91.0174825,0.36763 0,-15.29366 -90.9859993,-0.36762 z m 28.6810544,4.19104 60.69931,0.44117 0,6.91157 -60.69931,-0.44117 0,-6.91157 z" fill="#000000" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"></path><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" d="m 5.134755,995.23181 0,15.03369 89.295612,0.289 0.0309,-15.0336 -89.32651,-0.28909 z m 48.602767,4.26433 39.055244,0.57826 -0.0309,6.6494 -39.055244,-0.6505 0.03091,-6.57716 z" fill="#000000" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"></path><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" d="m 4.8257736,1026.4367 0,15.2936 89.2956114,0.3676 0.03091,-15.2936 -89.3265105,-0.3676 z m 37.5412354,4.4117 50.085877,0.5147 0,6.8379 -50.085877,-0.5148 0,-6.8378 z" fill="#000000" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"></path><path style="" d="m 19.852016,961.6643 12.714552,0 0,19.17599 -12.714552,0 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="5.59857845" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1"></path><path style="" d="m 38.527528,993.32531 12.714552,0 0,19.17609 -12.714552,0 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="5.59857845" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1"></path><path style="" d="m 27.050334,1024.828 12.714553,0 0,19.176 -12.714553,0 z" fill="#000000" fill-opacity="1" stroke="#000000" stroke-width="5.59857845" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1"></path></g></svg>
                         </li>
 
                         <li class="lp-tab" data-target="#settings" data-toggle="tab">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                                <g fill="#FFF">
-                                    <path d="M58.3 3.3H6.2C2.8 3.3-.1 6.1-.1 9.6c0 3.4 2.8 6.3 6.3 6.3h52.2c3.4 0 6.3-2.8 6.3-6.3-.1-3.5-2.9-6.3-6.4-6.3zM58.3 26.2H6.2c-3.4 0-6.3 2.8-6.3 6.3 0 3.4 2.8 6.3 6.3 6.3h52.2c3.4 0 6.3-2.8 6.3-6.3-.1-3.4-2.9-6.3-6.4-6.3zM58.3 49.2H6.2c-3.4 0-6.3 2.8-6.3 6.3 0 3.4 2.8 6.3 6.3 6.3h52.2c3.4 0 6.3-2.8 6.3-6.3-.1-3.5-2.9-6.3-6.4-6.3z"
-                                    />
-                                </g>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64">                                
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M63.6 28.4c-.1-.9-1.1-1.6-2-1.6-2.9 0-5.5-1.7-6.6-4.3-1.1-2.7-.4-5.8 1.8-7.8.7-.6.8-1.7.2-2.4-1.5-1.9-3.2-3.6-5-5.1-.7-.6-1.8-.5-2.4.2-1.9 2.1-5.3 2.9-7.9 1.8C39 8 37.2 5.3 37.4 2.3c.1-.9-.6-1.7-1.6-1.9-2.4-.3-4.8-.3-7.1 0-.9.1-1.6.9-1.6 1.8.1 2.9-1.6 5.7-4.3 6.8-2.6 1.1-6 .3-7.8-1.8-.6-.7-1.7-.8-2.4-.2-1.9 1.5-3.6 3.2-5.1 5.1-.6.7-.5 1.8.2 2.4 2.2 2 2.9 5.2 1.8 7.9-1.1 2.6-3.8 4.3-6.9 4.3-1 0-1.7.6-1.8 1.6-.3 2.4-.3 4.8 0 7.2 0 .8 1.1 1.5 2 1.5 2.8-.1 5.4 1.6 6.5 4.3 1.1 2.7.4 5.8-1.8 7.8-.7.6-.8 1.7-.2 2.4 1.5 1.9 3.2 3.6 5 5.1.7.6 1.8.5 2.4-.2 1.9-2.1 5.3-2.9 7.9-1.8 2.7 1.1 4.5 3.9 4.3 6.9-.1.9.6 1.7 1.6 1.9 1.2.1 2.4.2 3.6.2 1.2 0 2.3-.1 3.5-.2.9-.1 1.6-.9 1.6-1.8-.1-2.9 1.6-5.6 4.3-6.8 2.6-1.1 6-.3 7.8 1.8.6.7 1.7.8 2.4.2 1.9-1.5 3.6-3.2 5.1-5.1.6-.7.5-1.8-.2-2.4-2.2-2-2.9-5.2-1.8-7.9 1.1-2.6 3.7-4.3 6.5-4.3h.4c.9.1 1.7-.6 1.9-1.6.3-2.3.3-4.7 0-7.1zM32.2 42.6c-5.8 0-10.6-4.7-10.6-10.6 0-5.8 4.7-10.6 10.6-10.6 5.8 0 10.6 4.7 10.6 10.6 0 5.8-4.8 10.6-10.6 10.6zm0 0"
                                 />
                             </svg>
@@ -309,26 +305,6 @@
         <input type="text" style="margin-top:10px;float:left" ng-show="sv" />
         <project-header-selection></project-header-selection>
         <dashboard-header-selection></dashboard-header-selection>
-
-    </div>
-
-    <div class="righttab-box" style="padding-right:30px">
-
-
-        <!-- Search form -->
-        <!-- <offline-search class="navbar-form navbar-right" style="margin-right:0"></offline-search> -->
-        <!-- Expert mode switch -->
-        <div class="navbar-form navbar-right toggle-icon">
-            <expert-mode style="margin-left: -30px;margin-top: 4px;"></expert-mode>
-        </div>
-        <!-- Language switch -->
-        <div ng-if="vm.$layerService.touchMode" ng-click="vm.$layerService.touchMode=false" class="navbar-form navbar-right toggle-icon">
-            <img src="/images/touch.png" style="width:30px;height:30px;margin-top:7px;margin-left:-13px" />
-        </div>
-
-        <div ng-if="!vm.$layerService.touchMode" ng-click="vm.$layerService.touchMode=true" class="navbar-form navbar-right toggle-icon">
-            <span class="fa fa-mouse-pointer" style="font-size:18px;margin-top:10px" />
-        </div>
 
     </div>
 
