@@ -79,6 +79,10 @@ module App {
             this.$layerService.visual.rightPanelVisible = false; // otherwise, the rightpanel briefly flashes open before closing.
 
             this.$layerService.openSolution('data/projects/projects.json', $location.$$search.layers);
+
+            var ppt = csComp.Helpers.createRightPanelTab(
+                'presentation', 'presentation', null, 'Presentation', '{{"PowerPoint view" | translate}}', 'television', false, false);
+            this.$messageBusService.publish('rightpanel', 'activate', ppt);
         }
 
         /**

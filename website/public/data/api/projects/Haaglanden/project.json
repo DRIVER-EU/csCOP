@@ -157,7 +157,6 @@
                     "heatmapItems": null,
                     "url": "api/layers/hin",
                     "typeUrl": "api/resources/hin",
-                    "opacity": 100,
                     "isDynamic": true,
                     "isEditable": true,
                     "tags": "presentation",
@@ -284,7 +283,7 @@
                     "defaultFeatureType": "flooding",
                     "defaultLegendProperty": "h",
                     "isDynamic": true,
-                    "gui": {},
+                    "isEditable": true,
                     "tags": []
                 },
                 {
@@ -324,7 +323,7 @@
                     "defaultFeatureType": "flooding",
                     "defaultLegendProperty": "h",
                     "isDynamic": true,
-                    "gui": {},
+                    "isEditable": true,
                     "tags": []
                 }
             ]
@@ -684,5 +683,6 @@
             }
         }
     ],
-    "_localFile": "c:\\dev\\web\\cs\\apps\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json"
+    "_localFile": "c:\\dev\\web\\cs\\apps\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json",
+    "storage": "file"
 }
