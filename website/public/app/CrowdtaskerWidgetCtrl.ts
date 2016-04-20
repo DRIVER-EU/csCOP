@@ -179,7 +179,7 @@ module crowdtasker {
 
         private selectEvent() {
             if (!this.selectedEvent) return;
-            this.resetFilters();
+            // this.resetFilters();
             this.tasks = _.indexBy(_.filter(this.allTasks, (t: IFeature) => { return t.properties['event_id'] === this.selectedEvent; }), 'id');
             this.selectedTask = null;
             this.selectedStep = null;
@@ -268,12 +268,9 @@ module crowdtasker {
 
         private resetFilters() {
             if (this.layer) {
-                this.layer.group.ndx = crossfilter([]);
-                this.layer.group.ndx.add(this.layer.data.features);
-                this.$layerService.removeAllFilters(this.layer.group);
-                this.$layerService.removeAllStyles(this.layer.group);
                 delete this.$scope.eventFilter;
                 delete this.$scope.filter;
+                this.$layerService.refreshLayer(this.layer.id);
             }
         }
 

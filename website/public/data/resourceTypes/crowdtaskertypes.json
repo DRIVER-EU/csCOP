@@ -336,6 +336,11 @@
                         "color": "#44ff44"
                     },
                     {
+                        "label": "Slightly",
+                        "stringValue": "Slightly",
+                        "color": "#ff8844"
+                    },
+                    {
                         "label": "A little",
                         "stringValue": "A little",
                         "color": "#ff8844"

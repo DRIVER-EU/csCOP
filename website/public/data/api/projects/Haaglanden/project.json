@@ -237,6 +237,7 @@
         {
             "id": "76947763-7f29-4fa7-05af-901a08bc506d",
             "title": "Causes",
+            "oneLayerActive": true,
             "languages": {
                 "en": {
                     "title": "Causes"
@@ -247,22 +248,15 @@
             },
             "layers": [
                 {
-                    "id": "floodsim",
-                    "title": "Flooding",
+                    "id": "floodsim_d0",
+                    "title": "Expected water height",
+                    "description": "",
                     "type": "grid",
                     "renderType": "gridlayer",
                     "heatmapItems": null,
-                    "url": "/api/layers/floodsim",
-                    "typeUrl": "data/resourceTypes/floodsimtypes.json",
+                    "url": "/data/projects/Haaglanden/dmax_mask_24u.asc",
+                    "typeUrl": "/data/resourceTypes/floodsimtypes.json",
                     "opacity": 75,
-                    "languages": {
-                        "en": {
-                            "title": "Flooding"
-                        },
-                        "nl": {
-                            "title": "Overstroming"
-                        }
-                    },
                     "dataSourceParameters": {
                         "propertyName": "h",
                         "gridType": "esri",
@@ -281,15 +275,56 @@
                         "rows": 206,
                         "deltaLon": 0.0014584288488676631,
                         "deltaLat": -0.0008877224387042511,
-                        "noDataValue": -9999,
+                        "noDataValue": -999.9990234375,
                         "startLon": 4.624165116053319,
                         "startLat": 51.99900160775284,
                         "maxThreshold": 5.25,
-                        "minThreshold": -9999
+                        "minThreshold": 0
                     },
                     "defaultFeatureType": "flooding",
                     "defaultLegendProperty": "h",
-                    "isDynamic": false,
+                    "isDynamic": true,
+                    "gui": {},
+                    "tags": []
+                },
+                {
+                    "id": "floodsim_dmax",
+                    "title": "Maximum water height",
+                    "description": "Dmax",
+                    "type": "grid",
+                    "renderType": "gridlayer",
+                    "heatmapItems": null,
+                    "url": "/data/projects/Haaglanden/dm1maxd0.asc",
+                    "typeUrl": "/data/resourceTypes/floodsimtypes.json",
+                    "opacity": 75,
+                    "dataSourceParameters": {
+                        "propertyName": "h",
+                        "gridType": "esri",
+                        "projection": "WGS84",
+                        "contourLevels": [
+                            0.1,
+                            0.5,
+                            1,
+                            3,
+                            4,
+                            5,
+                            6
+                        ],
+                        "skipLines": 6,
+                        "columns": 380,
+                        "rows": 206,
+                        "deltaLon": 0.0014584288488676631,
+                        "deltaLat": -0.0008877224387042511,
+                        "noDataValue": -999.9990234375,
+                        "startLon": 4.624165116053319,
+                        "startLat": 51.99900160775284,
+                        "maxThreshold": 5.25,
+                        "minThreshold": 0
+                    },
+                    "defaultFeatureType": "flooding",
+                    "defaultLegendProperty": "h",
+                    "isDynamic": true,
+                    "gui": {},
                     "tags": []
                 }
             ]
@@ -441,7 +476,7 @@
             "id": "7b947763-7f29-4fa7-05af-901a08bc62bb",
             "title": "Communicatie",
             "clustering": true,
-            "clusterLevel": 10,
+            "clusterLevel": 13,
             "layers": [
                 {
                     "id": "communicationobjects",
