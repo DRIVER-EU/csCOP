@@ -8,12 +8,14 @@
         "enableLive": true,
         "enablePlay": true,
         "enableEvents": true,
-        "focus": 1459547676000,
-        "start": 1459116000000,
-        "end": 1459720800000,
-        "range": 604800000,
+        "enableFocus": true,
+        "focus": 1459476180000,
+        "start": 1459332000000,
+        "end": 1459504800000,
+        "range": 172800000,
         "zoomLevel": 3600000,
-        "zoomLevelName": "hours"
+        "zoomLevelName": "hours",
+        "expandHeight": 150
     },
     "mcas": [
         {
@@ -45,11 +47,26 @@
             "mapWidth": "100%",
             "alignMapRight": false,
             "showTimeline": true,
-            "showLeftmenu": true,
+            "showLeftmenu": false,
             "showLegend": false,
             "showRightmenu": false,
             "showBackgroundImage": false,
-            "widgets": [],
+            "widgets": [
+                {
+                    "id": "af68187a-d425-4f36-9620-f3c7a4738e21",
+                    "directive": "buttonwidget",
+                    "enabled": true,
+                    "style": "transparent",
+                    "left": "27px",
+                    "right": "",
+                    "top": "90px",
+                    "width": "300px",
+                    "data": {
+                        "layerGroup": "knoppen",
+                        "buttons": []
+                    }
+                }
+            ],
             "mobile": true
         },
         {
@@ -71,7 +88,6 @@
                 {
                     "id": "9893e455-847f-4e76-a2fd-765ebd3b91ea",
                     "directive": "crowdtaskerwidget",
-                    "elementId": "widget-9893e455-847f-4e76-a2fd-765ebd3b91ea",
                     "enabled": true,
                     "style": "default",
                     "left": "25px",
@@ -130,8 +146,27 @@
     "propertyTypeData": {},
     "groups": [
         {
+            "id": "knoppen",
+            "title": "Knoppen",
+            "layers": [
+                {
+                    "id": "hin",
+                    "title": "HIN",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "api/layers/hin",
+                    "typeUrl": "api/resources/hin",
+                    "opacity": 100,
+                    "isDynamic": true,
+                    "isEditable": true,
+                    "tags": "presentation",
+                    "timeAware": true
+                }
+            ]
+        },
+        {
             "id": "8cc47763-7f29-4fa7-05af-901a08bc4569",
-            "reference": "8cc47763-7f29-4fa7-05af-901a08bc4569",
             "title": "Crowdtasker",
             "description": "Crowdtasker allows volunteers to help in crisis situations.",
             "clustering": true,
@@ -194,6 +229,7 @@
                     "typeUrl": "data/resourceTypes/captypes.json",
                     "opacity": 100,
                     "isDynamic": true,
+                    "isEditable": true,
                     "timeAware": true
                 }
             ]
@@ -217,7 +253,7 @@
                     "renderType": "gridlayer",
                     "heatmapItems": null,
                     "url": "/api/layers/floodsim",
-                    "typeUrl": "/api/resources/floodsimtypes",
+                    "typeUrl": "data/resourceTypes/floodsimtypes.json",
                     "opacity": 75,
                     "languages": {
                         "en": {
@@ -356,6 +392,48 @@
                     },
                     "isDynamic": false,
                     "tags": []
+                },
+                {
+                    "id": "ghz",
+                    "title": "GHZ",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "data/projects/Haaglanden/GHZ.json",
+                    "typeUrl": "data/resourceTypes/ghz.json",
+                    "opacity": 100,
+                    "defaultFeatureType": "ghz",
+                    "isDynamic": true,
+                    "isEditable": true,
+                    "timeAware": false
+                },
+                {
+                    "id": "ggz",
+                    "title": "GGZ",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "data/projects/Haaglanden/GGZ.json",
+                    "typeUrl": "data/resourceTypes/ghz.json",
+                    "opacity": 100,
+                    "defaultFeatureType": "ggz",
+                    "isDynamic": true,
+                    "isEditable": true,
+                    "timeAware": false
+                },
+                {
+                    "id": "vvt",
+                    "title": "VVT",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "heatmapItems": null,
+                    "url": "data/projects/Haaglanden/VVT.json",
+                    "typeUrl": "data/resourceTypes/ghz.json",
+                    "opacity": 100,
+                    "defaultFeatureType": "ghz",
+                    "isDynamic": true,
+                    "isEditable": true,
+                    "timeAware": false
                 }
             ]
         },
@@ -554,29 +632,22 @@
                     "defaultFeatureType": "District",
                     "isDynamic": false,
                     "timeAware": false
-                },
-                {
-                    "id": "gemeente",
-                    "title": "Gemeentes",
-                    "type": "geojson",
-                    "renderType": "geojson",
-                    "heatmapItems": null,
-                    "url": "data/src/gemeente.json",
-                    "typeUrl": "data/resourceTypes/resources.json",
-                    "opacity": 70,
-                    "defaultFeatureType": "gemeente",
-                    "isDynamic": false,
-                    "tags": [],
-                    "fitToMap": false
                 }
             ]
         }
     ],
     "layerDirectory": "/api/layers",
     "eventTab": true,
-    "useOfflineSearch": true,
-    "useOnlineSearch": true,
-    "onlineSearchUrl": "bagsearchaddress",
-    "_localFile": "C:\\Users\\rbruining\\Documents\\TNO\\csMaster\\apps\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json",
-    "storage": "file"
+    "searchProviders": [
+        {
+            "name": "bing",
+            "url": "http://dev.virtualearth.net/REST/v1/Locations",
+            "key": "Ao_jzI4xGuIlIOSimZmvzR4YV3QGlwSsYxNJ6R62X1fHEozjhqYwBYC1YMoC638z",
+            "data": {
+                "culture": "nl",
+                "userLocation": "52.077857,4.316639"
+            }
+        }
+    ],
+    "_localFile": "c:\\dev\\web\\cs\\apps\\csCOP\\website\\public\\data\\api\\projects\\Haaglanden\\project.json"
 }
