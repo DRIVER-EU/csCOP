@@ -1,0 +1,340 @@
+[{
+  "name": "ValueNamePair",
+  "namespace": "eu.driver.model.cap",
+  "type": "record",
+  "fields": [{
+    "name": "valueName",
+    "type": "string"
+  }, {
+    "name": "value",
+    "type": "string"
+  }]
+}, {
+  "name": "Status",
+  "namespace": "eu.driver.model.cap",
+  "type": "enum",
+  "symbols": [
+    "Actual",
+    "Exercise",
+    "System",
+    "Test",
+    "Draft"
+  ]
+}, {
+  "name": "MsgType",
+  "namespace": "eu.driver.model.cap",
+  "type": "enum",
+  "symbols": [
+    "Alert",
+    "Update",
+    "Cancel",
+    "Ack",
+    "Error"
+  ]
+}, {
+  "name": "Scope",
+  "namespace": "eu.driver.model.cap",
+  "type": "enum",
+  "symbols": [
+    "Public",
+    "Restricted",
+    "Private"
+  ]
+}, {
+  "name": "Category",
+  "namespace": "eu.driver.model.cap",
+  "type": "enum",
+  "symbols": [
+    "Geo",
+    "Met",
+    "Safety",
+    "Security",
+    "Rescue",
+    "Fire",
+    "Health",
+    "Env",
+    "Transport",
+    "Infra",
+    "CBRNE",
+    "Other"
+  ]
+}, {
+  "name": "ResponseType",
+  "namespace": "eu.driver.model.cap",
+  "type": "enum",
+  "symbols": [
+    "Shelter",
+    "Evacuate",
+    "Prepare",
+    "Execute",
+    "Avoid",
+    "Monitor",
+    "Assess",
+    "AllClear",
+    "None"
+  ]
+}, {
+  "name": "Urgency",
+  "namespace": "eu.driver.model.cap",
+  "type": "enum",
+  "symbols": [
+    "Immediate",
+    "Expected",
+    "Future",
+    "Past",
+    "Unknown"
+  ]
+}, {
+  "name": "Severity",
+  "namespace": "eu.driver.model.cap",
+  "type": "enum",
+  "symbols": [
+    "Extreme",
+    "Severe",
+    "Moderate",
+    "Minor",
+    "Unknown"
+  ]
+}, {
+  "name": "Certainty",
+  "namespace": "eu.driver.model.cap",
+  "type": "enum",
+  "symbols": [
+    "Observed",
+    "Likely",
+    "Possible",
+    "Unlikely",
+    "Unknown"
+  ]
+}, {
+  "name": "Resource",
+  "namespace": "eu.driver.model.cap",
+  "type": "record",
+  "fields": [{
+    "name": "resourceDesc",
+    "type": "string"
+  }, {
+    "name": "size",
+    "type": ["null", "int"],
+    "default": null
+  }, {
+    "name": "uri",
+    "doc": "TODO, anyURI",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "deferUri",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "digest",
+    "type": "string",
+    "default": "null"
+  }]
+}, {
+  "name": "Area",
+  "namespace": "eu.driver.model.cap",
+  "type": "record",
+  "fields": [{
+    "name": "areaDesc",
+    "type": "string"
+  }, {
+    "name": "polygon",
+    "type": ["null", "string", {
+      "type": "array",
+      "items": "string"
+    }],
+    "default": null
+  }, {
+    "name": "circle",
+    "type": ["null", "string", {
+      "type": "array",
+      "items": "string"
+    }],
+    "default": null
+  }, {
+    "name": "geocode",
+    "type": ["null", "eu.driver.model.cap.ValueNamePair", {
+      "type": "array",
+      "items": "eu.driver.model.cap.ValueNamePair"
+    }],
+    "default": null
+  }, {
+    "name": "altitude",
+    "type": ["null", "double"],
+    "default": null
+  }, {
+    "name": "ceiling",
+    "type": ["null", "double"],
+    "default": null
+  }]
+}, {
+  "name": "Info",
+  "namespace": "eu.driver.model.cap",
+  "type": "record",
+  "fields": [{
+    "name": "language",
+    "default": "en-US",
+    "type": ["string", "null"]
+  }, {
+    "name": "category",
+    "type": ["eu.driver.model.cap.Category", {
+      "type": "array",
+      "items": "eu.driver.model.cap.Category"
+    }]
+  }, {
+    "name": "event",
+    "type": "string"
+  }, {
+    "name": "responseType",
+    "type": ["null", "eu.driver.model.cap.ResponseType", {
+      "type": "array",
+      "items": "eu.driver.model.cap.ResponseType"
+    }],
+    "default": null
+  }, {
+    "name": "urgency",
+    "type": "eu.driver.model.cap.Urgency"
+  }, {
+    "name": "severity",
+    "type": "eu.driver.model.cap.Severity"
+  }, {
+    "name": "certainty",
+    "type": "eu.driver.model.cap.Certainty"
+  }, {
+    "name": "audience",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "eventCode",
+    "type": ["null", "eu.driver.model.cap.ValueNamePair", {
+      "type": "array",
+      "items": "eu.driver.model.cap.ValueNamePair"
+    }],
+    "default": null
+  }, {
+    "name": "effective",
+    "doc": "TODO: datetime",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "onset",
+    "doc": "TODO: datetime",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "expires",
+    "doc": "TODO: datetime",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "senderName",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "headline",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "description",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "instruction",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "web",
+    "doc": "TODO: anyURI",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "contact",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "parameter",
+    "type": ["null", "eu.driver.model.cap.ValueNamePair", {
+      "type": "array",
+      "items": "eu.driver.model.cap.ValueNamePair"
+    }],
+    "default": null
+  }, {
+    "name": "resource",
+    "type": ["null", "eu.driver.model.cap.Resource", {
+      "type": "array",
+      "items": "eu.driver.model.cap.Resource"
+    }],
+    "default": null
+  }, {
+    "name": "area",
+    "type": ["null", "eu.driver.model.cap.Area", {
+      "type": "array",
+      "items": "eu.driver.model.cap.Area"
+    }],
+    "default": null
+  }]
+}, {
+  "name": "Alert",
+  "namespace": "eu.driver.model.cap",
+  "doc": "CAP Alert Message (version 1.2)",
+  "type": "record",
+  "fields": [{
+    "name": "identifier",
+    "type": "string"
+  }, {
+    "name": "sender",
+    "type": "string"
+  }, {
+    "name": "sent",
+    "type": "string",
+    "doc": "TODO xs:dateTime Used pattern"
+  }, {
+    "name": "status",
+    "type": "eu.driver.model.cap.Status"
+  }, {
+    "name": "msgType",
+    "type": "eu.driver.model.cap.MsgType"
+  }, {
+    "name": "source",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "scope",
+    "type": "eu.driver.model.cap.Scope"
+  }, {
+    "name": "restriction",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "addresses",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "code",
+    "type": ["null", "string", {
+      "type": "array",
+      "items": "string"
+    }],
+    "default": null
+  }, {
+    "name": "note",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "references",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "incidents",
+    "type": "string",
+    "default": "null"
+  }, {
+    "name": "info",
+    "type": ["null", "eu.driver.model.cap.Info", {
+      "type": "array",
+      "items": "eu.driver.model.cap.Info"
+    }],
+    "default": null
+  }]
+}]

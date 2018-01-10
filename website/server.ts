@@ -1,20 +1,30 @@
 import Winston = require('winston');
 import express = require('express');
 import path = require('path');
+import {
+    Consumer
+} from './test-bed/consumer';
+import {
+    Producer
+} from './test-bed/producer';
+import {
+    ITestBedOptions,
+    LogLevel
+} from 'node-test-bed-adapter';
 //import cors = require('cors');
 import * as csweb from 'csweb';
 
 Winston.remove(Winston.transports.Console);
-Winston.add(Winston.transports.Console, <Winston.ConsoleTransportOptions>{
+Winston.add(Winston.transports.Console, < Winston.ConsoleTransportOptions > {
     colorize: true,
-    label: 'csWeb',
+    label: 'csCOP',
     prettyPrint: true
 });
 
 var startDatabaseConnection = false;
 
-var cs = new csweb.csServer(__dirname, <csweb.csServerOptions>{
-    port: 3003,
+var cs = new csweb.csServer(__dirname, < csweb.csServerOptions > {
+    port: 8003,
     swagger: false
     //connectors: { mqtt: { server: 'localhost', port: 1883 }, mongo: { server : '127.0.0.1', port: 27017} }
 });
@@ -22,40 +32,38 @@ var cs = new csweb.csServer(__dirname, <csweb.csServerOptions>{
 //cs.server.use(cors());
 
 cs.start(() => {
+    var testBedOptions = <ITestBedOptions>{
+        kafkaHost: 'broker:3501',
+        schemaRegistry: 'http://schema_registry:3502',
+        fetchAllSchemas: false,
+        autoRegisterSchemas: true,
+        schemaFolder: './data/schemas',
+        consume: [{
+            topic: 'cap'
+        }],
+        produce: ['cap'],
+        logging: {
+            logToConsole: LogLevel.Debug,
+            logToFile: LogLevel.Debug,
+            logToKafka: LogLevel.Debug,
+            logFile: 'log.txt'
+        }
+    };
+    var consumer = new Consumer(testBedOptions);
+    var producer = new Producer(testBedOptions);
 
-    var cisOptions: csweb.ICISOptions = {
-        cisNotifyUrl: 'http://localhost:9001/notify',
-        cisMsgReceivedUrl: '/CISMsgReceived'
-    }
-    
-    var cisSource = new csweb.CISDataSource(cs.server, cs.api, 'c154aab7-a144-4ac0-4f1f-fafdaa2ef211', '/cis');
-    cisSource.init(cisOptions, (msg: string) => {
-        Winston.info('CISDataSource: ' + msg);
+    cs.server.get('/send-cap-endpoint', (req, res) => {
+        console.log(`Calling producer to send cap message`);
+        producer.sendcap((error, data) => {
+            if (error) {
+                res.sendStatus(404);
+                console.error(error);
+            } else {
+                res.sendStatus(200);
+                console.log(data);
+            }
+        });
     });
 
-    var restSourceOptions: csweb.IRestDataSourceSettings = {
-        converterFile: path.join(__dirname, './crowdtasker.js'),
-        pollIntervalSeconds: 120,
-        pruneIntervalSeconds: 300,
-        diffIgnoreGeometry: false,
-        diffPropertiesBlacklist: [],
-        logFile: './log/crowdtasker.log',
-        url: 'http://crowdtasker.ait.ac.at/be/api/',
-        urlParams: {
-            api_key: "{API_KEY}",
-            attachmentPath: "public\\data\\api\\attachments",
-            baseUrl: "http://localhost:" + cs.options.port
-        }
-    }
-
-    setTimeout(() => {
-        var restSource = new csweb.RestDataSource(cs.server, cs.api, 'crowdtasker', '/crowdtasker');
-        restSource.init(restSourceOptions, (msg: string) => {
-            Winston.info('RestDataSource: ' + msg);
-        });
-    }, 3000);
-
     console.log('really started');
-    //    //{ key: 'imb', s: new ImbAPI.ImbAPI('app-usdebug01.tsn.tno.nl', 4000),options: {} }
-    //    var ml = new MobileLayer.MobileLayer(api, 'mobilelayer', '/api/resources/SGBO', server, messageBus, cm);
 });

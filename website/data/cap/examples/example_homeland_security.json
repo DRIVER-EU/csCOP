@@ -1,0 +1,32 @@
+{
+  "identifier": "43b080713727",
+  "sender": "hsas@dhs.gov",
+  "sent": "2003-04-02T14:39:01-05:00",
+  "status": "Actual",
+  "msgType": "Alert",
+  "scope": "Public",
+  "info": {
+    "category": "Security",
+    "event": "Homeland Security Advisory System Update",
+    "urgency": "Immediate",
+    "severity": "Severe",
+    "certainty": "Likely",
+    "senderName": "U.S. Government, Department of Homeland Security",
+    "headline": "Homeland Security Sets Code ORANGE",
+    "description": "The Department of Homeland Security has elevated the Homeland Security Advisory System threat level to ORANGE / High in response to intelligence which may indicate a heightened threat of terrorism.",
+    "instruction": "A High Condition is declared when there is a high risk of terrorist attacks. In addition to the Protective Measures taken in the previous Threat Conditions, Federal departments and agencies should consider agency-specific Protective Measures in accordance with their existing plans.",
+    "web": "http://www.dhs.gov/dhspublic/display?theme=29",
+    "parameter": {
+      "valueName": "HSAS",
+      "value": "ORANGE"
+    },
+    "resource": {
+      "resourceDesc": "Image file (GIF)",
+      "mimeType": "image/gif",
+      "uri": "http://www.dhs.gov/dhspublic/getAdvisoryImage"
+    },
+    "area": {
+      "areaDesc": "U.S. nationwide and interests worldwide"
+    }
+  }
+}

@@ -40,3 +40,5 @@ website/public/bower_components
 website/typings
 
 website/public/data/api/attachments/
+website/public/data/api/backup/
+website/log.txt

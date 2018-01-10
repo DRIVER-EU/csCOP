@@ -1,0 +1,45 @@
+{
+  "identifier": "TRI13970876.2",
+  "sender": "trinet@caltech.edu",
+  "sent": "2003-06-11T20:56:00-07:00",
+  "status": "Actual",
+  "msgType": "Update",
+  "scope": "Public",
+  "references": "trinet@caltech.edu,TRI13970876.1,2003-06-11T20:30:00-07:00",
+  "info": {
+    "category": "Geo",
+    "event": "Earthquake",
+    "urgency": "Past",
+    "severity": "Minor",
+    "certainty": "Observed",
+    "senderName": "Southern California Seismic Network (TriNet) operated by Caltech and USGS",
+    "headline": "EQ 3.4 Imperial County CA",
+    "description": "A minor earthquake measuring 3.4 on the Richter scale occurred near Brawley, California at 8:30 PM Pacific Daylight Time on Wednesday, June 11, 2003. (This event has now been reviewed by a seismologist)",
+    "web": "http://www.trinet.org/scsn/scsn.html",
+    "parameter": [{
+        "valueName": "EventID",
+        "value": "13970876"
+      },
+      {
+        "valueName": "Version",
+        "value": "1"
+      },
+      {
+        "valueName": "Magnitude",
+        "value": "3.4 Ml"
+      },
+      {
+        "valueName": "Depth",
+        "value": "11.8 mi."
+      },
+      {
+        "valueName": "Quality",
+        "value": "Excellent"
+      }
+    ],
+    "area": {
+      "areaDesc": "1 mi. WSW of Brawley, CA; 11 mi. N of El Centro, CA; 30 mi. E of OCOTILLO (quarry); 1 mi. N of the Imperial Fault",
+      "circle": "32.9525,-115.5527 0"
+    }
+  }
+}
