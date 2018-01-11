@@ -13,6 +13,7 @@ import {
 } from 'node-test-bed-adapter';
 //import cors = require('cors');
 import * as csweb from 'csweb';
+import TestBedConfig = require('./config.json');
 
 Winston.remove(Winston.transports.Console);
 Winston.add(Winston.transports.Console, < Winston.ConsoleTransportOptions > {
@@ -32,22 +33,12 @@ var cs = new csweb.csServer(__dirname, < csweb.csServerOptions > {
 //cs.server.use(cors());
 
 cs.start(() => {
-    var testBedOptions = <ITestBedOptions>{
-        kafkaHost: 'broker:3501',
-        schemaRegistry: 'http://schema_registry:3502',
-        fetchAllSchemas: false,
-        autoRegisterSchemas: true,
-        schemaFolder: './data/schemas',
-        consume: [{
-            topic: 'cap'
-        }],
-        produce: ['cap'],
-        logging: {
-            logToConsole: LogLevel.Debug,
-            logToFile: LogLevel.Debug,
-            logToKafka: LogLevel.Debug,
-            logFile: 'log.txt'
-        }
+    var testBedOptions: ITestBedOptions = < any > TestBedConfig;
+    testBedOptions.logging = {
+        logToConsole: LogLevel.Debug,
+        logToFile: LogLevel.Debug,
+        logToKafka: LogLevel.Debug,
+        logFile: 'log.txt'
     };
     var consumer = new Consumer(testBedOptions);
     var producer = new Producer(testBedOptions);

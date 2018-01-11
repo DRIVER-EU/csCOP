@@ -1,0 +1,11 @@
+{
+    "kafkaHost": "broker:3501",
+    "schemaRegistry": "http://schema_registry:3502",
+    "fetchAllSchemas": false,
+    "autoRegisterSchemas": true,
+    "schemaFolder": "./data/schemas",
+    "consume": [{
+        "topic": "cap"
+    }],
+    "produce": ["cap"]
+}
