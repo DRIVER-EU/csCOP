@@ -5,8 +5,8 @@ RUN mkdir -p /src
 WORKDIR /src
 
 # If you have native dependencies, you'll need extra tools
-RUN apk add --no-cache make gcc g++ python
-RUN npm install -g node-gyp
+RUN apk add --no-cache make gcc g++ python git
+RUN npm install -g node-gyp typescript bower
 
 # Install app dependencies
 COPY package.json /src/
@@ -22,4 +22,11 @@ ENV PORT='8003'
 
 # Run App
 EXPOSE 8003
+
+RUN npm i --production
+WORKDIR /src/public
+RUN bower i --allow-root
+WORKDIR /src
+RUN tsc
+
 CMD ["yarn", "start"]
