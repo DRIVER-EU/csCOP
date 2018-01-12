@@ -270,7 +270,7 @@ module crowdtasker {
             if (this.layer) {
                 delete this.$scope.eventFilter;
                 delete this.$scope.filter;
-                this.$layerService.refreshLayer(this.layer.id);
+                // this.$layerService.refreshLayer(this.layer.id);
             }
         }
 

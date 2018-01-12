@@ -772,7 +772,7 @@ declare namespace d3 {
         };
 
         filter: {
-            (filter: (data: any, index: number) => boolean, thisArg?: any): UpdateSelection;
+            (filter: any): UpdateSelection; //(data: any, index: number) => boolean, thisArg?: any): UpdateSelection;
             //(filter: string): UpdateSelection;
         };
 
