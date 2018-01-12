@@ -12,11 +12,13 @@ import {
     ITopicMetadataItem,
     ITestBedOptions
 } from 'node-test-bed-adapter';
+import {CAPProcessor} from './capProcessor';
 
 export class Consumer {
     private id = 'csCOPconsumer';
     private adapter: TestBedAdapter;
     private log = Logger.instance;
+    private callback: Function;
 
     constructor(options: ITestBedOptions) {
         options.clientId = this.id;
@@ -27,6 +29,10 @@ export class Consumer {
             this.getTopics();
         });
         this.adapter.connect();
+    }
+
+    public setCallback(callback: Function) {
+        this.callback = callback;
     }
 
     private subscribe() {
@@ -72,13 +78,17 @@ export class Consumer {
     private handleMessage(message: Message) {
         switch (message.topic.toLowerCase()) {
             case 'heartbeat':
+            case 'connect-status-heartbeat':
                 this.log.info(`Received message on topic ${message.topic} with key ${message.key}: ${message.value}`);
                 break;
             case 'configuration':
                 this.log.info(`Received message on topic ${message.topic} with key ${message.key}: ${message.value}`);
                 break;
             case 'cap':
-                this.log.info(`Received message on topic ${message.topic} with key ${message.key}: ${typeof message.value === 'string' ? message.value : '\n' + JSON.stringify(message.value, null, 2)}`);
+                // this.log.info(`Received message on topic ${message.topic} with key ${message.key}: ${typeof message.value === 'string' ? message.value : '\n' + JSON.stringify(message.value, null, 2)}`);
+                this.log.info(`Received message on topic ${message.topic} with key ${message.key}`);
+                var fts = CAPProcessor.handleIncomingCAP(message.value);
+                if (fts && this.callback) this.callback(fts);
                 break;
             default:
                 this.log.info(`Received message on topic ${message.topic}: ${message.value}`);

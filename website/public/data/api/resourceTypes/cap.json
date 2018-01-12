@@ -1,0 +1,55 @@
+{
+  "id": "cap",
+  "title": "CAP",
+  "featureTypes": {
+    "Default": {
+      "id": "api/resources/cap#Default",
+      "name": "Default",
+      "style": {
+        "drawingMode": "Polygon",
+        "iconUri": "/images/cloud.png",
+        "cornerRadius": 50,
+        "fillColor": "#FF0000",
+        "iconWidth": 30,
+        "iconHeight": 30,
+        "strokeColor": "#000000",
+        "strokeWidth": 2
+      },
+      "propertyTypeKeys": "Name;updated;description;",
+      "u": "bower_components/csweb/dist-bower/images/marker.png"
+    }
+  },
+  "propertyTypeData": {
+    "featureTypeId": {
+      "label": "featureTypeId",
+      "title": "featureTypeId",
+      "isSearchable": true,
+      "visibleInCallOut": false,
+      "canEdit": false,
+      "type": "text"
+    },
+    "updated": {
+      "label": "updated",
+      "title": "updated",
+      "visibleInCallOut": true,
+      "type": "number"
+    },
+    "Name": {
+      "label": "updated",
+      "type": "text",
+      "visibleInCallOut": true,
+      "title": "Name"
+    },
+    "description": {
+      "label": "description",
+      "title": "description",
+      "isSearchable": true,
+      "visibleInCallOut": true,
+      "canEdit": false,
+      "type": "text"
+    }
+  },
+  "url": "api/resources/cap",
+  "isDynamic": true,
+  "_localFile": "c:\\dev\\apps\\DRIVER\\csCOP\\website\\public\\data\\api\\resourceTypes\\cap.json"
+}
