@@ -9,5 +9,5 @@ services:
     volumes:
       - ./:/home/node/app
     ports:
-      - "8003"
+      - "8003:8003"
     command: "npm start"
