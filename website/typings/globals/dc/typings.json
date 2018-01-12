@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/rinzeb/DefinitelyTyped/3de292f2aab5566a0030af48b9cd7bcae6392696/dcjs/dc.d.ts",
+    "raw": "github:rinzeb/DefinitelyTyped/dcjs/dc.d.ts#3de292f2aab5566a0030af48b9cd7bcae6392696",
+    "typings": "https://raw.githubusercontent.com/rinzeb/DefinitelyTyped/3de292f2aab5566a0030af48b9cd7bcae6392696/dcjs/dc.d.ts"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/rinzeb/DefinitelyTyped/681d6bb905ff2aa90f8373904697ac35e15131e1/webshot/webshot.d.ts",
+    "raw": "github:rinzeb/DefinitelyTyped/webshot/webshot.d.ts#681d6bb905ff2aa90f8373904697ac35e15131e1",
+    "typings": "https://raw.githubusercontent.com/rinzeb/DefinitelyTyped/681d6bb905ff2aa90f8373904697ac35e15131e1/webshot/webshot.d.ts"
+  }
+}

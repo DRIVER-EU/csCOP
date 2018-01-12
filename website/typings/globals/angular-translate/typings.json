@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/49b81182471d3e8c72b5b8c10d677e09cf9bd751/angular-translate/angular-translate.d.ts",
+    "raw": "registry:dt/angular-translate#2.4.0+20160729132354",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/49b81182471d3e8c72b5b8c10d677e09cf9bd751/angular-translate/angular-translate.d.ts"
+  }
+}

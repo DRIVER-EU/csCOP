@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/rinzeb/DefinitelyTyped/681de3c3d9ed39a7cfab2cb8ad0ac24de1a037f2/express-serve-static-core/express-serve-static-core.d.ts",
+    "raw": "github:rinzeb/DefinitelyTyped/express-serve-static-core/express-serve-static-core.d.ts#681de3c3d9ed39a7cfab2cb8ad0ac24de1a037f2",
+    "typings": "https://raw.githubusercontent.com/rinzeb/DefinitelyTyped/681de3c3d9ed39a7cfab2cb8ad0ac24de1a037f2/express-serve-static-core/express-serve-static-core.d.ts"
+  }
+}

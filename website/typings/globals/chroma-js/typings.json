@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/7343a3b43c2771d5cae4698bc0f5dc310e16954d/chroma-js/chroma-js.d.ts",
+    "raw": "registry:dt/chroma-js#1.1.1+20160815215350",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/7343a3b43c2771d5cae4698bc0f5dc310e16954d/chroma-js/chroma-js.d.ts"
+  }
+}

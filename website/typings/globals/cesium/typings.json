@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/rinzeb/DefinitelyTyped/09e844c1ef5a2b4b5bda6c672453cc7f1fdfe0c6/cesium/cesium.d.ts",
+    "raw": "github:rinzeb/DefinitelyTyped/cesium/cesium.d.ts#09e844c1ef5a2b4b5bda6c672453cc7f1fdfe0c6",
+    "typings": "https://raw.githubusercontent.com/rinzeb/DefinitelyTyped/09e844c1ef5a2b4b5bda6c672453cc7f1fdfe0c6/cesium/cesium.d.ts"
+  }
+}
