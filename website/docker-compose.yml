@@ -1,15 +1,15 @@
 version: "2"
 services:
-    cscop:
-      build: https://github.com/DRIVER-EU/csCOP.git#test-bed:website
-      hostname: cscop
-      depends_on:
-        - schema_registry
-        - zookeeper
-        - broker
-      ports:
-        - "8003:8003"
-      volumes:
-        - .config/:/src/config/
-      environment:
-        CSCOP_PORT: '8003'
+  cscop:
+    build: https://github.com/DRIVER-EU/csCOP.git#test-bed:website
+    hostname: cscop
+    depends_on:
+      - schema_registry
+      - zookeeper
+      - broker
+    ports:
+      - "8003:8003"
+    volumes:
+      - ./config/:/src/config/
+    environment:
+      CSCOP_PORT: '8003'
