@@ -2,9 +2,9 @@
   "id": "cap",
   "title": "CAP",
   "featureTypes": {
-    "Default": {
-      "id": "api/resources/cap#Default",
-      "name": "Default",
+    "Polygon": {
+      "id": "api/resources/cap#Polygon",
+      "name": "Polygon",
       "style": {
         "drawingMode": "Polygon",
         "iconUri": "/images/cloud.png",
@@ -15,7 +15,23 @@
         "strokeColor": "#000000",
         "strokeWidth": 2
       },
-      "propertyTypeKeys": "Name;updated;description;",
+      "propertyTypeKeys": "Name;description;event;senderName;certainty;areaDesc;featureTypeId;updated",
+      "u": "bower_components/csweb/dist-bower/images/marker.png"
+    },
+    "Point": {
+      "id": "api/resources/cap#Point",
+      "name": "Point",
+      "style": {
+        "drawingMode": "Point",
+        "iconUri": "/images/cloud.png",
+        "cornerRadius": 50,
+        "fillColor": "#FF0000",
+        "iconWidth": 30,
+        "iconHeight": 30,
+        "strokeColor": "#000000",
+        "strokeWidth": 2
+      },
+      "propertyTypeKeys": "Name;description;event;senderName;certainty;areaDesc;featureTypeId;updated",
       "u": "bower_components/csweb/dist-bower/images/marker.png"
     }
   },
@@ -35,9 +51,9 @@
       "type": "number"
     },
     "Name": {
-      "label": "updated",
+      "label": "Name",
       "type": "text",
-      "visibleInCallOut": true,
+      "visibleInCallOut": false,
       "title": "Name"
     },
     "description": {
@@ -46,7 +62,31 @@
       "isSearchable": true,
       "visibleInCallOut": true,
       "canEdit": false,
+      "type": "textarea"
+    },
+    "event": {
+      "label": "event",
+      "title": "event",
+      "isSearchable": true,
+      "visibleInCallOut": true,
+      "canEdit": false,
       "type": "text"
+    },
+    "certainty": {
+      "label": "certainty",
+      "title": "certainty",
+      "isSearchable": true,
+      "visibleInCallOut": true,
+      "canEdit": false,
+      "type": "text"
+    },
+    "senderName": {
+      "label": "senderName",
+      "title": "senderName",
+      "isSearchable": true,
+      "visibleInCallOut": true,
+      "canEdit": false,
+      "type": "textarea"
     }
   },
   "url": "api/resources/cap",

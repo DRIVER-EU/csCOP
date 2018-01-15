@@ -47,11 +47,14 @@ cs.start(() => {
     consumer.setCallback((fts: any[]) => {
         if (fts && _.isArray(fts) && fts.length > 0) {
             var featuresUpdates = _.map(fts, (f) => {
+                console.log(f.properties);
                 return <csweb.IChangeEvent > {
                     value: f,
                     type: csweb.ChangeType.Create,
                     id: f.id
                 };
+            }).filter((fupd) => {
+                return (<any>fupd).value.properties && (<any>fupd).value.properties.description;
             });
             cs.api.addUpdateFeatureBatch(capLayerId, featuresUpdates, {}, (r) => {});
             console.log(`Updated ${fts.length} features`);
