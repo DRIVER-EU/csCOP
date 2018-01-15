@@ -18,7 +18,7 @@ COPY . /src/
 RUN mkdir -p /root/cscop
 
 # Enables customized options using environment variables
-ENV PORT='8003'
+ENV CSCOP_PORT='8003'
 
 # Run App
 EXPOSE 8003

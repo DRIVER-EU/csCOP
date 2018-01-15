@@ -1,13 +1,15 @@
 version: "2"
 services:
-  node:
-    image: "node:alpine"
-    user: "node"
-    working_dir: /home/node/app
-    environment:
-      - NODE_ENV=production
-    volumes:
-      - ./:/home/node/app
-    ports:
-      - "8003:8003"
-    command: "npm start"
+    cscop:
+      build: https://github.com/DRIVER-EU/csCOP.git#test-bed:website
+      hostname: cscop
+      depends_on:
+        - schema_registry
+        - zookeeper
+        - broker
+      ports:
+        - "8003:8003"
+      volumes:
+        - .config/:/src/config/
+      environment:
+        CSCOP_PORT: '8003'

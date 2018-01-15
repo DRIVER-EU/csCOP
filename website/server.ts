@@ -14,7 +14,7 @@ import {
 } from 'node-test-bed-adapter';
 //import cors = require('cors');
 import * as csweb from 'csweb';
-import TestBedConfig = require('./config.json');
+import TestBedConfig = require('./config/config.json');
 
 Winston.remove(Winston.transports.Console);
 Winston.add(Winston.transports.Console, < Winston.ConsoleTransportOptions > {
@@ -25,9 +25,10 @@ Winston.add(Winston.transports.Console, < Winston.ConsoleTransportOptions > {
 
 var startDatabaseConnection = false;
 var capLayerId: string = 'cap';
+var port = process.env.CSCOP_PORT || 8003;
 
 var cs = new csweb.csServer(__dirname, < csweb.csServerOptions > {
-    port: 8003,
+    port: port,
     swagger: false
     //connectors: { mqtt: { server: 'localhost', port: 1883 }, mongo: { server : '127.0.0.1', port: 27017} }
 });
