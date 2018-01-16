@@ -40,7 +40,7 @@ cs.start(() => {
     testBedOptions.logging = {
         logToConsole: LogLevel.Info,
         logToFile: LogLevel.Debug,
-        logToKafka: LogLevel.Info,
+        logToKafka: LogLevel.Error,
         logFile: 'log.txt'
     };
     var consumer = new Consumer(testBedOptions);

@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@types/bluebird@^3.5.19":
+  version "3.5.19"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.19.tgz#1a47308819ac2d1d6d1ca4f5d800ac84924100de"
+
 "@types/kafka-node@^2.0.3":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@types/kafka-node/-/kafka-node-2.0.4.tgz#500b26729ff4067d4f75251481d351c5a56852e0"
@@ -870,9 +874,13 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
-depd@1.1.1, depd@~1.1.0, depd@~1.1.1:
+depd@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.1.tgz#5783b4e1c459f06fa5ca27f991f3d06e7a310359"
+
+depd@~1.1.0, depd@~1.1.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
 destroy@~1.0.4:
   version "1.0.4"
@@ -977,13 +985,13 @@ error-ex@^1.2.0:
     is-arrayish "^0.2.1"
 
 es5-ext@^0.10.35, es5-ext@^0.10.9, es5-ext@~0.10.14, es5-ext@~0.10.2, es5-ext@~0.10.7:
-  version "0.10.37"
-  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.37.tgz#0ee741d148b80069ba27d020393756af257defc3"
+  version "0.10.38"
+  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.38.tgz#fa7d40d65bbc9bb8a67e1d3f9cc656a00530eed3"
   dependencies:
-    es6-iterator "~2.0.1"
+    es6-iterator "~2.0.3"
     es6-symbol "~3.1.1"
 
-es6-iterator@~2.0.1:
+es6-iterator@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/es6-iterator/-/es6-iterator-2.0.3.tgz#a7de889141a05a94b0854403b2d0a0fbfa98f3b7"
   dependencies:
@@ -1114,8 +1122,8 @@ extend@^3.0.0, extend@~3.0.0, extend@~3.0.1:
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
 
 extglob@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/extglob/-/extglob-2.0.3.tgz#55e019d0c95bf873949c737b7e5172dba84ebb29"
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/extglob/-/extglob-2.0.4.tgz#ad00fe4dc612a9232e8718711dc5cb5ab0285543"
   dependencies:
     array-unique "^0.3.2"
     define-property "^1.0.0"
@@ -1910,9 +1918,9 @@ jwt-simple@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/jwt-simple/-/jwt-simple-0.5.1.tgz#79ea01891b61de6b68e13e67c0b4b5bda937b294"
 
-kafka-node@^2.3.0, kafka-node@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/kafka-node/-/kafka-node-2.3.1.tgz#54f11525f7b9575924a326a06f40164558e46d54"
+"kafka-node@https://github.com/rinzeb/kafka-node#7dcbcde2279576611f41dd10e945711d429d50ca":
+  version "2.3.2-alpha.1"
+  resolved "https://github.com/rinzeb/kafka-node#7dcbcde2279576611f41dd10e945711d429d50ca"
   dependencies:
     async "^2.5.0"
     binary "~0.3.0"
@@ -2345,16 +2353,16 @@ node-status-codes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/node-status-codes/-/node-status-codes-1.0.0.tgz#5ae5541d024645d32a58fcddc9ceecea7ae3ac2f"
 
-node-test-bed-adapter@^0.1.1:
+"node-test-bed-adapter@https://github.com/DRIVER-EU/node-test-bed-adapter#c5afd243477e9d6c43e114831768626ab6ef6113":
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/node-test-bed-adapter/-/node-test-bed-adapter-0.1.1.tgz#29ed813948366b24e074ce7551a5a3c66fe0d110"
+  resolved "https://github.com/DRIVER-EU/node-test-bed-adapter#c5afd243477e9d6c43e114831768626ab6ef6113"
   dependencies:
     "@types/kafka-node" "^2.0.3"
     avsc "^5.1.1"
     axios "^0.17.1"
     bluebird "^3.5.1"
     jasmine-ts "^0.2.1"
-    kafka-node "^2.3.0"
+    kafka-node "https://github.com/rinzeb/kafka-node#7dcbcde2279576611f41dd10e945711d429d50ca"
     url "^0.11.0"
 
 node-uuid@1.4.7:
@@ -3307,8 +3315,8 @@ snyk-try-require@^1.1.1, snyk-try-require@^1.2.0:
     then-fs "^2.0.0"
 
 snyk@^1.25.0:
-  version "1.68.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.68.0.tgz#d2ff1ae83cd5f9a7205b7834d5c41ef966c5a3c1"
+  version "1.68.1"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.68.1.tgz#bee46100c2a3516676ab8bde239f4c1ed4031ae5"
   dependencies:
     abbrev "^1.0.7"
     ansi-escapes "^1.3.0"
@@ -3842,8 +3850,8 @@ uuid@^2.0.1:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
 
 uuid@^3.0.0, uuid@^3.0.1, uuid@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.2.0.tgz#19a63e22b3b32a0ba23984a4f384836465e24949"
 
 v8flags@^3.0.0:
   version "3.0.1"

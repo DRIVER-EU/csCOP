@@ -19,13 +19,13 @@
   "dependencies": {
     "@types/bluebird": "^3.5.19",
     "@types/node": "^9.3.0",
+    "bluebird": "^3.5.1",
     "chokidar": "^2.0.0",
     "compression": "^1.7.1",
     "cors": "^2.8.4",
     "csweb": "TNOCS/csWeb-dist#0.3.17",
-    "kafka-node": "^2.3.1",
     "moment": "^2.20.1",
-    "node-test-bed-adapter": "^0.1.1",
+    "node-test-bed-adapter": "https://github.com/DRIVER-EU/node-test-bed-adapter#c5afd243477e9d6c43e114831768626ab6ef6113",
     "winston": "^2.1.0"
   },
   "bugs": {
