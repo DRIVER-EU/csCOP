@@ -765,9 +765,9 @@ cryptiles@3.x.x:
   dependencies:
     boom "5.x.x"
 
-csweb@TNOCS/csWeb-dist#0.3.17:
+csweb@0.3.17:
   version "0.3.17"
-  resolved "https://codeload.github.com/TNOCS/csWeb-dist/tar.gz/499fd30cad41fdcc224cd3d6538a0c64ed15c339"
+  resolved "https://registry.yarnpkg.com/csweb/-/csweb-0.3.17.tgz#884ecfcba47575b50db8cf5e0966ed614a6cc30d"
   dependencies:
     async "^1.5.2"
     bcryptjs "^2.3.0"
@@ -2353,9 +2353,9 @@ node-status-codes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/node-status-codes/-/node-status-codes-1.0.0.tgz#5ae5541d024645d32a58fcddc9ceecea7ae3ac2f"
 
-"node-test-bed-adapter@https://github.com/DRIVER-EU/node-test-bed-adapter#c5afd243477e9d6c43e114831768626ab6ef6113":
-  version "0.1.1"
-  resolved "https://github.com/DRIVER-EU/node-test-bed-adapter#c5afd243477e9d6c43e114831768626ab6ef6113"
+"node-test-bed-adapter@https://github.com/DRIVER-EU/node-test-bed-adapter#0.1.3":
+  version "0.1.3"
+  resolved "https://github.com/DRIVER-EU/node-test-bed-adapter#836b67d2fa75919b0f802116676f9c2510f74760"
   dependencies:
     "@types/kafka-node" "^2.0.3"
     avsc "^5.1.1"

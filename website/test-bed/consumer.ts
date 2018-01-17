@@ -14,6 +14,7 @@ import {
     ITestBedOptions
 } from 'node-test-bed-adapter';
 import {CAPProcessor} from './capProcessor';
+import * as _ from 'underscore';
 
 export class Consumer {
     private id = 'csCOPconsumer';
@@ -62,8 +63,7 @@ export class Consumer {
 
     private subscribe(): Promise < void | OffsetFetchRequest[] > {
         this.adapter.on('message', message => this.handleMessage(message));
-        this.adapter.on('error', err => this.log.error(`Consumer received an error: ${err}`));
-        this.adapter.on('offsetOutOfRange', err => this.log.error(`Consumer received an error: ${err}`));
+        this.adapter.on('offsetOutOfRange', err => this.log.error(`Consumer received an error: ${_.isObject(err) ? JSON.stringify(err) : err}`));
         return this.adapter.addConsumerTopics({
             topic: TestBedAdapter.HeartbeatTopic
         }).catch(err => {
