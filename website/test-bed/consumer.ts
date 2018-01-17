@@ -13,7 +13,7 @@ import {
     ITopicMetadataItem,
     ITestBedOptions
 } from 'node-test-bed-adapter';
-import {CAPProcessor} from './capProcessor';
+import {CapProcessor2} from './capProcessor2';
 import * as _ from 'underscore';
 
 export class Consumer {
@@ -22,6 +22,7 @@ export class Consumer {
     private log = Logger.instance;
     private callback: Function;
     private retries: number = 0;
+    private capProcessor = new CapProcessor2();
 
     constructor(options: ITestBedOptions) {
         options.clientId = this.id;
@@ -116,7 +117,7 @@ export class Consumer {
             case 'cap':
                 // this.log.info(`Received message on topic ${message.topic} with key ${message.key}: ${typeof message.value === 'string' ? message.value : '\n' + JSON.stringify(message.value, null, 2)}`);
                 this.log.info(`Received message on topic ${message.topic} with key ${message.key}`);
-                var fts = CAPProcessor.handleIncomingCAP(message.value);
+                var fts = this.capProcessor.handleIncomingCAP(<any>message.value);
                 if (fts && this.callback) this.callback(fts);
                 break;
             default:

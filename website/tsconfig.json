@@ -10,6 +10,7 @@
   },
   "include": [
     "./*.ts",
+    "./test-bed/*.ts",
     "public/app/*.ts",
   ],
   "files": [
