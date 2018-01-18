@@ -51,11 +51,19 @@ export class CapProcessor2 {
         }
         capAreas.forEach((area: Area) => {
             if (area.polygon) {
-                let polygon: string = area.polygon && typeof area.polygon === 'string' ? area.polygon : (area.polygon as string[]).shift();
+                let polygon: string;
+                if (typeof area.polygon === 'string') polygon = area.polygon;
+                if (_.isArray(area.polygon)) polygon = (area.polygon as string[]).shift();
+                if (area.polygon['string']) polygon = area.polygon['string'];
+                if (area.polygon['array']) polygon = area.polygon['array'].shift();
                 f.geometry = this.convertCAPGeometryToGeoJSON(polygon, 'polygon');
                 f.properties.featureTypeId = 'AlertPolygon';
             } else if (area.circle) {
-                let circle: string = area.circle && typeof area.circle === 'string' ? area.circle : (area.circle as string[]).shift();
+                let circle: string;
+                if (typeof area.circle === 'string') circle = area.circle;
+                if (_.isArray(area.circle)) circle = (area.circle as string[]).shift();
+                if (area.circle['string']) circle = area.circle['string'];
+                if (area.circle['array']) circle = area.circle['array'].shift();
                 f.geometry = this.convertCAPGeometryToGeoJSON(circle, 'circle');
                 f.properties.featureTypeId = 'AlertPoint';
             } else {

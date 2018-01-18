@@ -84,8 +84,8 @@ export interface Resource {
     digest?: null | undefined | string;
 }
 
-export type PolygonType = null | undefined | string | string[];
-export type CircleType = null | undefined | string | string[];
+export type PolygonType = null | undefined | string | string[] | Record<'string', string> | Record<'array', string[]>;
+export type CircleType = null | undefined | string | string[] | Record<'string', string> | Record<'array', string[]>;
 
 export interface Area {
     areaDesc: string;
