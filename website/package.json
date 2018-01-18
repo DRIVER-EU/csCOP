@@ -1,6 +1,6 @@
 {
   "name": "csCOP",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "CommonSense web application",
   "main": "server.js",
   "start": "node server.js",
