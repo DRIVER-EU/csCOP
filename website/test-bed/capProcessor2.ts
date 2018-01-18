@@ -1,17 +1,5 @@
 import {PolygonType} from './ICAP';
-import {
-    Alert,
-    Area,
-    Info,
-    Status,
-    Category,
-    Certainty,
-    MsgType,
-    ResponseType,
-    Scope,
-    Severity,
-    Urgency
-} from './ICAP';
+import {Alert, Area, Info, Status, Category, Certainty, MsgType, ResponseType, Scope, Severity, Urgency} from './ICAP';
 import {Feature, newGuid, Geometry} from 'csweb';
 import {Logger} from 'node-test-bed-adapter';
 import * as _ from 'underscore';
@@ -59,38 +47,20 @@ export class CapProcessor2 {
         }
         capAreas.forEach((area: Area) => {
             if (area.polygon) {
-                let polygon: string =
-                    area.polygon && area.polygon['string']
-                        ? area.polygon['string']
-                        : area.polygon['array'].shift();
-                f.geometry = this.convertCAPGeometryToGeoJSON(
-                    polygon,
-                    'polygon'
-                );
+                let polygon: string = area.polygon && area.polygon['string'] ? area.polygon['string'] : area.polygon['array'].shift();
+                f.geometry = this.convertCAPGeometryToGeoJSON(polygon, 'polygon');
                 f.properties.featureTypeId = 'AlertPolygon';
             } else if (area.circle) {
-                let circle: string =
-                    area.circle && area.circle['string']
-                        ? area.circle['string']
-                        : area.circle['array'].shift();
+                let circle: string = area.circle && area.circle['string'] ? area.circle['string'] : area.circle['array'].shift();
                 f.geometry = this.convertCAPGeometryToGeoJSON(circle, 'circle');
                 f.properties.featureTypeId = 'AlertPoint';
             } else {
                 this.log.warn('No valid CAP geometry found.');
                 return;
             }
-            f.properties = CapProcessor2.flattenCapProperties(
-                f.properties,
-                area
-            );
-            f.properties = CapProcessor2.flattenCapProperties(
-                f.properties,
-                capInfo
-            );
-            f.properties = CapProcessor2.flattenCapProperties(
-                f.properties,
-                capAlert
-            );
+            f.properties = CapProcessor2.flattenCapProperties(f.properties, area);
+            f.properties = CapProcessor2.flattenCapProperties(f.properties, capInfo);
+            f.properties = CapProcessor2.flattenCapProperties(f.properties, capAlert);
             fts.push(f);
         });
         return fts;
@@ -98,10 +68,7 @@ export class CapProcessor2 {
 
     static blacklistProps = ['info', 'area'];
     /** Flattens nested properties and extends them */
-    private static flattenCapProperties(
-        props: _.Dictionary<any>,
-        capThing: Area | Info | Alert
-    ) {
+    private static flattenCapProperties(props: _.Dictionary<any>, capThing: Area | Info | Alert) {
         let capThingStringOnly = _.mapObject(capThing, (val, key) => {
             if (CapProcessor2.blacklistProps.indexOf(key) >= 0) return null;
             if (val === null) return null;
@@ -167,15 +134,7 @@ export class CapProcessor2 {
             .toISOString()
             .split('.')
             .shift();
-        iso = ''.concat(
-            iso,
-            tdiffpm,
-            tdiffh < 10 ? '0' : '',
-            tdiffh.toFixed(0),
-            ':',
-            tdiffm < 10 ? '0' : '',
-            tdiffm.toFixed(0)
-        );
+        iso = ''.concat(iso, tdiffpm, tdiffh < 10 ? '0' : '', tdiffh.toFixed(0), ':', tdiffm < 10 ? '0' : '', tdiffm.toFixed(0));
         return iso;
     }
 

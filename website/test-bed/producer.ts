@@ -1,14 +1,9 @@
 import {Info, Alert} from './ICAP';
 import {ProduceRequest} from 'kafka-node';
-import {
-    TestBedAdapter,
-    Logger,
-    LogLevel,
-    ITestBedOptions
-} from 'node-test-bed-adapter';
+import {TestBedAdapter, Logger, LogLevel, ITestBedOptions} from 'node-test-bed-adapter';
 import {setTimeout} from 'timers';
-import { Feature, Geometry } from 'csweb/dist-npm';
-import { CapProcessor2 } from './capProcessor2';
+import {Feature, Geometry} from 'csweb/dist-npm';
+import {CapProcessor2} from './capProcessor2';
 
 export class Producer {
     private id = 'csCOPProducer';
@@ -34,16 +29,10 @@ export class Producer {
             })
             .catch(err => {
                 this.log.error(`Initializing test-bed-adapter failed: ${err}`);
-                if (
-                    this.retries < this.adapter.getConfig().maxConnectionRetries
-                ) {
+                if (this.retries < this.adapter.getConfig().maxConnectionRetries) {
                     this.retries += 1;
                     let timeout = this.adapter.getConfig().retryTimeout;
-                    this.log.info(
-                        `Retrying to connect in ${timeout} seconds (retry #${
-                            this.retries
-                        })`
-                    );
+                    this.log.info(`Retrying to connect in ${timeout} seconds (retry #${this.retries})`);
                     setTimeout(() => this.connectAdapter(), timeout * 1000);
                 }
             });
