@@ -1,20 +1,18 @@
-import { Polygon } from "leaflet";
+export enum Status { Actual = "Actual", Exercise = "Exercise", System = "System", Test = "Test", Draft = "Draft"};
 
-export enum Status { Actual, Exercise, System, Test, Draft };
+export enum MsgType { Alert = "Alert", Update = "Update", Cancel = "Cancel", Ack = "Ack", Error = "Error"};
 
-export enum MsgType { Alert, Update, Cancel, Ack, Error };
+export enum Scope { Public = "Public", Restricted = "Restricted", Private = "Private"};
 
-export enum Scope { Public, Restricted, Private };
+export enum Category { Geo = "Geo", Met = "Met", Safety = "Safety", Security = "Security", Rescue = "Rescue", Fire = "Fire", Health = "Health", Env = "Env", Transport = "Transport", Infra = "Infra", CBRNE = "CBRNE", Other = "Other"};
 
-export enum Category { Geo, Met, Safety, Security, Rescue, Fire, Health, Env, Transport, Infra, CBRNE, Other };
+export enum ResponseType { Shelter = "Shelter", Evacuate = "Evacuate", Prepare = "Prepare", Execute = "Execute", Avoid = "Avoid", Monitor = "Monitor", Assess = "Assess", AllClear = "AllClear", None = "None"};
 
-export enum ResponseType { Shelter, Evacuate, Prepare, Execute, Avoid, Monitor, Assess, AllClear, None };
+export enum Urgency { Immediate = "Immediate", Expected = "Expected", Future = "Future", Past = "Past", Unknown = "Unknown"};
 
-export enum Urgency { Immediate, Expected, Future, Past, Unknown };
+export enum Severity { Extreme = "Extreme", Severe = "Severe", Moderate = "Moderate", Minor = "Minor", Unknown = "Unknown"};
 
-export enum Severity { Extreme, Severe, Moderate, Minor, Unknown };
-
-export enum Certainty { Observed, Likely, Possible, Unlikely, Unknown };
+export enum Certainty { Observed = "Observed", Likely = "Likely", Possible = "Possible", Unlikely = "Unlikely", Unknown = "Unknown"};
 
 export interface ValueNamePair {
 	valueName: string;
@@ -41,11 +39,9 @@ export interface Area {
 	ceiling?: null | undefined | number;
 }
 
-export type AreaKey = 'eu.driver.model.cap.Area' | 'array';
-
 export interface Info {
 	language: string | null | undefined;
-	category: Category | Category[];
+	category: string | Category | Category[] | Record<'array', Category[]> | Record<'eu.driver.model.cap.Category', Category>;
 	event: string;
 	responseType?: null | undefined | ResponseType | ResponseType[];
 	urgency: Urgency;
@@ -64,10 +60,8 @@ export interface Info {
 	contact?: null | undefined | string;
 	parameter?: null | undefined | ValueNamePair | ValueNamePair[];
 	resource?: null | undefined | Resource | Resource[];
-	area?: null | undefined |  Record<'array', Area[]> | Record<'eu.driver.model.cap.Area', Area>;
+	area?: null | undefined | Area | Area[] | Record<'array', Area[]> | Record<'eu.driver.model.cap.Area', Area>;
 }
-
-export type InfoKey = 'eu.driver.model.cap.Info' | 'array';
 
 export interface Alert {
 	identifier: string;
@@ -83,5 +77,5 @@ export interface Alert {
 	note?: null | undefined | string;
 	references?: null | undefined | string;
 	incidents?: null | undefined | string;
-	info?: null | undefined | Record<'array', Info[]> | Record<'eu.driver.model.cap.Info', Info>;
+	info?: null | undefined | Info | Info[] | Record<'array', Info[]> | Record<'eu.driver.model.cap.Info', Info>;
 }

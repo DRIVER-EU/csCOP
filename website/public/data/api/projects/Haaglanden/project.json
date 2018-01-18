@@ -122,43 +122,12 @@
           "type": "dynamicgeojson",
           "renderType": "geojson",
           "url": "api/layers/cap",
-          "typeUrl": "api/resources/cap",
+          "typeUrl": "data/resourceTypes/captypes.json",
           "isDynamic": true,
           "isEditable": true,
           "tags": "presentation",
           "timeAware": true,
           "enabled": true
-        }
-      ]
-    },
-    {
-      "id": "84527763-7f29-4fa7-05af-901a08bc4569",
-      "title": "CAP",
-      "description": "Send CAP messages through CIS",
-      "clustering": true,
-      "clusterLevel": 10,
-      "languages": {
-        "en": {
-          "description": "Send CAP messages through CIS"
-        },
-        "nl": {
-          "description": "Stuur CAP berichten via CIS"
-        }
-      },
-      "layers": [
-        {
-          "id": "c154aab7-a144-4ac0-4f1f-fafdaa2ef211",
-          "title": "CAP",
-          "description": "CAP messages",
-          "type": "dynamicgeojson",
-          "renderType": "geojson",
-          "heatmapItems": null,
-          "url": "api/layers/c154aab7-a144-4ac0-4f1f-fafdaa2ef211",
-          "typeUrl": "data/resourceTypes/captypes.json",
-          "opacity": 100,
-          "isDynamic": true,
-          "isEditable": true,
-          "timeAware": true
         }
       ]
     },

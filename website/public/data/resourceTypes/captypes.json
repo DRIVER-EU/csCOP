@@ -14,12 +14,12 @@
                 "fillColor": "#ddee22",
                 "opacity": 0.6,
                 "fillOpacity": 0.6,
-                "nameLabel": "sender"
+                "nameLabel": "event"
             },
-            "propertyTypeKeys": "Name;identifier;headline;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;description;"
+            "propertyTypeKeys": "Name;headline;event;instruction;status;scope;senderName;contact;severity;certainty;urgency;category;sent;expires;responseType;areaDesc;description;identifier"
         },
-        "Alert": {
-            "name": "Alert",
+        "AlertPolygon": {
+            "name": "AlertPolygon",
             "style": {
                 "iconUri": "images/event.png",
                 "iconWidth": 26,
@@ -32,9 +32,9 @@
                 "fillColor": "#ddeeff",
                 "opacity": 0.6,
                 "fillOpacity": 0.6,
-                "nameLabel": "sender"
+                "nameLabel": "event"
             },
-            "propertyTypeKeys": "Name;identifier;headline;event;status;scope;sender;severity;certainty;urgency;category;addresses;sent;areaDesc;description;"
+            "propertyTypeKeys": "Name;headline;event;instruction;status;scope;senderName;contact;severity;certainty;urgency;category;sent;expires;responseType;areaDesc;description;identifier"
         }
     },
     "propertyTypeData": {
@@ -73,22 +73,40 @@
             "visibleInCallOut": true,
             "canEdit": true
         },
-        "description": {
-            "label": "description",
-            "title": "Description",
-            "type": "text",
-            "defaultValue": "Description",            
-            "visibleInCallOut": true,
-            "canEdit": true
-        },
-        "sender": {
-            "label": "sender",
+        "senderName": {
+            "label": "senderName",
             "title": "Sender",
             "description": "Name of the sender (will be overwritten with 'csweb' for alerts send by this tool)",
-            "type": "text",
+            "type": "textarea",
             "defaultValue": "csweb",
             "visibleInCallOut": true,
             "canEdit": false
+        },
+        "contact": {
+            "label": "contact",
+            "title": "Contact",
+            "description": "Name of the contact",
+            "type": "text",
+            "defaultValue": "csweb",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "responseType": {
+            "label": "responseType",
+            "title": "responseType",
+            "description": "responseType",
+            "type": "text",
+            "defaultValue": "csweb",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "identifier": {
+            "label": "identifier",
+            "title": "Identifier",
+            "description": "Unique identifier of the alert",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
         },
         "headline": {
             "label": "headline",
@@ -148,14 +166,7 @@
         },
         "description": {
             "label": "description",
-            "languages": {
-                "nl": {
-                    "title": "Omschrijving"
-                },
-                "en": {
-                    "title": "Description"
-                }
-            },
+            "title": "Description",
             "type": "textarea",
             "visibleInCallOut": true,
             "canEdit": true
@@ -163,7 +174,7 @@
         "areaDesc": {
             "label": "areaDesc",
             "title": "Area description",
-            "type": "text",
+            "type": "textarea",
             "visibleInCallOut": true,
             "canEdit": true
         },
@@ -171,7 +182,7 @@
             "label": "event",
             "title": "Event",
             "description": "Description of the event",
-            "type": "textarea",
+            "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
         },
@@ -186,14 +197,30 @@
                 "crowdtasker-support": "Crowdtasker-support"
             },
             "defaultValue": "",
-            "visibleInCallOut": true,
-            "canEdit": true
+            "visibleInCallOut": false,
+            "canEdit": false
         },
         "sent": {
             "label": "sent",
             "title": "Sent",
             "description": "Time that the alert was sent (will be filled in automatically)",
             "type": "date",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "expires": {
+            "label": "expires",
+            "title": "Expires",
+            "description": "Time that the alert will expire",
+            "type": "date",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "instruction": {
+            "label": "instruction",
+            "title": "Instruction",
+            "description": "Instruction",
+            "type": "textarea",
             "visibleInCallOut": true,
             "canEdit": true
         },

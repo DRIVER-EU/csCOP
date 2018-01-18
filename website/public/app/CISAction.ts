@@ -6,11 +6,10 @@ module CISAction {
     import IFeature = csComp.Services.IFeature;
     import IProjectLayer = csComp.Services.IProjectLayer;
     import IActionOption = csComp.Services.IActionOption;
-
+  
     export class CISAction implements csComp.Services.IActionService {
         public id: string = 'CISAction';
         private layerService: csComp.Services.LayerService;
-        private notifyUrl: string;
 
         stop() { }
         addFeature(feature: IFeature) { }
@@ -41,7 +40,7 @@ module CISAction {
         }
 
         private sendCISMessage(feature: IFeature, layerService: csComp.Services.LayerService) {
-            var url = '/cis/notify';
+            var url = '/send-cap-alert';
             console.log('Send CIS message to ' + url);
             $.ajax({
                 contentType: 'application/json',
@@ -58,11 +57,9 @@ module CISAction {
                 }
             });
         }
-        
 
         public init(layerService: csComp.Services.LayerService) {
-            this.notifyUrl = '/cis/notify';
-            console.log(`Init CISActionService with notify on ${this.notifyUrl}`);
+            console.log(`Init CISActionService`);
         }
     }
 }

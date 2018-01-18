@@ -23,6 +23,8 @@ Winston.add(Winston.transports.Console, < Winston.ConsoleTransportOptions > {
     prettyPrint: true
 });
 
+const SEND_CAP_ENDPOINT = '/send-cap-alert';
+
 var startDatabaseConnection = false;
 var capLayerId: string = 'cap';
 var port = process.env.CSCOP_PORT || 8003;
@@ -53,26 +55,28 @@ cs.start(() => {
                     type: csweb.ChangeType.Create,
                     id: f.id
                 };
-            }).filter((fupd) => {
-                return (<any>fupd).value.properties && (<any>fupd).value.properties.description;
             });
             cs.api.addUpdateFeatureBatch(capLayerId, featuresUpdates, {}, (r) => {});
             console.log(`Updated ${fts.length} features`);
         }
     });
-    // var producer = new Producer(testBedOptions);
+    var producer = new Producer(testBedOptions);
 
-    cs.server.get('/send-cap-endpoint', (req, res) => {
+    cs.server.post(SEND_CAP_ENDPOINT, (req, res) => {
+        if (!req.body || _.isEmpty(req.body)) {
+            console.warn(`No valid CAP message found in body`);
+            res.sendStatus(404);
+        }
         console.log(`Calling producer to send cap message`);
-        // producer.sendcap((error, data) => {
-        //     if (error) {
-        //         res.sendStatus(404);
-        //         console.error(error);
-        //     } else {
-        //         res.sendStatus(200);
-        //         console.log(data);
-        //     }
-        // });
+        producer.sendCap(req.body, (error, data) => {
+            if (error) {
+                res.sendStatus(404);
+                console.error(error);
+            } else {
+                res.sendStatus(200);
+                console.log(data);
+            }
+        });
     });
 
     console.log('really started');
