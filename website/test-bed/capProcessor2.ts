@@ -22,6 +22,8 @@ export class CapProcessor2 {
             capInfos = capAlert.info['array'];
         } else if (capAlert.info.hasOwnProperty('eu.driver.model.cap.Info')) {
             capInfos = [capAlert.info['eu.driver.model.cap.Info']];
+        } else if (capAlert.info.hasOwnProperty('category')) {
+            capInfos = [capAlert.info as Info];
         } else {
             this.log.info('No valid info field found in CAP message');
             return;
@@ -40,18 +42,20 @@ export class CapProcessor2 {
         if (capInfo.hasOwnProperty('array')) {
             capAreas = capInfo.area['array'];
         } else if (capInfo.area.hasOwnProperty('eu.driver.model.cap.Area')) {
-            capAreas = <Area[]>[capInfo.area['eu.driver.model.cap.Area']];
+            capAreas = [capInfo.area['eu.driver.model.cap.Area']];
+        } else if (capInfo.area.hasOwnProperty('areaDesc')) {
+            capAreas = [capInfo.area as Area];
         } else {
-            this.log.info('No valid info field found in CAP message');
+            this.log.info('No valid area field found in CAP message');
             return;
         }
         capAreas.forEach((area: Area) => {
             if (area.polygon) {
-                let polygon: string = area.polygon && area.polygon['string'] ? area.polygon['string'] : area.polygon['array'].shift();
+                let polygon: string = area.polygon && typeof area.polygon === 'string' ? area.polygon : (area.polygon as string[]).shift();
                 f.geometry = this.convertCAPGeometryToGeoJSON(polygon, 'polygon');
                 f.properties.featureTypeId = 'AlertPolygon';
             } else if (area.circle) {
-                let circle: string = area.circle && area.circle['string'] ? area.circle['string'] : area.circle['array'].shift();
+                let circle: string = area.circle && typeof area.circle === 'string' ? area.circle : (area.circle as string[]).shift();
                 f.geometry = this.convertCAPGeometryToGeoJSON(circle, 'circle');
                 f.properties.featureTypeId = 'AlertPoint';
             } else {
