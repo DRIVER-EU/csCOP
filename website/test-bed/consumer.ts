@@ -5,7 +5,7 @@
 import {Message, OffsetFetchRequest} from 'kafka-node';
 import * as Promise from 'bluebird';
 import {TestBedAdapter, Logger, LogLevel, ITopicMetadataItem, ITestBedOptions} from 'node-test-bed-adapter';
-import {CapProcessor2} from './capProcessor2';
+import {CapProcessor} from './capProcessor';
 import * as _ from 'underscore';
 
 export class Consumer {
@@ -14,7 +14,7 @@ export class Consumer {
     private log = Logger.instance;
     private callback: Function;
     private retries: number = 0;
-    private capProcessor = new CapProcessor2();
+    private capProcessor = new CapProcessor();
 
     constructor(options: ITestBedOptions) {
         options.clientId = this.id;

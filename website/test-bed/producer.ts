@@ -3,14 +3,14 @@ import {ProduceRequest} from 'kafka-node';
 import {TestBedAdapter, Logger, LogLevel, ITestBedOptions} from 'node-test-bed-adapter';
 import {setTimeout} from 'timers';
 import {Feature, Geometry} from 'csweb/dist-npm';
-import {CapProcessor2} from './capProcessor2';
+import {CapProcessor} from './capProcessor';
 
 export class Producer {
     private id = 'csCOPProducer';
     private adapter: TestBedAdapter;
     private log = Logger.instance;
     private retries: number = 0;
-    private capProcessor: CapProcessor2 = new CapProcessor2();
+    private capProcessor: CapProcessor = new CapProcessor();
 
     constructor(options: ITestBedOptions) {
         this.adapter = new TestBedAdapter(options);
