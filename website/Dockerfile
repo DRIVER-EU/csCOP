@@ -29,4 +29,6 @@ RUN bower i --allow-root
 WORKDIR /src
 RUN tsc
 
+RUN ["chmod", "+x", "./scripts/wait-for.sh"]
+
 CMD ["yarn", "start"]
