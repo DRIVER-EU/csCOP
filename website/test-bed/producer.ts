@@ -45,7 +45,7 @@ export class Producer {
     }
 
     public sendCap(capAlertFeature: Feature, cb: Function) {
-        var capAlert: Alert = CapProcessor2.createDefaultAlertMessage();
+        var capAlert: Alert = CapProcessor.createDefaultAlertMessage();
         this.addFeatureGeometryToCAP(capAlert, capAlertFeature.geometry);
         capAlert.identifier = capAlertFeature.id;
         const payloads: ProduceRequest[] = [
