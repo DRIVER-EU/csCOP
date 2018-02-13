@@ -34,10 +34,10 @@ export class Consumer {
                     this.log.error(`Error subscribing to topics: ${err}`);
                 });
         });
-        this.connectAdapter();
+        this.connectAdapter(options);
     }
 
-    private connectAdapter() {
+    private connectAdapter(options: ITestBedOptions) {
         this.adapter
             .connect()
             .then(() => {
@@ -45,11 +45,11 @@ export class Consumer {
             })
             .catch(err => {
                 this.log.error(`Initializing test-bed-adapter failed: ${err}`);
-                if (this.retries < this.adapter.getConfig().maxConnectionRetries) {
+                if (this.retries < options.maxConnectionRetries) {
                     this.retries += 1;
-                    let timeout = this.adapter.getConfig().retryTimeout;
+                    let timeout = options.retryTimeout;
                     this.log.info(`Retrying to connect in ${timeout} seconds (retry #${this.retries})`);
-                    setTimeout(() => this.connectAdapter(), timeout * 1000);
+                    setTimeout(() => this.connectAdapter(options), timeout * 1000);
                 }
             });
     }

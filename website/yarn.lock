@@ -6,9 +6,19 @@
   version "3.5.19"
   resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.19.tgz#1a47308819ac2d1d6d1ca4f5d800ac84924100de"
 
-"@types/kafka-node@^2.0.3":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@types/kafka-node/-/kafka-node-2.0.4.tgz#500b26729ff4067d4f75251481d351c5a56852e0"
+"@types/bluebird@^3.5.20":
+  version "3.5.20"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.20.tgz#f6363172add6f4eabb8cada53ca9af2781e8d6a1"
+
+"@types/kafka-node@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@types/kafka-node/-/kafka-node-2.0.6.tgz#6377f8b2f7cb4d52f9bc6f73439c37921db05b3d"
+  dependencies:
+    "@types/node" "*"
+
+"@types/node@*":
+  version "9.4.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.5.tgz#d2a90c634208173d1b1a0a6ba9f1df3de62edcf5"
 
 "@types/node@^9.3.0":
   version "9.3.0"
@@ -196,9 +206,9 @@ atob@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.0.3.tgz#19c7a760473774468f20b2d2d03372ad7d4cbf5d"
 
-avsc@^5.1.1:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/avsc/-/avsc-5.1.2.tgz#4790a3041d1f0b53435ac0474631e9a95d96ebee"
+avsc@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/avsc/-/avsc-5.2.0.tgz#6d92f080e06decb3c337ed955ac98ddc7345561e"
 
 aws-sign2@~0.6.0:
   version "0.6.0"
@@ -1918,9 +1928,9 @@ jwt-simple@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/jwt-simple/-/jwt-simple-0.5.1.tgz#79ea01891b61de6b68e13e67c0b4b5bda937b294"
 
-"kafka-node@https://github.com/rinzeb/kafka-node#7dcbcde2279576611f41dd10e945711d429d50ca":
-  version "2.3.2-alpha.1"
-  resolved "https://github.com/rinzeb/kafka-node#7dcbcde2279576611f41dd10e945711d429d50ca"
+kafka-node@^2.3.2:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/kafka-node/-/kafka-node-2.4.1.tgz#449e5a697c3cf4e5f3bf6c10374017c08dcaf19b"
   dependencies:
     async "^2.5.0"
     binary "~0.3.0"
@@ -2353,16 +2363,18 @@ node-status-codes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/node-status-codes/-/node-status-codes-1.0.0.tgz#5ae5541d024645d32a58fcddc9ceecea7ae3ac2f"
 
-"node-test-bed-adapter@https://github.com/DRIVER-EU/node-test-bed-adapter#0.1.3":
-  version "0.1.3"
-  resolved "https://github.com/DRIVER-EU/node-test-bed-adapter#836b67d2fa75919b0f802116676f9c2510f74760"
+node-test-bed-adapter@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/node-test-bed-adapter/-/node-test-bed-adapter-0.2.2.tgz#c32360017c31fa3e91cf52dd0eabaec92b8194ed"
   dependencies:
-    "@types/kafka-node" "^2.0.3"
-    avsc "^5.1.1"
+    "@types/bluebird" "^3.5.20"
+    "@types/kafka-node" "^2.0.6"
+    avsc "^5.2.0"
     axios "^0.17.1"
     bluebird "^3.5.1"
     jasmine-ts "^0.2.1"
-    kafka-node "https://github.com/rinzeb/kafka-node#7dcbcde2279576611f41dd10e945711d429d50ca"
+    kafka-node "^2.3.2"
+    typescript "^2.8.0-dev.20180211"
     url "^0.11.0"
 
 node-uuid@1.4.7:
@@ -3726,6 +3738,10 @@ typedarray@^0.0.6:
 typescript@^2.4.1:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
+
+typescript@^2.8.0-dev.20180211:
+  version "2.8.0-insiders.20180127"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.8.0-insiders.20180127.tgz#ceffc20983754a6127ee7c806676f0b30d0fc1ce"
 
 uid-number@^0.0.6:
   version "0.0.6"

@@ -2,7 +2,7 @@ import {Info, Alert} from './ICAP';
 import {ProduceRequest} from 'kafka-node';
 import {TestBedAdapter, Logger, LogLevel, ITestBedOptions} from 'node-test-bed-adapter';
 import {setTimeout} from 'timers';
-import {Feature, Geometry} from 'csweb/dist-npm';
+import {Feature, Geometry} from 'csweb';
 import {CapProcessor} from './capProcessor';
 
 export class Producer {
@@ -18,10 +18,10 @@ export class Producer {
         this.adapter.on('ready', () => {
             this.log.info('Producer is connected');
         });
-        this.connectAdapter();
+        this.connectAdapter(options);
     }
 
-    private connectAdapter() {
+    private connectAdapter(options: ITestBedOptions) {
         this.adapter
             .connect()
             .then(() => {
@@ -29,11 +29,11 @@ export class Producer {
             })
             .catch(err => {
                 this.log.error(`Initializing test-bed-adapter failed: ${err}`);
-                if (this.retries < this.adapter.getConfig().maxConnectionRetries) {
+                if (this.retries < options.maxConnectionRetries) {
                     this.retries += 1;
-                    let timeout = this.adapter.getConfig().retryTimeout;
+                    let timeout = options.retryTimeout;
                     this.log.info(`Retrying to connect in ${timeout} seconds (retry #${this.retries})`);
-                    setTimeout(() => this.connectAdapter(), timeout * 1000);
+                    setTimeout(() => this.connectAdapter(options), timeout * 1000);
                 }
             });
     }
