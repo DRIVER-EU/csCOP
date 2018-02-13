@@ -1,6 +1,6 @@
 import {Info, Alert} from './ICAP';
 import {ProduceRequest} from 'kafka-node';
-import {TestBedAdapter, Logger, LogLevel, ITestBedOptions} from 'node-test-bed-adapter';
+import {TestBedAdapter, Logger, LogLevel, ITestBedOptions, uuid4} from 'node-test-bed-adapter';
 import {setTimeout} from 'timers';
 import {Feature, Geometry} from 'csweb';
 import {CapProcessor} from './capProcessor';
@@ -50,7 +50,14 @@ export class Producer {
         capAlert.identifier = capAlertFeature.id;
         const payloads: ProduceRequest[] = [
             {
-                key: {id: this.id},
+                key: {
+                    distributionID: uuid4(),
+                    senderID: this.id,
+                    dateTimeSent: new Date().getTime(),
+                    dateTimeExpires: 0,
+                    distributionStatus: 'Test',
+                    distributionKind: 'Report'
+                  },
                 topic: 'cap',
                 messages: capAlert,
                 attributes: 1 // Gzip
