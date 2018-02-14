@@ -30,6 +30,21 @@ var cs = new csweb.csServer(__dirname, <csweb.csServerOptions>{
 
 //cs.server.use(cors());
 
+function sendFeatureUpdates(fts: any[], layerId: string) {
+    if (fts && _.isArray(fts) && fts.length > 0) {
+        var featuresUpdates = _.map(fts, f => {
+            console.log(f.properties);
+            return <csweb.IChangeEvent>{
+                value: f,
+                type: csweb.ChangeType.Create,
+                id: f.id
+            };
+        });
+        cs.api.addUpdateFeatureBatch(layerId, featuresUpdates, {}, r => {});
+        console.log(`Updated ${fts.length} features`);
+    }
+}
+
 cs.start(() => {
     var testBedOptions: ITestBedOptions = <any>TestBedConfig;
     testBedOptions.logging = {
@@ -39,20 +54,7 @@ cs.start(() => {
         logFile: 'log.txt'
     };
     var consumer = new Consumer(testBedOptions);
-    consumer.setCallback((fts: any[]) => {
-        if (fts && _.isArray(fts) && fts.length > 0) {
-            var featuresUpdates = _.map(fts, f => {
-                console.log(f.properties);
-                return <csweb.IChangeEvent>{
-                    value: f,
-                    type: csweb.ChangeType.Create,
-                    id: f.id
-                };
-            });
-            cs.api.addUpdateFeatureBatch(capLayerId, featuresUpdates, {}, r => {});
-            console.log(`Updated ${fts.length} features`);
-        }
-    });
+    consumer.setCallback(sendFeatureUpdates);
     var producer = new Producer(testBedOptions);
 
     cs.server.post(SEND_CAP_ENDPOINT, (req, res) => {

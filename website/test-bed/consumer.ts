@@ -6,6 +6,7 @@ import {Message, OffsetFetchRequest} from 'kafka-node';
 import * as Promise from 'bluebird';
 import {TestBedAdapter, Logger, LogLevel, ITopicMetadataItem, ITestBedOptions} from 'node-test-bed-adapter';
 import {CapProcessor} from './capProcessor';
+import {GeoJsonProcessor} from './geoJsonProcessor';
 import * as _ from 'underscore';
 
 export class Consumer {
@@ -15,6 +16,7 @@ export class Consumer {
     private callback: Function;
     private retries: number = 0;
     private capProcessor = new CapProcessor();
+    private geoJsonProcessor = new GeoJsonProcessor();
 
     constructor(options: ITestBedOptions) {
         options.clientId = this.id;
@@ -115,8 +117,14 @@ export class Consumer {
             case 'cap':
                 // this.log.info(`Received message on topic ${message.topic} with key ${message.key}: ${typeof message.value === 'string' ? message.value : '\n' + JSON.stringify(message.value, null, 2)}`);
                 this.log.info(`Received message on topic ${message.topic} with key ${message.key}`);
-                var fts = this.capProcessor.handleIncomingCAP(<any>message.value);
-                if (fts && this.callback) this.callback(fts);
+                let capFeatures = this.capProcessor.handleIncomingCAP(<any>message.value);
+                if (capFeatures && this.callback) this.callback(capFeatures, 'cap');
+                break;
+            case 'css-demo-geojson':
+            case 'css-demo-geojson2':
+                this.log.info(`Received message on topic ${message.topic} with key ${message.key}`);
+                let mlpFeatures = this.geoJsonProcessor.handleIncomingMessage(<any>message.value);
+                if (mlpFeatures && this.callback) this.callback(mlpFeatures, 'mlp');
                 break;
             default:
                 this.log.info(`Received message on topic ${message.topic}: ${message.value}`);

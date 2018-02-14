@@ -132,6 +132,26 @@
       ]
     },
     {
+      "id": "livelocations",
+      "title": "Live locations",
+      "layers": [
+        {
+          "id": "mlp",
+          "title": "MLP",
+          "type": "dynamicgeojson",
+          "renderType": "geojson",
+          "url": "api/layers/mlp",
+          "typeUrl": "data/resourceTypes/mlptypes.json",
+          "defaultFeatureType": "MLPPoint",
+          "isDynamic": true,
+          "isEditable": false,
+          "tags": "presentation",
+          "timeAware": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
       "id": "76947763-7f29-4fa7-05af-901a08bc506d",
       "title": "Causes",
       "oneLayerActive": true,

@@ -1,0 +1,65 @@
+{
+    "featureTypes": {
+        "MLPPoint": {
+            "name": "MLPPoint",
+            "style": {
+                "iconUri": "images/event.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Point",
+                "strokeColor": "#dd0000",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ddee22",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "event"
+            },
+            "propertyTypeKeys": "Name;roll;pitch;yaw;speed"
+        }
+    },
+    "propertyTypeData": {
+        "Name": {
+            "label": "Name",
+            "title": "Name",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "roll": {
+            "label": "roll",
+            "title": "Roll",
+            "description": "Roll",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "yaw": {
+            "label": "yaw",
+            "title": "Yaw",
+            "description": "Yaw",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "pitch": {
+            "label": "pitch",
+            "title": "Pitch",
+            "description": "Pitch",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "speed": {
+            "label": "speed",
+            "title": "Speed",
+            "description": "Speed",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        }
+    },
+    "id": "mlptypes",
+    "propertyTypes": {}
+}
