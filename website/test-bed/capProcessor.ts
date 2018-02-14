@@ -115,7 +115,7 @@ export class CapProcessor {
             status: Status.Test,
             msgType: MsgType.Alert,
             scope: Scope.Public,
-            addresses: '',
+            addresses: null,
             info: {
                 language: 'EN',
                 category: Category.Met,

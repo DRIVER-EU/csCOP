@@ -21,7 +21,7 @@
         "AlertPolygon": {
             "name": "AlertPolygon",
             "style": {
-                "iconUri": "images/event.png",
+                "iconUri": "images/polygon.png",
                 "iconWidth": 26,
                 "iconHeight": 26,
                 "strokeWidth": 6,
