@@ -23,7 +23,6 @@ ENV CSCOP_PORT='8003'
 # Run App
 EXPOSE 8003
 
-RUN yarn install --production
 WORKDIR /src/public
 RUN bower i --allow-root
 WORKDIR /src

@@ -11,7 +11,7 @@
   "include": [
     "./*.ts",
     "./test-bed/*.ts",
-    "public/app/*.ts",
+    "public/app/*.ts"
   ],
   "files": [
     "./typings/index.d.ts",
