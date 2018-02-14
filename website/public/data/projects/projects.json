@@ -36,7 +36,7 @@
         "title": "OpenStreetMap HOT",
         "subtitle": "Road",
         "url": "http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
-        "isDefault": false,
+        "isDefault": true,
         "minZoom": 0,
         "maxZoom": 19,
         "cesium_url": "http://c.tile.openstreetmap.fr/hot/",
@@ -122,7 +122,7 @@
         "preview": "http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/11/673/1051.png"
     }, {
         "title": "Positron",
-        "isDefault": true,
+        "isDefault": false,
         "subtitle": "From CartoDB",
         "subdomains": ["a", "b", "c", "d"],
         "minZoom": 0,
@@ -132,10 +132,28 @@
         "cesium_url": "http://d.basemaps.cartocdn.com/light_nolabels/",
         "attribution": "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
         "preview": "http://a.basemaps.cartocdn.com/light_nolabels/11/673/1051.png"
+    }, 
+    {
+        "title": "MBTiles",
+        "isDefault": false,
+        "subtitle": "From test-bed",
+        "subdomains": ["a", "b", "c", "d"],
+        "minZoom": 0,
+        "maxZoom": 10,
+        "cesium_maptype": "openstreetmap",
+        "url": "http://134.221.20.240:3344/the-hague-test/{z}/{x}/{y}.png",
+        "cesium_url": "http://d.basemaps.cartocdn.com/light_nolabels/",
+        "attribution": "Tiles &copy",
+        "preview": "http://134.221.20.240:3344/the-hague-test/10/522/336.png"
     }],
     "projects": [{
-        "title": "VR Haaglanden",
-        "url": "data/api/projects/Haaglanden/project.json",
+        "title": "Team A",
+        "url": "data/projects/Roden/project-a.json",
+        "dynamic": true
+    },
+	{
+        "title": "Team B",
+        "url": "data/projects/Roden/project-b.json",
         "dynamic": true
     }]
 }

@@ -1,11 +1,17 @@
 {
     "kafkaHost": "localhost:3501",
-    "schemaRegistry": "http://localhost:3502",
+    "schemaRegistry": "localhost:3502",
+    "wrapUnions": true,
     "fetchAllSchemas": false,
     "autoRegisterSchemas": true,
     "schemaFolder": "./data/schemas",
-    "consume": [{
-        "topic": "cap"
-    }],
-    "produce": ["cap"]
+    "consume": [
+        {
+            "topic": "cap"
+        },
+        {
+            "topic": "css-demo-geojson2"
+        }
+    ],
+    "produce": ["cap", "css-demo-geojson2"]
 }
