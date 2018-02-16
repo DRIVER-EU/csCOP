@@ -1,0 +1,77 @@
+{
+    "featureTypes": {
+        "TeamPoint": {
+            "name": "TeamPoint",
+            "style": {
+                "iconUri": "images/event.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Point",
+                "strokeColor": "#dd0000",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ddee22",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "event"
+            },
+            "propertyTypeKeys": "Name;message"
+        },
+        "TeamLine": {
+            "name": "TeamLine",
+            "style": {
+                "iconUri": "images/line.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Line",
+                "strokeColor": "#dd0000",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ddee22",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "event"
+            },
+            "propertyTypeKeys": "Name;message"
+        },
+        "TeamPolygon": {
+            "name": "TeamPolygon",
+            "style": {
+                "iconUri": "images/polygon.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Polygon",
+                "strokeColor": "#dd9900",
+                "selectedStrokeColor": "#004400",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ddeeff",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "event"
+            },
+            "propertyTypeKeys": "Name;message"
+        }
+    },
+    "propertyTypeData": {
+        "Name": {
+            "label": "Name",
+            "title": "Name",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "message": {
+            "label": "message",
+            "title": "message",
+            "description": "message",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        }
+    },
+    "id": "teamcommunication",
+    "propertyTypes": {}
+}

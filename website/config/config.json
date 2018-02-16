@@ -1,4 +1,5 @@
 {
+    "clientId": "csCOP-A",
     "kafkaHost": "localhost:3501",
     "schemaRegistry": "localhost:3502",
     "wrapUnions": "auto",
@@ -12,7 +13,10 @@
         },
         {
             "topic": "css-demo-geojson2"
+        },
+        {
+            "topic": "teamcommunication"
         }
     ],
-    "produce": ["cap", "css-demo-geojson2"]
+    "produce": ["cap", "teamcommunication"]
 }

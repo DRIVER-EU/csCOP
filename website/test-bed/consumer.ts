@@ -19,7 +19,7 @@ export class Consumer {
     private geoJsonProcessor = new GeoJsonProcessor();
 
     constructor(options: ITestBedOptions) {
-        options.clientId = this.id;
+        options.clientId = options.clientId || this.id;
         this.adapter = new TestBedAdapter(options);
         this.adapter.on('error', err => {
             this.log.error(`Consumer received an error: ${err}`);

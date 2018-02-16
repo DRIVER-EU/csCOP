@@ -95,12 +95,12 @@
   ],
   "viewBounds": {
     "southWest": [
-      52.0147717,
-      4.1967104
+        53.01462,
+        5.90822
     ],
     "northEast": [
-      52.1285368,
-      4.4230263
+        53.35712,
+        6.96438
     ]
   },
   "userPrivileges": {
@@ -123,6 +123,19 @@
           "renderType": "geojson",
           "url": "api/layers/cap",
           "typeUrl": "data/resourceTypes/captypes.json",
+          "isDynamic": true,
+          "isEditable": true,
+          "tags": "presentation",
+          "timeAware": true,
+          "enabled": true
+        },
+        {
+          "id": "teamcommunication",
+          "title": "Team communication",
+          "type": "dynamicgeojson",
+          "renderType": "geojson",
+          "url": "api/layers/teamcommunication",
+          "typeUrl": "data/resourceTypes/teamcommunication.json",
           "isDynamic": true,
           "isEditable": true,
           "tags": "presentation",

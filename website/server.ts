@@ -17,6 +17,7 @@ Winston.add(Winston.transports.Console, <Winston.ConsoleTransportOptions>{
 });
 
 const SEND_CAP_ENDPOINT = '/send-cap-alert';
+const SEND_GEOJSON_ENDPOINT = '/send-geojson';
 
 var startDatabaseConnection = false;
 var capLayerId: string = 'cap';
@@ -64,6 +65,35 @@ cs.start(() => {
         }
         console.log(`Calling producer to send cap message`);
         producer.sendCap(req.body, (error, data) => {
+            if (error) {
+                res.sendStatus(404);
+                console.error(error);
+            } else {
+                res.sendStatus(200);
+                console.log(data);
+            }
+        });
+    });
+
+    /**
+     * Expects a body in JSON format, with interface:
+     * {"topic": string,
+     *  "data": IFeature
+     * }
+     */
+    cs.server.post(SEND_GEOJSON_ENDPOINT, (req, res) => {
+        if (!req.body || _.isEmpty(req.body)) {
+            console.warn(`No valid geojson message found in body`);
+            res.sendStatus(404);
+            return;
+        }
+        if (!req.body.topic || !req.body.data) {
+            console.warn(`No valid topic or data found in body`);
+            res.sendStatus(404);
+            return;
+        }
+        console.log(`Calling producer to send geojson message`);
+        producer.sendGeojson(req.body.data, req.body.topic, (error, data) => {
             if (error) {
                 res.sendStatus(404);
                 console.error(error);

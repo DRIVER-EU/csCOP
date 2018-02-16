@@ -21,7 +21,7 @@ export class GeoJsonProcessor {
             }
         }
         //TODO: parse better
-        if (ftCollection.features && ftCollection.features.hasOwnProperty('array')) {
+        if (ftCollection && ftCollection.features && ftCollection.features.hasOwnProperty('array')) {
             ftCollection.features = ftCollection.features['array'];
         }
         if (_.isArray(ftCollection.features)) {
