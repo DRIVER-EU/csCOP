@@ -20,8 +20,9 @@ Winston.add(Winston.transports.Console, <Winston.ConsoleTransportOptions>{
 
 var DynamicTestBedConfig;
 if (fs.existsSync('./config/dynamic-config.json')) {
-    DynamicTestBedConfig = fs.readFileSync('./config/dynamic-config.json');
-    Winston.warn('Using config/dynamic-config.json (overwrites default config)');
+    let configText = fs.readFileSync('./config/dynamic-config.json', {encoding: 'utf8'});
+    DynamicTestBedConfig = JSON.parse(configText);
+    console.warn('Using config/dynamic-config.json (overwrites default config)');
 }
 const TestBedConfig = DynamicTestBedConfig || StaticTestBedConfig;
 
