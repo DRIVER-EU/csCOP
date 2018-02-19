@@ -10,6 +10,6 @@ services:
     ports:
       - "8003:8003"
     volumes:
-      - ./config/:/src/config/
+      - ./config/config.json:/src/config/dynamic-config.json
     environment:
       CSCOP_PORT: '8003'

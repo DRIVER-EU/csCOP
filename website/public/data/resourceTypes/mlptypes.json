@@ -3,7 +3,7 @@
         "MLPPoint": {
             "name": "MLPPoint",
             "style": {
-                "iconUri": "images/event.png",
+                "iconUri": "images/mlp/icon_{itemType}.png",
                 "iconWidth": 26,
                 "iconHeight": 26,
                 "strokeWidth": 6,
@@ -16,13 +16,21 @@
                 "fillOpacity": 0.6,
                 "nameLabel": "event"
             },
-            "propertyTypeKeys": "Name;roll;pitch;yaw;speed"
+            "propertyTypeKeys": "Name;roll;pitch;yaw;speed;itemType"
         }
     },
     "propertyTypeData": {
         "Name": {
             "label": "Name",
             "title": "Name",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "itemType": {
+            "label": "itemType",
+            "title": "Item type",
+            "description": "Item type",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": true

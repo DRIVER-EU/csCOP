@@ -23,7 +23,7 @@
     "cors": "^2.8.4",
     "csweb": "0.3.17",
     "moment": "^2.20.1",
-    "node-test-bed-adapter": "DRIVER-EU/node-test-bed-adapter#59bcddd",
+    "node-test-bed-adapter": "^0.2.5",
     "winston": "^2.4.0"
   },
   "devDependencies": {

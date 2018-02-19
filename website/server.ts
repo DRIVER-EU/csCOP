@@ -1,13 +1,15 @@
 import Winston = require('winston');
 import express = require('express');
 import path = require('path');
+import fs = require('fs');
 import * as _ from 'underscore';
 import {Consumer} from './test-bed/consumer';
 import {Producer} from './test-bed/producer';
 import {ITestBedOptions, LogLevel} from 'node-test-bed-adapter';
 //import cors = require('cors');
 import * as csweb from 'csweb';
-import TestBedConfig = require('./config/config.json');
+import StaticTestBedConfig = require('./config/config.json');
+
 
 Winston.remove(Winston.transports.Console);
 Winston.add(Winston.transports.Console, <Winston.ConsoleTransportOptions>{
@@ -15,6 +17,13 @@ Winston.add(Winston.transports.Console, <Winston.ConsoleTransportOptions>{
     label: 'csCOP',
     prettyPrint: true
 });
+
+var DynamicTestBedConfig;
+if (fs.existsSync('./config/dynamic-config.json')) {
+    DynamicTestBedConfig = fs.readFileSync('./config/dynamic-config.json');
+    Winston.warn('Using config/dynamic-config.json (overwrites default config)');
+}
+const TestBedConfig = DynamicTestBedConfig || StaticTestBedConfig;
 
 const SEND_CAP_ENDPOINT = '/send-cap-alert';
 const SEND_GEOJSON_ENDPOINT = '/send-geojson';

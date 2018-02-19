@@ -1,12 +1,7 @@
-FROM node:alpine
-
+FROM rinzeb/node-python-typescript-git
 # Create app directory
 RUN mkdir -p /src
 WORKDIR /src
-
-# If you have native dependencies, you'll need extra tools
-RUN apk add --no-cache make gcc g++ python git
-RUN npm install -g node-gyp typescript bower
 
 # Install app dependencies
 COPY package.json /src/
