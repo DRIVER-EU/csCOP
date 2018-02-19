@@ -1,0 +1,119 @@
+{
+    "featureTypes": {
+        "Area": {
+            "name": "Area",
+            "style": {
+                "iconUri": "images/cloud.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Polygon",
+                "strokeColor": "#dd0000",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ddee22",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "type"
+            },
+            "propertyTypeKeys": "Name;type"
+        },
+        "MeasurementArea": {
+            "name": "MeasurementArea",
+            "style": {
+                "iconUri": "images/event.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Polygon",
+                "strokeColor": "#dd0000",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#dd44ee",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "type"
+            },
+            "propertyTypeKeys": "Name;type"
+        },
+        "Measurement": {
+            "name": "Measurement",
+            "style": {
+                "iconUri": "images/cloud.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Point",
+                "strokeColor": "#dd0000",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ddee22",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "substances"
+            },
+            "propertyTypeKeys": "Name;type;substances;weather"
+        },
+        "MeasurementLocation": {
+            "name": "MeasurementLocation",
+            "style": {
+                "iconUri": "images/step.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Point",
+                "strokeColor": "#dd0000",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ddee22",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "type"
+            },
+            "propertyTypeKeys": "Name;type;substances;weather"
+        }
+    },
+    "propertyTypeData": {
+        "Name": {
+            "label": "Name",
+            "title": "Name",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "type": {
+            "label": "type",
+            "title": "Type",
+            "description": "Type",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "substances": {
+            "label": "substances",
+            "title": "Substances",
+            "description": "substances",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "weather": {
+            "label": "weather",
+            "title": "Weather",
+            "description": "weather",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "speed": {
+            "label": "speed",
+            "title": "Speed",
+            "description": "Speed",
+            "type": "number",
+            "visibleInCallOut": true,
+            "canEdit": true
+        }
+    },
+    "id": "mlptypes",
+    "propertyTypes": {}
+}

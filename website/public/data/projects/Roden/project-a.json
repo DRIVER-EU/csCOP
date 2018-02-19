@@ -177,6 +177,51 @@
       ]
     },
     {
+      "id": "measurements",
+      "title": "Measurements",
+      "layers": [
+        {
+          "id": "measurements",
+          "title": "Measurements",
+          "type": "geojson",
+          "renderType": "geojson",
+          "url": "data/layers/measurements.json",
+          "typeUrl": "data/resourceTypes/measurement_types.json",
+          "defaultFeatureType": "Measurement",
+          "isDynamic": false,
+          "isEditable": false,
+          "tags": "presentation",
+          "enabled": false
+        },
+        {
+          "id": "measurement_positions",
+          "title": "Measurements positions",
+          "type": "geojson",
+          "renderType": "geojson",
+          "url": "data/layers/measurement_positions.json",
+          "typeUrl": "data/resourceTypes/measurement_types.json",
+          "defaultFeatureType": "MeasurementLocation",
+          "isDynamic": false,
+          "isEditable": false,
+          "tags": "presentation",
+          "enabled": false
+        },
+        {
+          "id": "alarmareas",
+          "title": "Alarm areas",
+          "type": "geojson",
+          "renderType": "geojson",
+          "url": "data/layers/alarm_area.json",
+          "typeUrl": "data/resourceTypes/measurement_types.json",
+          "defaultFeatureType": "Area",
+          "isDynamic": false,
+          "isEditable": false,
+          "tags": "presentation",
+          "enabled": false
+        }
+      ]
+    },
+    {
       "id": "76947763-7f29-4fa7-05af-901a08bc506d",
       "title": "Causes",
       "oneLayerActive": true,

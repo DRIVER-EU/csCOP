@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {"marker-color": "#7e7e7e", "marker-size": "medium", "marker-symbol": "", "featureTypeId": "Measurement", "type": "Measurement", "substances": "CH: 0.0ppm; NOx: 0.02ppm", "weather": "2.0Celsius, SW 3Bft, 80%"},
+            "geometry": {"type": "Point", "coordinates": [6.447317004203796, 53.14828570056346]}
+        },
+        {"type": "Feature", "properties": {"marker-color": "#ff0000", "marker-size": "medium", "marker-symbol": "", "type": "Incident"}, "geometry": {"type": "Point", "coordinates": [6.446303129196167, 53.14827604869628]}},
+        {
+            "type": "Feature",
+            "properties": {"marker-color": "#7e7e7e", "marker-size": "medium", "marker-symbol": "", "featureTypeId": "Measurement", "type": "Measurement", "substances": "CH: 0.0ppm; NOx: 0.01ppm", "weather": "2.0Celsius, SW 3Bft, 80%"},
+            "geometry": {"type": "Point", "coordinates": [6.448245048522949, 53.150881974055636]}
+        },
+        {
+            "type": "Feature",
+            "properties": {"marker-color": "#7e7e7e", "marker-size": "medium", "marker-symbol": "", "featureTypeId": "Measurement", "type": "Measurement", "substances": "CH: 0.05ppm; NOx: 0.02ppm", "weather": "2.5Celsius; SW 3Bft; 82%"},
+            "geometry": {"type": "Point", "coordinates": [6.468136310577393, 53.167417870229826]}
+        },
+        {
+            "type": "Feature",
+            "properties": {"marker-color": "#7e7e7e", "marker-size": "medium", "marker-symbol": "", "featureTypeId": "Measurement", "type": "Measurement", "substances": "CH: 0.07ppm; NOx: 0.03ppm", "weather": "2.0Celsius; SW 3Bft; 80%"},
+            "geometry": {"type": "Point", "coordinates": [6.510987281799316, 53.196148344737814]}
+        },
+        {
+            "type": "Feature",
+            "properties": {"marker-color": "#7e7e7e", "marker-size": "medium", "marker-symbol": "", "featureTypeId": "Measurement", "type": "Measurement", "substances": "CH: 0.06ppm; NOx: 0.04ppm", "weather": "1.6Celsius; SW 3Bft; 81%"},
+            "geometry": {"type": "Point", "coordinates": [6.466569900512695, 53.18381881222983]}
+        },
+        {
+            "type": "Feature",
+            "properties": {"marker-color": "#7e7e7e", "marker-size": "medium", "marker-symbol": "", "featureTypeId": "Measurement", "type": "Measurement", "substances": "CH: 0.15ppm; NOx: 0.05ppm", "weather": "1.8Celsius; SW 3Bft; 79%"},
+            "geometry": {"type": "Point", "coordinates": [6.502683162689209, 53.17857222177311]}
+        },
+        {
+            "type": "Feature",
+            "properties": {"marker-color": "#7e7e7e", "marker-size": "medium", "marker-symbol": "", "featureTypeId": "Measurement", "type": "Measurement", "substances": "CH: 0.02ppm; NOx: 0.01ppm", "weather": "2.2Celsius; SW 3Bft; 80%"},
+            "geometry": {"type": "Point", "coordinates": [6.500730514526367, 53.215798839064085]}
+        }
+    ]
+}
