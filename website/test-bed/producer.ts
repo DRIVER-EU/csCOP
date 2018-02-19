@@ -77,7 +77,7 @@ export class Producer {
 
     private mapProperties(props: _.Dictionary<any>) {
         //TODO: map correct variable type https://github.com/mtth/avsc/wiki/API#class-unwrappeduniontypeschema-opts
-        var result: _.Dictionary<any> = _.map(props, (val, key) => {return {"string": val.toString()}});
+        var result: _.Dictionary<any> = _.mapObject(props, (val, key) => {return {'string': val.toString()}; });
         return result;
     }
 
