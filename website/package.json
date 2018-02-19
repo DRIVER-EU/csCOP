@@ -1,5 +1,5 @@
 {
-  "name": "csCOP",
+  "name": "cs_cop",
   "version": "1.0.3",
   "description": "CommonSense web application",
   "main": "server.js",
@@ -18,17 +18,18 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "chokidar": "^2.0.0",
-    "compression": "^1.7.1",
+    "chokidar": "^2.0.2",
+    "compression": "^1.7.2",
     "cors": "^2.8.4",
     "csweb": "0.3.17",
     "moment": "^2.20.1",
-    "node-test-bed-adapter": "DRIVER-EU/node-test-bed-adapter#v0.2.4",
-    "winston": "^2.1.0"
+    "node-test-bed-adapter": "DRIVER-EU/node-test-bed-adapter#59bcddd",
+    "winston": "^2.4.0"
   },
   "devDependencies": {
-    "@types/bluebird": "^3.5.19",
-    "@types/node": "^9.3.0"
+    "@types/bluebird": "^3.5.20",
+    "@types/kafka-node": "^2.0.6",
+    "@types/node": "^9.4.6"
   },
   "bugs": {
     "url": "https://github.com/TNOCS/csWeb/issues"
