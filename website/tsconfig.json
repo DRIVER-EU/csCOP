@@ -15,8 +15,7 @@
   ],
   "files": [
     "./typings/index.d.ts",
-    "public/bower_components/csweb/dist-bower/csComp.d.ts",
-    "node_modules/node-test-bed-adapter/dist/lib/index.d.ts"
+    "public/bower_components/csweb/dist-bower/csComp.d.ts"
   ],
   "exclude": [
     "typings/browser.d.ts",
