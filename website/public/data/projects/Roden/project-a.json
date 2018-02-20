@@ -8,9 +8,9 @@
     "enablePlay": true,
     "enableEvents": true,
     "enableFocus": true,
-    "focus": 1459476180000,
-    "start": 1459332000000,
-    "end": 1459504800000,
+    "focus": 1519815600000,
+    "start": 1519512000000,
+    "end": 1520114800000,
     "range": 172800000,
     "zoomLevel": 3600000,
     "zoomLevelName": "hours",
@@ -59,7 +59,7 @@
           "left": "27px",
           "right": "",
           "top": "90px",
-          "width": "300px",
+          "width": "220px",
           "data": {
             "layerGroup": "knoppen",
             "buttons": []
@@ -130,7 +130,7 @@
         },
         {
           "id": "teamcommunication",
-          "title": "Team A",
+          "title": "On-site team",
           "type": "dynamicgeojson",
           "renderType": "geojson",
           "url": "api/layers/teamcommunication",
@@ -143,7 +143,7 @@
         },
         {
           "id": "teamcommunication-b",
-          "title": "Team B",
+          "title": "Off-site team",
           "type": "dynamicgeojson",
           "renderType": "geojson",
           "url": "api/layers/teamcommunication-b",
@@ -195,7 +195,7 @@
         },
         {
           "id": "measurement_positions",
-          "title": "Measurements positions",
+          "title": "Measurement area",
           "type": "geojson",
           "renderType": "geojson",
           "url": "data/layers/measurement_positions.json",

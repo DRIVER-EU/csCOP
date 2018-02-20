@@ -1,5 +1,42 @@
 {
     "featureTypes": {
+        "TeamStagingPoint": {
+            "name": "TeamStagingPoint",
+            "style": {
+                "iconUri": "images/marker.png",
+                "iconWidth": 28,
+                "iconHeight": 28,
+                "strokeWidth": 0,
+                "selectedStrokeWidth": 6,
+                "drawingMode": "Point",
+                "strokeColor": "#dd0000",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#ffffff",
+                "opacity": 0.8,
+                "fillOpacity": 0.0,
+                "nameLabel": "Name"
+            },
+            "propertyTypeKeys": "Name;message"
+        },
+        "TeamFirePoint": {
+            "name": "TeamFirePoint",
+            "style": {
+                "iconUri": "images/fire.png",
+                "iconWidth": 26,
+                "iconHeight": 26,
+                "strokeWidth": 6,
+                "drawingMode": "Point",
+                "strokeColor": "#dd0000",
+                "selectedStrokeColor": "#00ff00",
+                "selectedStrokeWidth": 7,
+                "fillColor": "#dd2222",
+                "opacity": 0.6,
+                "fillOpacity": 0.6,
+                "nameLabel": "Name"
+            },
+            "propertyTypeKeys": "Name;message"
+        },
         "TeamPoint": {
             "name": "TeamPoint",
             "style": {
@@ -14,7 +51,7 @@
                 "fillColor": "#ddee22",
                 "opacity": 0.6,
                 "fillOpacity": 0.6,
-                "nameLabel": "event"
+                "nameLabel": "Name"
             },
             "propertyTypeKeys": "Name;message"
         },
@@ -32,7 +69,7 @@
                 "fillColor": "#ddee22",
                 "opacity": 0.6,
                 "fillOpacity": 0.6,
-                "nameLabel": "event"
+                "nameLabel": "Name"
             },
             "propertyTypeKeys": "Name;message"
         },
@@ -50,7 +87,7 @@
                 "fillColor": "#ddeeff",
                 "opacity": 0.6,
                 "fillOpacity": 0.6,
-                "nameLabel": "event"
+                "nameLabel": "Name"
             },
             "propertyTypeKeys": "Name;message"
         }

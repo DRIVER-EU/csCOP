@@ -1,9 +1,9 @@
 {
   "name": "csCop",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "authors": [
     "Erik Vullings",
-    "Arnoud de Jong"
+    "Rinze Bruining"
   ],
   "main": "../server.js",
   "moduleType": [
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "description": "Common Operational Picture viewer with csWeb",
-  "homepage": "http://github.com/TNOCS/csWeb",
+  "homepage": "http://github.com/DRIVER-EU/csCop",
   "private": true,
   "ignore": [
     "**/.*",
