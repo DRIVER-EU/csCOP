@@ -1,6 +1,6 @@
 {
   "name": "cs_cop",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CommonSense web application",
   "main": "server.js",
   "start": "node server.js",
