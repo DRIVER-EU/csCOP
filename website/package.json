@@ -21,7 +21,7 @@
     "chokidar": "^2.0.2",
     "compression": "^1.7.2",
     "cors": "^2.8.4",
-    "csweb": "0.3.17",
+    "csweb": "0.3.20",
     "moment": "^2.20.1",
     "node-test-bed-adapter": "^0.2.5",
     "winston": "^2.4.0"
