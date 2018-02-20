@@ -134,17 +134,30 @@
         "preview": "http://a.basemaps.cartocdn.com/light_nolabels/11/673/1051.png"
     }, 
     {
-        "title": "MBTiles",
-        "isDefault": false,
-        "subtitle": "From test-bed",
+        "title": "MBTiles test-bed`1",
+        "isDefault": true,
+        "subtitle": "Klokantech style",
         "subdomains": ["a", "b", "c", "d"],
         "minZoom": 0,
-        "maxZoom": 10,
+        "maxZoom": 20,
         "cesium_maptype": "openstreetmap",
-        "url": "http://134.221.20.240:3344/the-hague-test/{z}/{x}/{y}.png",
+        "url": "http://driver-testbed.eu:3344/styles/klokantech-basic/{z}/{x}/{y}.png",
         "cesium_url": "http://d.basemaps.cartocdn.com/light_nolabels/",
         "attribution": "Tiles &copy",
-        "preview": "http://134.221.20.240:3344/the-hague-test/10/522/336.png"
+        "preview": "http://driver-testbed.eu:3344/styles/klokantech-basic/12/2117/1328.png"
+    },
+    {
+        "title": "MBTiles test-bed 2",
+        "isDefault": false,
+        "subtitle": "OSM bright style",
+        "subdomains": ["a", "b", "c", "d"],
+        "minZoom": 0,
+        "maxZoom": 20,
+        "cesium_maptype": "openstreetmap",
+        "url": "http://driver-testbed.eu:3344/styles/osm-bright/{z}/{x}/{y}.png",
+        "cesium_url": "http://d.basemaps.cartocdn.com/light_nolabels/",
+        "attribution": "Tiles &copy",
+        "preview": "http://driver-testbed.eu:3344/styles/osm-bright/12/2117/1328.png"
     }],
     "projects": [{
         "title": "Team A",

@@ -3,6 +3,7 @@
     "kafkaHost": "localhost:3501",
     "schemaRegistry": "localhost:3502",
     "wrapUnions": "auto",
+    "heartbeatInterval": 10000,
     "fetchAllSchemas": false,
     "fetchAllVersions": false,
     "autoRegisterSchemas": true,
@@ -12,11 +13,11 @@
             "topic": "cap"
         },
         {
-            "topic": "css-demo-geojson2"
+            "topic": "css-demo-geojson"
         },
         {
             "topic": "teamcommunication"
         }
     ],
-    "produce": ["cap", "teamcommunication"]
+    "produce": ["cap", "teamcommunication", "css-demo-geojson"]
 }

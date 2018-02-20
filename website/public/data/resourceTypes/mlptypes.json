@@ -3,20 +3,20 @@
         "MLPPoint": {
             "name": "MLPPoint",
             "style": {
-                "iconUri": "images/mlp/icon_{itemType}.png",
+                "iconUri": "images/mlp/icon_{subLabel}.png",
                 "iconWidth": 26,
                 "iconHeight": 26,
-                "strokeWidth": 6,
+                "strokeWidth": 4,
                 "drawingMode": "Point",
-                "strokeColor": "#dd0000",
-                "selectedStrokeColor": "#00ff00",
+                "strokeColor": "#0000dd",
+                "selectedStrokeColor": "#00dd00",
                 "selectedStrokeWidth": 7,
-                "fillColor": "#ddee22",
+                "fillColor": "#ffeeee",
                 "opacity": 0.6,
                 "fillOpacity": 0.6,
-                "nameLabel": "event"
+                "nameLabel": "subLabel"
             },
-            "propertyTypeKeys": "Name;roll;pitch;yaw;speed;itemType"
+            "propertyTypeKeys": "Name;roll;pitch;yaw;speed;type;objectType;subType;subLabel"
         }
     },
     "propertyTypeData": {
@@ -27,10 +27,34 @@
             "visibleInCallOut": true,
             "canEdit": true
         },
-        "itemType": {
-            "label": "itemType",
+        "type": {
+            "label": "type",
             "title": "Item type",
             "description": "Item type",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "objectType": {
+            "label": "objectType",
+            "title": "Object type",
+            "description": "Object type",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "subType": {
+            "label": "subType",
+            "title": "Rescue label",
+            "description": "Rescue label",
+            "type": "text",
+            "visibleInCallOut": true,
+            "canEdit": true
+        },
+        "subLabel": {
+            "label": "subLabel",
+            "title": "Sublabel",
+            "description": "Sublabel",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
