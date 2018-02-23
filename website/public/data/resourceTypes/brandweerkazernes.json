@@ -1,0 +1,108 @@
+{
+  "featureTypes": {
+    "brandweerkazernes": {
+      "style": {
+        "drawingMode": "Point",
+        "fillColor": "#ffffff",
+        "strokeColor": "#ffffff",
+        "selectedStrokeColor": "#0000FF",
+        "strokeWidth": 2,
+        "stroke": true,
+        "fillOpacity": 0.9,
+        "opacity": 0.9,
+        "iconWidth": 28,
+        "iconHeight": 28,
+        "nameLabel": "Name",
+        "iconUri": "images/7022 brandweerkazerne.png"
+      },
+      "propertyTypeKeys": "Name;Organisati;LOC_TYPE;LOC_NAAM;LOC_STRAAT;Huisnr;Postcode;Plaats;GEM;Regio;Website;Telefoon;BIJZONDERH;X;Y;X-nav;Y-nav;BAG Id;"
+    }
+  },
+  "propertyTypeData": {
+    "Name": {
+      "label": "Name",
+      "title": "Naam",
+      "type": "text",
+      "expression": "properties.LOC_TYPE + ' ' + properties.LOC_NAAM",
+      "visibleInCallout": false
+    },
+    "X": {
+      "title": "RD X",
+      "type": "number",
+      "description": "Rijksdriehoek coördinaat"
+    },
+    "Y": {
+      "title": "RD Y",
+      "type": "number",
+      "description": "Rijksdriehoek coördinaat"
+    },
+    "X-nav": {
+      "title": "RD X (navigatie)",
+      "type": "number",
+      "description": "Rijksdriehoek coördinaat voor navigatie"
+    },
+    "Y-nav": {
+      "title": "RD Y (navigatie)",
+      "type": "number",
+      "description": "Rijksdriehoek coördinaat voor navigatie"
+    },
+    "BAG Id": {
+      "title": "BAG id",
+      "type": "number",
+      "description": "Basis Adres Gegevens id van het kadaster"
+    },
+    "Organisati": {
+      "title": "Organisatie",
+      "type": "text",
+      "description": ""
+    },
+    "LOC_TYPE": {
+      "title": "Locatie type",
+      "type": "textarea",
+      "description": ""
+    },
+    "LOC_NAAM": {
+      "title": "Locatie naam",
+      "type": "textarea",
+      "description": ""
+    },
+    "LOC_STRAAT": {
+      "title": "Straat",
+      "type": "textarea"
+    },
+    "Huisnr": {
+      "title": "Huisnr",
+      "type": "text"
+    },
+    "Postcode": {
+      "title": "Postcode",
+      "type": "text"
+    },
+    "Plaats": {
+      "title": "Plaats",
+      "type": "text"
+    },
+    "GEM": {
+      "title": "Gemeente",
+      "type": "text"
+    },
+    "Regio": {
+      "title": "Regio",
+      "type": "number"
+    },
+    "Website": {
+      "title": "Website",
+      "type": "bbcode",
+      "stringFormat": "[url=http://{0}]website[/url]",
+      "description": "Link naar de website"
+    },
+    "Telefoon": {
+      "title": "Telefoon",
+      "type": "text"
+    },
+    "BIJZONDERH": {
+      "title": "Bijzonderheden",
+      "type": "text"
+    }
+  }
+}

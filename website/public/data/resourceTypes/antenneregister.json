@@ -1,0 +1,46 @@
+{
+  "featureTypes": {
+    "antenneregister": {
+      "style": {
+        "drawingMode": "Point",
+        "fillColor": "#ffffff",
+        "strokeColor": "#ffffff",
+        "selectedStrokeColor": "#0000ff",
+        "strokeWidth": 2,
+        "stroke": true,
+        "fillOpacity": 1,
+        "strokeOpacity": 1,
+        "opacity": 1,
+        "iconWidth": 28,
+        "iconHeight": 28,
+        "nameLabel": "TOEPASSING",
+        "iconUri": "images/antenna.png"
+      },
+      "propertyTypeKeys": "TOEPASSING;ANT_HOOGTE;GEMEENTE;X;Y"
+    }
+  },
+  "propertyTypeData": {
+    "GEMEENTE": {
+      "title": "Gemeente",
+      "type": "text"
+    },
+    "TOEPASSING": {
+      "title": "Toepassing",
+      "type": "text"
+    },
+    "X": {
+      "title": "RD X",
+      "type": "number",
+      "description": "Rijksdriehoek coördinaat"
+    },
+    "Y": {
+      "title": "RD Y",
+      "type": "number",
+      "description": "Rijksdriehoek coördinaat"
+    },
+    "ANT_HOOGTE": {
+      "title": "Antenna hoogte",
+      "type": "number"
+    }
+  }
+}

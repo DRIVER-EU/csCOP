@@ -1,0 +1,30 @@
+{
+    "featureTypes": {
+        "ambassade": {
+            "name": "foto",
+            "style": {
+                "drawingMode": "Point",
+                "strokeWidth": 0,
+                "fillOpacity": 0,
+                "fillColor": "transparent",
+                "selectedStrokeColor": "blue",
+                "selectedFillColor": "transparent",
+                "iconWidth": 24,
+                "iconHeight": 24,
+                "iconUri":"{icon}"
+            },
+            "propertyTypeKeys": "icon;large"
+        }
+    },
+    "propertyTypeData": {
+        "icon": {
+            "type": "media",
+            "title": "icon"            
+        },
+        "large": {
+            "type": "media",
+            "title": "Large"            
+        }
+    },
+    "id": "foto"
+}

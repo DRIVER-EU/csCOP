@@ -1,0 +1,482 @@
+{
+  "id": "groningen",
+  "title": "Groningen",
+  "logo": "images/TNOblack.png",
+  "isDynamic": false,
+  "showScale": true,
+  "showZoomButtons": true,
+  "showLocation": true,
+  "timeLine": {
+    "enableLive": false,
+    "enablePlay": false,
+    "enableEvents": true,
+    "enableFocus": false,
+    "focus": 1461691696774,
+    "start": 1461690586786,
+    "end": 1461720112486,
+    "range": 29525700,
+    "zoomLevel": 900000,
+    "zoomLevelName": "quarters",
+    "isLive": false,
+    "expandHeight": 350
+  },
+  "mcas": [],
+  "profile": {
+    "authenticationMethod": 1
+  },
+  "datasources": null,
+  "dashboards": [
+    {
+      "id": "map",
+      "name": "Kaart",
+      "editMode": true,
+      "showMap": true,
+      "mapWidth": "100%",
+      "alignMapRight": false,
+      "showTimeline": false,
+      "showLeftmenu": true,
+      "showLegend": false,
+      "showRightmenu": false,
+      "showBackgroundImage": false,
+      "visiblelayers": [
+        "clip"
+      ],
+      "widgets": [
+        {
+          "directive": "locationwidget",
+          "enabled": true,
+          "style": "white",
+          "width": "370px",
+          "height": "145px",
+          "bottom": "75px",
+          "left": "35%",
+          "data": {
+            "streetViewApiKey": "AIzaSyDKFM7-fvJzuu1LNiMfd7WlOosBP-E20vc",
+            "showCoordinates": true,
+            "showSunMoonRise": true
+          }
+        }
+      ],
+      "mobile": true
+    },
+    {
+      "id": "datatable",
+      "name": "Tabel",
+      "editMode": false,
+      "showMap": false,
+      "mapWidth": "100%",
+      "alignMapRight": false,
+      "showTimeline": false,
+      "showLeftmenu": false,
+      "showLegend": false,
+      "showRightmenu": false,
+      "showBackgroundImage": false,
+      "widgets": [
+        {
+          "id": "datatable_id",
+          "directive": "datatable",
+          "enabled": true,
+          "customStyle": null,
+          "style": "transparent",
+          "top": "80px",
+          "width": "100%",
+          "height": "100%"
+        }
+      ],
+      "mobile": true
+    }
+  ],
+  "userPrivileges": {
+    "mca": {
+      "expertMode": true
+    }
+  },
+  "modeSelection": true,
+  "expertMode": 3,
+  "propertyTypeData": {},
+  "groups": [
+    {
+      "id": "locaties",
+      "title": "Locaties",
+      "layers": [
+        {
+          "id": "ambulanceposten",
+          "title": "Ambulanceposten",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/ambulanceposten.geojson",
+          "typeUrl": "data/resourceTypes/ambulanceposten.json",
+          "opacity": 75,
+          "defaultFeatureType": "ambulanceposten",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "azc",
+          "title": "Asielzoekerscentra",
+          "description": "Bron: COA 2015",
+          "type": "geojson",
+          "url": "data/projects/groningen/azc.geojson",
+          "typeUrl": "data/resourceTypes/azc.json",
+          "opacity": 75,
+          "defaultFeatureType": "azc",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "brandweerkazernes",
+          "title": "Brandweerkazernes",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/brandweerkazernes.geojson",
+          "typeUrl": "data/resourceTypes/brandweerkazernes.json",
+          "opacity": 75,
+          "defaultFeatureType": "brandweerkazernes",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "gemeentehuizen",
+          "title": "Gemeentehuizen",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/gemeentehuizen.geojson",
+          "typeUrl": "data/resourceTypes/gemeentehuizen.json",
+          "opacity": 75,
+          "defaultFeatureType": "gemeentehuizen",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "politievestigingen",
+          "title": "Politievestigingen",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/politievestigingen.geojson",
+          "typeUrl": "data/resourceTypes/politievestigingen.json",
+          "opacity": 75,
+          "defaultFeatureType": "politievestigingen",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "scholenonderwijs_bo",
+          "title": "Scholen: basisonderwijs",
+          "description": "Bron: DUO mei 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/scholenonderwijs_bo.geojson",
+          "typeUrl": "data/resourceTypes/scholenonderwijs_bo.json",
+          "opacity": 75,
+          "defaultFeatureType": "scholenonderwijs_bo",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "scholenonderwijs_bo_spec",
+          "title": "Scholen: speciaal basisonderwijs",
+          "description": "Bron: DUO mei 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/scholenonderwijs_bo_spec.geojson",
+          "typeUrl": "data/resourceTypes/scholenonderwijs_bo_spec.json",
+          "opacity": 75,
+          "defaultFeatureType": "scholenonderwijs_bo_spec",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "scholenonderwijs_vo",
+          "title": "Scholen: voortgezet onderwijs",
+          "description": "Bron: DUO mei 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/scholenonderwijs_vo.geojson",
+          "typeUrl": "data/resourceTypes/scholenonderwijs_vo.json",
+          "opacity": 75,
+          "defaultFeatureType": "scholenonderwijs_vo",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        }
+      ],
+      "clustering": true,
+      "clusterLevel": 13
+    },
+    {
+      "id": "masten en leidingen",
+      "title": "Masten en leidingen",
+      "layers": [
+        {
+          "id": "antenneregister",
+          "title": "Antenneregister",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/antenneregister.geojson",
+          "typeUrl": "data/resourceTypes/antenneregister.json",
+          "opacity": 75,
+          "defaultFeatureType": "antenneregister",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "c2000masten",
+          "title": "C2000 masten",
+          "description": "",
+          "type": "geojson",
+          "url": "data/projects/groningen/c2000masten.geojson",
+          "typeUrl": "data/resourceTypes/c2000masten.json",
+          "opacity": 75,
+          "defaultFeatureType": "c2000masten",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "hoogspanningsleidingen",
+          "title": "Hoogspanningsleidingen",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/hoogspanningsleidingen.geojson",
+          "typeUrl": "data/resourceTypes/hoogspanningsleidingen.json",
+          "opacity": 75,
+          "defaultFeatureType": "hoogspanningsleidingen",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "hoogspanningsmasten",
+          "title": "Hoogspanningsmasten",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/hoogspanningsmasten.geojson",
+          "typeUrl": "data/resourceTypes/hoogspanningsmasten.json",
+          "opacity": 75,
+          "defaultFeatureType": "hoogspanningsmasten",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        }
+      ],
+      "clustering": true,
+      "clusterLevel": 13
+    },
+    {
+      "id": "bevolking",
+      "title": "Bevolking",
+      "layers": [
+        {
+          "id": "buurt",
+          "title": "Buurt",
+          "description": "Bron: CBS Gemeente, Wijk en Buurtkaart 2015",
+          "type": "geojson",
+          "url": "data/projects/groningen/buurt.geojson",
+          "typeUrl": "data/resourceTypes/buurt.json",
+          "opacity": 75,
+          "defaultFeatureType": "buurt",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "gemeente",
+          "title": "Gemeente",
+          "description": "Bron: CBS Gemeente, Wijk en Buurtkaart 2015",
+          "type": "geojson",
+          "url": "data/projects/groningen/gemeente.geojson",
+          "typeUrl": "data/resourceTypes/gemeente.json",
+          "opacity": 75,
+          "defaultFeatureType": "gemeente",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "vluchtelingen",
+          "title": "Vluchtelingen",
+          "description": "Bron: CBS 2015",
+          "type": "geojson",
+          "url": "data/projects/groningen/vluchtelingen.geojson",
+          "typeUrl": "data/resourceTypes/vluchtelingen.json",
+          "opacity": 75,
+          "defaultFeatureType": "vluchtelingen",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "wijk",
+          "title": "Wijk",
+          "description": "Bron: CBS Gemeente, Wijk en Buurtkaart 2015",
+          "type": "geojson",
+          "url": "data/projects/groningen/wijk.geojson",
+          "typeUrl": "data/resourceTypes/wijk.json",
+          "opacity": 75,
+          "defaultFeatureType": "wijk",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        }
+      ],
+      "oneLayerActive": true
+    },
+    {
+      "id": "regio",
+      "title": "Regio",
+      "layers": [
+        {
+          "id": "clip",
+          "title": "groningen",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/clip.geojson",
+          "typeUrl": "data/resourceTypes/clip.json",
+          "opacity": 75,
+          "defaultFeatureType": "clip",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": true
+        }
+      ],
+      "clustering": true,
+      "clusterLevel": 13
+    },
+    {
+      "id": "zieken- en verpleeghuizen",
+      "title": "Zieken- en verpleeghuizen",
+      "layers": [
+        {
+          "id": "ggz",
+          "title": "GGZ",
+          "description": "Bron: Ministerie van VWZ op www.zorgopdekaart.nl",
+          "type": "geojson",
+          "url": "data/projects/groningen/ggz.geojson",
+          "typeUrl": "data/resourceTypes/ggz.json",
+          "opacity": 75,
+          "defaultFeatureType": "ggz",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "ghz",
+          "title": "GHZ",
+          "description": "Bron: Ministerie van VWZ op www.zorgopdekaart.nl",
+          "type": "geojson",
+          "url": "data/projects/groningen/ghz.geojson",
+          "typeUrl": "data/resourceTypes/ghz.json",
+          "opacity": 75,
+          "defaultFeatureType": "ghz",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "vvt",
+          "title": "VVT",
+          "description": "Bron: Ministerie van VWZ op www.zorgopdekaart.nl",
+          "type": "geojson",
+          "url": "data/projects/groningen/vvt.geojson",
+          "typeUrl": "data/resourceTypes/vvt.json",
+          "opacity": 75,
+          "defaultFeatureType": "vvt",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "ziekenhuis",
+          "title": "Ziekenhuizen",
+          "description": "Bron: Ministerie van VWZ op www.zorgopdekaart.nl",
+          "type": "geojson",
+          "url": "data/projects/groningen/ziekenhuis.geojson",
+          "typeUrl": "data/resourceTypes/ziekenhuis.json",
+          "opacity": 75,
+          "defaultFeatureType": "ziekenhuis",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        }
+      ],
+      "clustering": true,
+      "clusterLevel": 13
+    },
+    {
+      "id": "weg en spoor",
+      "title": "Weg en spoor",
+      "layers": [
+        {
+          "id": "inrichting_el_station",
+          "title": "Inrichting stations",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/inrichting_el_station.geojson",
+          "typeUrl": "data/resourceTypes/inrichting_el_station.json",
+          "opacity": 75,
+          "defaultFeatureType": "inrichting_el_station",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "spoorwegen",
+          "title": "Spoorwegen",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/spoorwegen.geojson",
+          "typeUrl": "data/resourceTypes/spoorwegen.json",
+          "opacity": 75,
+          "defaultFeatureType": "spoorwegen",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        },
+        {
+          "id": "wegdeel_vlak_brug_beweegbaar",
+          "title": "Beweegbare bruggen",
+          "description": "Bron: Imergis 2016",
+          "type": "geojson",
+          "url": "data/projects/groningen/wegdeel_vlak_brug_beweegbaar.geojson",
+          "typeUrl": "data/resourceTypes/wegdeel_vlak_brug_beweegbaar.json",
+          "opacity": 75,
+          "defaultFeatureType": "wegdeel_vlak_brug_beweegbaar",
+          "isDynamic": false,
+          "timeAware": false,
+          "fitToMap": false
+        }
+      ],
+      "clustering": true,
+      "clusterLevel": 13
+    }
+  ],
+  "layerDirectory": "/api/layers",
+  "eventTab": false,
+  "searchProviders": [
+    {
+      "name": "bing",
+      "url": "http://dev.virtualearth.net/REST/v1/Locations",
+      "key": "Amr8FC04ddS61JzKj7yM4CaIqKWSucR29t7DmBWZbw99sgqhXmqDUSobNbgzaQFS",
+      "data": {
+        "culture": "nl",
+        "userLocation": "52.077857,4.316639"
+      }
+    },
+    {
+      "name": "OpenCageData",
+      "url": "https://api.opencagedata.com/geocode/v1/json",
+      "key": "f3d87404630aa9140c2ccfb32a2168c5",
+      "data": {
+        "culture": "nl",
+        "language": "nl-NL",
+        "userLocation": "52.077857,4.316639"
+      }
+    }
+  ],
+  "storage": "file"
+}

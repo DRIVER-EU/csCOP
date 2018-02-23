@@ -1,0 +1,265 @@
+{
+  "featureTypes": {
+    "gemeente": {
+      "style": {
+        "drawingMode": "Polygon",
+        "fillColor": "#ffffff",
+        "strokeColor": "#000088",
+        "strokeWidth": 2,
+        "stroke": true,
+        "fillOpacity": 0.9,
+        "opacity": 0.9,
+        "iconWidth": 28,
+        "iconHeight": 28,
+        "nameLabel": "GM_NAAM",
+        "iconUri": "images/gemeente.png"
+      },
+      "propertyTypeKeys": "GM_CODE;GM_NAAM;AANT_INW;AANT_MAN;AANT_VROUW;P_00_14_JR;P_15_24_JR;P_25_44_JR;P_45_64_JR;P_65_EO_JR;P_ONGEHUWD;P_GEHUWD;P_GESCHEID;P_VERWEDUW;BEV_DICHTH;OAD;STED;AANTAL_HH;P_EENP_HH;P_HH_Z_K;P_HH_M_K;GEM_HH_GR;P_WEST_AL;P_N_W_AL;P_MAROKKO;P_SURINAM;P_OVER_NW;AO_UIT_TOT;WW_UIT_TOT;WWB_UITTOT;A_SOZ_OW;AUTO_TOT;AUTO_HH;AUTO_LAND;BEDR_AUTO;MOTOR_2W;A_LFTJ6J;A_LFTO6J;A_BST_B;A_BST_NB;OPP_TOT;OPP_LAND;OPP_WATER"
+    }
+  },
+  "propertyTypeData": {
+    "GM_NAAM": {
+      "title": "Gemeente naam",
+      "type": "text",
+      "visibleInCallOut": false
+    },
+    "WK_CODE": {
+      "title": "Wijk code",
+      "type": "text"
+    },
+    "GM_CODE": {
+      "title": "Gemeente code",
+      "type": "text"
+    },
+    "IND_WBI": {
+      "title": "Indelingswijziging wijken en buurten [code]",
+      "type": "number",
+      "description": "Deze indicator geeft per wijk en buurt aan of de cijfers uit deze tabel zonder problemen kunnen worden gekoppeld aan en vergeleken met de cijfers van een jaar eerder, of dat er wijzigingen in de Wijk- en Buurtindeling zijn waardoor dit niet kan. Detailinformatie over wijzigingen in de Wijk- en Buurtindeling kan worden verkregen door de wijk- en buurtkaart van twee opeenvolgende jaren met elkaar te vergelijken. 1. De codering en afbakening van deze wijk/buurt is ongewijzigd ten opzichte van het voorgaande jaar. Het is wel mogelijk dat een naamswijziging heeft plaatsgevonden. De cijfers kunnen worden gekoppeld en vergeleken met die van het voorgaande jaar; 2. De codering van de wijk/buurt is veranderd ten opzichte van het voorgaande jaar. De afbakening is ongewijzigd. Om te kunnen koppelen met cijfers van het voorgaande jaar zal eerst moeten worden achterhaald wat de codering van het voorgaande jaar was. Is de koppeling eenmaal geslaagd dan kunnen de cijfers alsnog met elkaar worden vergeleken; 3. De afbakening van de wijk/buurt is veranderd ten opzichte van het voorgaande jaar. Dit kan gepaard zijn gegaan met een gewijzigde codering. De cijfers kunnen niet zonder meer worden vergeleken met die van het voorgaande jaar. Verschillen kunnen immers samenhangen met de verandering in de afbakening van de wijk of buurt "
+    },
+    "OAD": {
+      "title": "Omgevingsadressendichtheid",
+      "type": "number",
+      "description": "Het gemiddeld aantal adressen van een buurt, wijk of gemeente per vierkante kilometer binnen een cirkel met een straal van één kilometer op 1 januari van het betreffende jaar. De OAD beoogt de mate van concentratie van menselijke activiteiten (wonen, werken, schoolgaan, winkelen, uitgaan etc.) weer te geven. CBS gebruikt de OAD om de stedelijkheid van een bepaald gebied te bepalen."
+    },
+    "STED": {
+      "title": "Stedelijkheid [code]",
+      "type": "options",
+      "description": "Op grond van de omgevingsadressendichtheid is aan iedere buurt, wijk of gemeente een stedelijkheidsklasse toegekend.",
+      "options": [
+        "IGNORE 0",
+        "≥2 500 adressen/km²", 
+        "1500–2500 adressen/km²",
+        "1000–1500 adressen/km²", 
+        "500–1000 adressen/km²", 
+        "<500 adressen/km²"
+      ]
+    },
+    "AANT_INW": {
+      "title": "Aantal inwoners",
+      "type": "number"
+    },
+    "AANT_MAN": {
+      "title": "Aantal mannen",
+      "type": "number"
+    },
+    "AANT_VROUW": {
+      "title": "Aantal vrouwen",
+      "type": "number"
+    },
+    "P_00_14_JR": {
+      "type": "number",
+      "title": "Leeftijd jonger dan 15 jaar",
+      "stringFormat": "{0}%"
+    },
+    "P_15_24_JR": {
+      "title": "Leeftijd 15 tot en met 24 jaar",
+      "stringFormat": "{0}%",
+      "type": "number"
+    },
+    "P_25_44_JR": {
+      "title": "Leeftijd 25 tot en met 44 jaar",
+      "stringFormat": "{0}%",
+      "type": "number"
+    },
+    "P_45_64_JR": {
+      "type": "number",
+      "title": "Leeftijd 45 tot en met 64 jaar",
+      "stringFormat": "{0}%"
+    },
+    "P_65_EO_JR": {
+      "title": "Leeftijd 65 jaar en ouder",
+      "type": "number",
+      "stringFormat": "{0}%"
+    },
+    "P_ONGEHUWD": {
+      "title": "Ongehuwd",
+      "type": "number",
+      "stringFormat": "{0}%"
+    },
+    "P_GEHUWD": {
+      "title": "Gehuwd",
+      "type": "number",
+      "stringFormat": "{0}%"
+    },
+    "P_GESCHEID": {
+      "title": "Gescheiden",
+      "type": "number",
+      "stringFormat": "{0}%"
+    },
+    "P_VERWEDUW": {
+      "title": "Verweduwd",
+      "type": "number",
+      "stringFormat": "{0}%"
+    },
+    "BEV_DICHTH": {
+      "title": "Bevolkings dichtheid",
+      "stringFormat": "{0:0,0}",
+      "type": "number"
+    },
+    "AANTAL_HH": {
+      "title": "Aantal huishoudens",
+      "stringFormat": "{0:0,0}",
+      "type": "number"
+    },
+    "P_EENP_HH": {
+      "title": "Eénpersoonshuishoudens",
+      "stringFormat": "{0}%",
+      "type": "number"
+    },
+    "P_HH_Z_K": {
+      "title": "Huishoudens zonder kinderen",
+      "stringFormat": "{0}%",
+      "type": "number"
+    },
+    "P_HH_M_K": {
+      "title": "Huishoudens met kinderen",
+      "stringFormat": "{0}%",
+      "type": "number"
+    },
+    "GEM_HH_GR": {
+      "title": "Gemiddelde grootte huishouden",
+      "stringFormat": "{0:0,0.##}",
+      "type": "number"
+    },
+    "P_WEST_AL": {
+      "title": "Westerse allochtonen",
+      "stringFormat": "{0}%",
+      "type": "number"
+    },
+    "P_N_W_AL": {
+      "title": "Niet-Westerse allochtonen",
+      "stringFormat": "{0}%",
+      "type": "number"
+    },
+    "P_SURINAM": {
+      "title": "Suriname",
+      "description": "Percentage allochtonen van Surinaamse afkomst",
+      "stringFormat": "{0}%",
+      "type": "number"
+    },
+    "P_TURKIJE": {
+      "title": "Turkije",
+      "description": "Percentage allochtonen van Turkse afkomst",
+      "stringFormat": "{0}%",
+      "type": "number"
+    },
+    "P_OVER_NW": {
+      "title": "Overig niet-Westers",
+      "stringFormat": "{0}%",
+      "description": "Percentage allochtonen van niet-Westerse afkomst",
+      "type": "number"
+    },
+    "AO_UIT_TOT": {
+      "title": "AO-uitkeringen totaal",
+      "type": "number",
+      "stringFormat": "{0:0,0}",
+      "description": "Personen die een arbeidsongeschiktheidsuitkering ontvangen op grond van de Wet op de arbeidsongeschiktheidsverzekering (WAO), de Wet arbeidsongeschiktheidsverzekering zelfstandigen (WAZ), de Wet werk en Inkomen naar arbeidsvermogen (WIA), de Wet arbeidsongeschiktheidsvoorziening jonggehandi-capten (Wajong) en de Wet werk en arbeidsondersteuning jonggehandicapten (wet Wajong)."
+    },
+    "WW_UIT_TOT": {
+      "title": "WW-uitkeringen totaal",
+      "type": "number",
+      "stringFormat": "{0:0,0}",
+      "description": "Personen die een uitkering ontvangen op grond van de Werkloosheidswet (WW)."
+    },
+    "WWB_UITTOT": {
+      "title": "Algemene bijstandsuitkeringen totaal",
+      "type": "number",
+      "stringFormat": "{0:0,0}",
+      "description": "Personen die een bijstandsuitkering op grond van de Wet werk en bijstand (WWB, tot 1 januari 2015) of de Participatiewet (vanaf 1 januari 2015) ontvangen. Het betreft in 2015 voorlopige cijfers."
+    },
+    "A_SOZ_OW": {
+      "title": "Personen met een AOW-uitkering",
+      "stringFormat": "{0:0,0}",
+      "type": "number",
+      "description": "Personen die een basispensioen van de Rijksoverheid ontvangen op grond van de Algemene Ouderdomswet (AOW)."
+    },
+    "AUTO_TOT": {
+      "title": "Auto totaal",
+      "stringFormat": "{0:0,0}",
+      "type": "number"
+    },
+    "AUTO_HH": {
+      "title": "Auto's per huishouden",
+      "stringFormat": "{0:0,0.0}",
+      "type": "number"
+    },
+    "AUTO_LAND": {
+      "title": "Personenauto’s per km²",
+      "type": "number",
+      "stringFormat": "{0:0,0}",
+      "description": "Het aantal personenauto’s per km² land op 1 januari. De personenauto’s worden regionaal ingedeeld met behulp van de kentekenregistratie. Personenauto’s die geregistreerd staan op het adres van het lease- of verhuurbedrijf vertekenen daarom de autodichtheid per oppervlakte."
+    },
+    "BEDR_AUTO": {
+      "title": "Bedrijfsauto",
+      "type": "number",
+      "stringFormat": "{0:0,0}",
+      "description": "Het aantal bestelauto’s, vrachtauto’s, trekkers (motorvoertuigen ingericht voor het trekken van opleggers), speciale voertuigen (bedrijfsauto’s voor bijzondere doeleinden zoals bv brandweerauto’s, reinigingsauto’s, takelwagens) en autobussen op 1 januari. De cijfers zijn afgerond op vijftallen."
+    },
+    "MOTOR_2W": {
+      "title": "Motor 2w",
+      "type": "number",
+      "stringFormat": "{0:0,0}",
+      "description": "Het aantal motorrijwielen, scooters, motorcarriers en motorinvalidenwagens met een motorrijwielkentekenbewijs op 1 januari. De cijfers zijn afgerond op vijftallen."
+    },
+    "A_LFTJ6J": {
+      "title": "Aantal auto’s jonger dan 6j",
+      "stringFormat": "{0:0,0}",
+      "type": "number",
+      "description": "Het aantal personenauto’s van jonger dan 6 jaar. Deze leeftijd is afgeleid van het bouwjaar van het voertuig."
+    },
+    "A_LFTO6J": {
+      "title": "Aantal auto's ouder dan 6j",
+      "stringFormat": "{0:0,0}",
+      "type": "number",
+      "description": "Het aantal personenauto’s ouder dan 6 jaar. Deze leeftijd is afgeleid van het bouwjaar van het voertuig."
+    },
+    "A_BST_B": {
+      "title": "Auto's op benzine",
+      "type": "number",
+      "description": "Personenauto’s; brandstof benzine"
+    },
+    "A_BST_NB": {
+      "title": "Auto's overige brandstof",
+      "type": "number",
+      "description": "Het aantal personenauto’s met overige brandstof. Hieronder vallen: diesel, LPG, elektriciteit (incl. hybride), waterstof, alcohol en CNG."
+    },
+    "OPP_TOT": {
+      "title": "Oppervlakte totaal [ha]",
+      "type": "number",
+      "stringFormat": "{0:0,0}",
+      "description": "De totale oppervlakte is de som van de oppervlakten water en land in hele hectaren (ha.)"
+    },
+    "OPP_LAND": {
+      "title": "Oppervlakte land [ha]",
+      "type": "number",
+      "stringFormat": "{0:0,0}",
+      "description": "De oppervlakte land is bepaald door het meest recente digitale bestand Bodemgebruik te combineren met het digitale bestand van gemeente-, wijk- en buurtgrenzen"
+    },
+    "OPP_WATER": {
+      "title": "Opp water",
+      "type": "number",
+      "stringFormat": "{0:0,0}",
+      "description": "Oppervlakte water omvat zowel binnen- als buitenwater. Tot binnenwater wordt gerekend alle water niet onderhevig aan getijden en breder dan 6 meter, zoals het IJsselmeer, Markermeer, Randmeren, sloten, rivieren, kanalen en dergelijke. "
+    }
+  }
+}

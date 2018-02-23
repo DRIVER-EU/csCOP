@@ -1,0 +1,27 @@
+{
+    "featureTypes": {
+        "location": {
+            "name": "location",
+            "style": {
+                "drawingMode": "Overlay",
+                "strokeWidth": 0,
+                "fillOpacity": 0,
+                "fillColor": "transparent",
+                "selectedStrokeColor": "transparent",
+                "selectedFillColor": "transparent",
+                "iconUri": "images/podium.png"
+            },
+            "propertyTypeKeys": "Name;attribution"
+        }
+    },
+    "propertyTypeData": {
+        "Name": {
+            "title": "Naam",
+            "type": "text"
+        },
+        "attribution": {
+            "title": "Attributie",
+            "description": "Invulling locatie door de organisatoren."
+        }
+    }
+}

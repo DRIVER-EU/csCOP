@@ -1,0 +1,99 @@
+{
+  "featureTypes": {
+    "hoogspanningsleidingen": {
+      "style": {
+        "drawingMode": "LineString",
+        "fillColor": "#ffffff",
+        "strokeColor": "#ff0000",
+        "selectedStrokeColor": "#0000FF",
+        "strokeWidth": 4,
+        "stroke": true,
+        "fillOpacity": 0.9,
+        "opacity": 0.9,
+        "iconWidth": 28,
+        "iconHeight": 28,
+        "nameLabel": "typespoorb",
+        "iconUri": "images/hoogspanningsmast.png"
+      },
+      "propertyTypeKeys": "ogc_fid;fid;namespace;lokaalid;brontype;bronactual;bronbeschr;bronnauwke;objectbegi;tijdstipre;tdncode;visualisat;typeinfras;typespoorb;spoorbreed;aantalspor;vervoerfun;elektrific;status"
+    }
+  },
+  "propertyTypeData": {
+    "ogc_fid": {
+      "title": "OGC FID",
+      "type": "number"
+    },
+    "fid": {
+      "title": "FID",
+      "type": "number"
+    },
+    "namespace": {
+      "title": "Namespace",
+      "type": "text"
+    },
+    "lokaalid": {
+      "title": "Lokaal id",
+      "type": "number"
+    },
+    "brontype": {
+      "title": "Brontype",
+      "type": "text"
+    },
+    "bronactual": {
+      "title": "Bronactual",
+      "type": "text"
+    },
+    "bronbeschr": {
+      "title": "Bronbeschrijving",
+      "type": "textarea"
+    },
+    "bronnauwke": {
+      "title": "Bronnauwkeurigheid",
+      "type": "number"
+    },
+    "objectbegi": {
+      "title": "Objectbegi",
+      "type": "text"
+    },
+    "tijdstipre": {
+      "title": "Tijdstipre",
+      "type": "text"
+    },
+    "tdncode": {
+      "title": "TDN code",
+      "type": "number"
+    },
+    "visualisat": {
+      "title": "Visualisatie",
+      "type": "number"
+    },
+    "typeinfras": {
+      "title": "Type infrastructuur",
+      "type": "text"
+    },
+    "typespoorb": {
+      "title": "Type spoorbreedte",
+      "type": "text"
+    },
+    "spoorbreed": {
+      "title": "Spoorbreedte",
+      "type": "text"
+    },
+    "aantalspor": {
+      "title": "Aantalsporen",
+      "type": "text"
+    },
+    "vervoerfun": {
+      "title": "Vervoerfunctie",
+      "type": "textarea"
+    },
+    "elektrific": {
+      "title": "Elektrificatie",
+      "type": "text"
+    },
+    "status": {
+      "title": "Status",
+      "type": "text"
+    }
+  }
+}

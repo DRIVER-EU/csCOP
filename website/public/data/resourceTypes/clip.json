@@ -1,0 +1,37 @@
+{
+  "featureTypes": {
+    "clip": {
+      "style": {
+        "drawingMode": "Polygon",
+        "fillColor": "#ffffff",
+        "strokeColor": "#000088",
+        "strokeWidth": 4,
+        "stroke": true,
+        "fillOpacity": 0,
+        "opacity": 0.9,
+        "iconWidth": 28,
+        "iconHeight": 28,
+        "nameLabel": "Name",
+        "iconUri": "images/clip.png"
+      },
+      "propertyTypeKeys": "id;regiocode;Name"
+    }
+  },
+  "propertyTypeData": {
+    "id": {
+      "title": "Id",
+      "type": "number",
+      "description": ""
+    },
+    "regiocode": {
+      "title": "Regiocode",
+      "type": "number",
+      "description": ""
+    },
+    "Name": {
+      "title": "Name",
+      "type": "textarea",
+      "description": ""
+    }
+  }
+}

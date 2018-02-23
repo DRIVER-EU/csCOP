@@ -1,0 +1,38 @@
+{
+    "featureTypes": {
+        "ministeries": {
+            "name": "ministeries",
+            "contourProperty": "geometry",
+            "style": {
+                "drawingMode": "Point",
+                "strokeWidth": 0,
+                "fillOpacity": 0,
+                "fillColor": "transparent",
+                "selectedStrokeColor": "blue",
+                "selectedFillColor": "transparent",
+                "iconWidth": 32,
+                "iconHeight": 37,
+                "iconUri": "images/ministerie.png"
+            },
+            "propertyTypeKeys" : "Name;address"
+        }
+    },
+    "propertyTypeData" : {
+        "Name" : {
+            "label" : "Name",
+            "title" : "Name",
+            "description" : "Name",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        },
+        "address" : {
+            "title" : "Adres",
+            "type" : "text",
+            "visibleInCallOut" : true,
+            "canEdit" : true,
+            "isSearchable" : false
+        }
+    }
+}

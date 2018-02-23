@@ -1,0 +1,87 @@
+{
+  "featureTypes": {
+    "inrichting_el_station": {
+      "style": {
+        "drawingMode": "Point",
+        "fillColor": "#ffffff",
+        "strokeColor": "#ffffff",
+        "selectedStrokeColor": "#0000FF",
+        "strokeWidth": 2,
+        "stroke": true,
+        "fillOpacity": 0.9,
+        "opacity": 0.9,
+        "iconWidth": 28,
+        "iconHeight": 28,
+        "nameLabel": "Name",
+        "iconUri": "images/{typeinrich}.png"
+      },
+      "propertyTypeKeys": "Name;typeinrich;naam;ogc_fid;fid;namespace;lokaalid;brontype;bronactual;bronbeschr;bronnauwke;objectbegi;tijdstipre;tdncode;visualisat"
+    }
+  },
+  "propertyTypeData": {
+    "Name": {
+      "label": "Name",
+      "title": "Naam",
+      "type": "text",
+      "expression": "properties.typeinrich + ' ' + properties.naam",
+      "visibleInCallout": false
+    },
+    "ogc_fid": {
+      "title": "OGC FID",
+      "type": "number"
+    },
+    "fid": {
+      "title": "FID",
+      "type": "number"
+    },
+    "namespace": {
+      "title": "Namespace",
+      "type": "text"
+    },
+    "lokaalid": {
+      "title": "Lokaal id",
+      "type": "number"
+    },
+    "brontype": {
+      "title": "Brontype",
+      "type": "text"
+    },
+    "bronactual": {
+      "title": "Bronactual",
+      "type": "text"
+    },
+    "bronbeschr": {
+      "title": "Bronbeschrijving",
+      "type": "textarea"
+    },
+    "bronnauwke": {
+      "title": "Bronnauwkeurigheid",
+      "type": "number"
+    },
+    "objectbegi": {
+      "title": "Objectbegi",
+      "type": "text",
+      "description": ""
+    },
+    "tijdstipre": {
+      "title": "Tijdstipre",
+      "type": "text",
+      "description": ""
+    },
+    "tdncode": {
+      "title": "TDN code",
+      "type": "number",
+      "description": ""
+    },
+    "visualisat": {
+      "title": "Visualisatie",
+      "type": "number",
+      "description": ""
+    },
+    "typeinrich": {
+      "title": "Typeinrichting",
+      "type": "textarea",
+      "description": ""
+    }
+  }
+}
