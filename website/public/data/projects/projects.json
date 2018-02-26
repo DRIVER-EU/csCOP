@@ -158,6 +158,32 @@
         "cesium_url": "http://d.basemaps.cartocdn.com/light_nolabels/",
         "attribution": "Tiles &copy",
         "preview": "http://driver-testbed.eu:3344/styles/osm-bright/12/2117/1328.png"
+    },
+    {
+        "title": "MBTiles test-bed local",
+        "isDefault": false,
+        "subtitle": "OSM bright style",
+        "subdomains": ["a", "b", "c", "d"],
+        "minZoom": 0,
+        "maxZoom": 20,
+        "cesium_maptype": "openstreetmap",
+        "url": "http://localhost:3344/styles/osm-bright/{z}/{x}/{y}.png",
+        "cesium_url": "http://d.basemaps.cartocdn.com/light_nolabels/",
+        "attribution": "Tiles &copy",
+        "preview": "http://localhost:3344/styles/osm-bright/12/2117/1328.png"
+    },
+    {
+        "title": "MBTiles test-bed local2",
+        "isDefault": false,
+        "subtitle": "OSM bright style",
+        "subdomains": ["a", "b", "c", "d"],
+        "minZoom": 0,
+        "maxZoom": 20,
+        "cesium_maptype": "openstreetmap",
+        "url": "http://localhost:3344/styles/osm-bright/{z}/{x}/{y}.png",
+        "cesium_url": "http://d.basemaps.cartocdn.com/light_nolabels/",
+        "attribution": "Tiles &copy",
+        "preview": "http://localhost:3344/styles/osm-bright/12/2117/1328.png"
     }],
     "projects": [{
         "title": "Team A",
