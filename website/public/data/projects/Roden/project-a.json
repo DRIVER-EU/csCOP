@@ -142,11 +142,11 @@
           "enabled": true
         },
         {
-          "id": "teamcommunication-b",
+          "id": "offsitecomms",
           "title": "Off-site team",
           "type": "dynamicgeojson",
           "renderType": "geojson",
-          "url": "api/layers/teamcommunication-b",
+          "url": "api/layers/offsitecomms",
           "typeUrl": "data/resourceTypes/teamcommunication.json",
           "isDynamic": true,
           "isEditable": true,
