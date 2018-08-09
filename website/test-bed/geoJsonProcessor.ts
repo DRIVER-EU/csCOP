@@ -28,6 +28,8 @@ export class GeoJsonProcessor {
             ftCollection.features.forEach((f) => {
                 if (f.geometry.hasOwnProperty('eu.driver.model.geojson.Point')) {
                     f.geometry = f.geometry['eu.driver.model.geojson.Point'];
+                } else if (f.geometry.hasOwnProperty('eu.driver.model.geojson.sim.Point')) {
+                    f.geometry = f.geometry['eu.driver.model.geojson.sim.Point'];
                 }
                 if (f.properties && f.properties['guid']) {
                     f.id = f.properties['guid'];
