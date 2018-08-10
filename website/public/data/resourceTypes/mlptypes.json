@@ -3,7 +3,7 @@
         "MLPPoint": {
             "name": "MLPPoint",
             "style": {
-                "iconUri": "images/mlp/icon_{subLabel}.png",
+                "iconUri": "images/mlp/icon_{label}.png",
                 "iconWidth": 26,
                 "iconHeight": 26,
                 "strokeWidth": 4,
@@ -14,15 +14,15 @@
                 "fillColor": "#ffeeee",
                 "opacity": 0.6,
                 "fillOpacity": 0.6,
-                "nameLabel": "subLabel"
+                "nameLabel": "name"
             },
-            "propertyTypeKeys": "Name;roll;pitch;yaw;speed;type;objectType;subType;subLabel"
+            "propertyTypeKeys": "name;roll;pitch;yaw;speed;type;objectType;subType;subLabel;label;subEntities;subEntitiesFeature"
         }
     },
     "propertyTypeData": {
-        "Name": {
-            "label": "Name",
-            "title": "Name",
+        "name": {
+            "label": "name",
+            "title": "name",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": true
@@ -51,10 +51,36 @@
             "visibleInCallOut": true,
             "canEdit": true
         },
+        "subEntitiesFeature": {
+            "label": "subEntitiesFeature",
+            "title": "Linked item",
+            "description": "Linked item",
+            "type": "relation",
+            "visibleInCallOut": true,
+            "canEdit": true,
+            "subject": "subEntitiesFeature",
+            "targetlayers": ["*"]
+        },
         "subLabel": {
             "label": "subLabel",
             "title": "Sublabel",
             "description": "Sublabel",
+            "type": "text",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "subEntities": {
+            "label": "subEntities",
+            "title": "Subentities",
+            "description": "Subentities",
+            "type": "text",
+            "visibleInCallOut": false,
+            "canEdit": true
+        },
+        "label": {
+            "label": "label",
+            "title": "Label",
+            "description": "Label",
             "type": "text",
             "visibleInCallOut": true,
             "canEdit": true

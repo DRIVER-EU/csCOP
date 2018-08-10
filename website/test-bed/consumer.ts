@@ -121,14 +121,40 @@ export class Consumer {
                 break;
             case 'css-demo-geojson':
             case 'css-demo-geojson2':
+            case 'standard_geojson_sim_station':
             case 'standard_geojson_sim_item':
+            case 'standard_geojson_sim_unit':
+            case 'standard_geojson_sim_unitgroup':
                 this.log.info(`Received message on topic ${message.topic} with key ${message.key}`);
-                let mlpFeatures = this.geoJsonProcessor.handleIncomingMessage(<any>message.value);
-                if (mlpFeatures && this.callback) this.callback(mlpFeatures, 'mlp');
+                this.convertMessageAndUpdateFeatures(message);
                 break;
             default:
                 this.log.info(`Received message on topic ${message.topic}: ${message.value}`);
                 break;
+        }
+    }
+
+    private convertMessageAndUpdateFeatures(message: IAdapterMessage) {
+        let features = this.geoJsonProcessor.handleIncomingMessage(<any>message.value);
+        if (!features || !this.callback) {
+            console.warn('Cannot send update');
+            return;
+        }
+        switch (message.topic) {
+            case 'standard_geojson_sim_item':
+                this.callback(features, 'items');
+                break;
+            case 'standard_geojson_sim_unit':
+                this.callback(features, 'units');
+                break;
+            case 'standard_geojson_sim_unitgroup':
+                this.callback(features, 'unitgroups');
+                break;
+            case 'standard_geojson_sim_station':
+                this.callback(features, 'stations');
+                break;
+            default:
+                console.warn(`Unknown topic ${message.topic}`);
         }
     }
 }

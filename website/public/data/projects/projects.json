@@ -135,7 +135,7 @@
     }, 
     {
         "title": "MBTiles test-bed`1",
-        "isDefault": true,
+        "isDefault": false,
         "subtitle": "Klokantech style",
         "subdomains": ["a", "b", "c", "d"],
         "minZoom": 0,
