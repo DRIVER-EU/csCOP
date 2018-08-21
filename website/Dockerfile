@@ -19,7 +19,7 @@ ENV CSCOP_PORT='8003'
 EXPOSE 8003
 
 WORKDIR /src/public
-RUN bower i --allow-root
+RUN bower i --allow-root --force
 WORKDIR /src
 RUN tsc
 

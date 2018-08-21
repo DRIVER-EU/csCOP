@@ -61,11 +61,11 @@ export class Consumer {
 
     private subscribe(): Promise<void | OffsetFetchRequest[]> {
         this.adapter.on('message', message => this.handleMessage(message));
-        this.adapter.on('offsetOutOfRange', err => this.log.error(`Consumer received an error: ${_.isObject(err) ? JSON.stringify(err) : err}`));
+        this.adapter.on('offsetOutOfRange', err => this.log.error(`Consumer received an error in subscribe(): ${_.isObject(err) ? JSON.stringify(err) : err}`));
         return this.adapter
             .addConsumerTopics({
-                topic: TestBedAdapter.HeartbeatTopic
-            })
+                topic: TestBedAdapter.HeartbeatTopic, offset: Number.MAX_SAFE_INTEGER
+            }, true)
             .catch(err => {
                 if (err) {
                     this.log.error(`Consumer received an error: ${err}`);
@@ -83,7 +83,7 @@ export class Consumer {
                 if (results && results.length > 0) {
                     results.forEach(result => {
                         if (result.hasOwnProperty('metadata')) {
-                            console.log('TOPICS');
+                            this.log.info('TOPICS');
                             const metadata = (result as {
                                 [metadata: string]: {
                                     [topic: string]: ITopicMetadataItem;
@@ -91,11 +91,11 @@ export class Consumer {
                             }).metadata;
                             for (let key in metadata) {
                                 const md = metadata[key];
-                                console.log(`Topic: ${key}, partitions: ${Object.keys(md).length}`);
+                                this.log.info(`Topic: ${key}, partitions: ${Object.keys(md).length}`);
                             }
                         } else {
-                            console.log('NODE');
-                            console.log(result);
+                            this.log.info('NODE');
+                            this.log.info(result);
                         }
                     });
                     resolve();

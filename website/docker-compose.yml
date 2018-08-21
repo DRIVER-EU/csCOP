@@ -12,4 +12,5 @@ services:
     volumes:
       - ./config/config.json:/src/config/dynamic-config.json
     environment:
+      CSCOP_SERVER: 'http://localhost'
       CSCOP_PORT: '8003'

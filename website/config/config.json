@@ -1,7 +1,7 @@
 {
     "clientId": "csCOP-A",
     "kafkaHost": "localhost:3501",
-    "schemaRegistry": "localhost:3502",
+    "schemaRegistry": "http://localhost:3502",
     "wrapUnions": "auto",
     "heartbeatInterval": 10000,
     "fetchAllSchemas": false,

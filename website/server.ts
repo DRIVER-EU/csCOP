@@ -31,9 +31,11 @@ const SEND_GEOJSON_ENDPOINT = '/send-geojson';
 
 var startDatabaseConnection = false;
 var capLayerId: string = 'cap';
+var host = process.env.CSCOP_SERVER || 'http://localhost';
 var port = process.env.CSCOP_PORT || 8003;
 
 var cs = new csweb.csServer(__dirname, <csweb.csServerOptions>{
+    host: host,
     port: port,
     swagger: false
     //connectors: { mqtt: { server: 'localhost', port: 1883 }, mongo: { server : '127.0.0.1', port: 27017} }

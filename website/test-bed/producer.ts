@@ -69,7 +69,7 @@ export class Producer {
                 console.error(error);
             }
             if (data) {
-                console.log(data);
+                this.log.info(data);
             }
             cb(error, data);
         });
