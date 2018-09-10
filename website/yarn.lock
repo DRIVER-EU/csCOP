@@ -12,9 +12,13 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^10.7.1":
+"@types/node@*":
   version "10.7.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.7.1.tgz#b704d7c259aa40ee052eec678758a68d07132a2e"
+
+"@types/node@^10.9.3":
+  version "10.9.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.3.tgz#85f288502503ade0b3bfc049fe1777b05d0327d5"
 
 abbrev@1, abbrev@^1.1.1:
   version "1.1.1"
@@ -2095,9 +2099,9 @@ node-pre-gyp@^0.10.0:
     semver "^5.3.0"
     tar "^4"
 
-node-test-bed-adapter@DRIVER-EU/node-test-bed-adapter.git#5-Fix-OffsetOutOfRange-error:
+node-test-bed-adapter@^0.4.5:
   version "0.4.5"
-  resolved "https://codeload.github.com/DRIVER-EU/node-test-bed-adapter/tar.gz/3e6688a6b81766b1d9c11268ef276025a14ab77a"
+  resolved "https://registry.yarnpkg.com/node-test-bed-adapter/-/node-test-bed-adapter-0.4.5.tgz#99fc3cfe6354b9d4cdf01646272e2c9fbebca164"
   dependencies:
     "@types/bluebird" "^3.5.20"
     "@types/kafka-node" "^2.0.6"

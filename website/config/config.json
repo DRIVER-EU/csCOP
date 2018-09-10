@@ -6,9 +6,14 @@
     "heartbeatInterval": 10000,
     "fetchAllSchemas": false,
     "fetchAllVersions": false,
+    "fromOffset": true,
     "autoRegisterSchemas": true,
     "schemaFolder": "./data/schemas",
     "consume": [{
+            "topic": "system_heartbeat",
+            "offset": -1
+        },
+        {
             "topic": "cap"
         },
         {

@@ -21,15 +21,15 @@
     "chokidar": "^2.0.4",
     "compression": "^1.7.3",
     "cors": "^2.8.4",
-    "csweb": "0.3.26",
+    "csweb": "0.3.27",
     "moment": "^2.22.2",
-    "node-test-bed-adapter": "0.4.5",
+    "node-test-bed-adapter": "https://github.com/DRIVER-EU/node-test-bed-adapter/files/2333008/node-test-bed-adapter-0.4.6.tar.gz",
     "winston": "^2.4.3"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.23",
     "@types/kafka-node": "^2.0.7",
-    "@types/node": "^10.7.1"
+    "@types/node": "^10.9.3"
   },
   "bugs": {
     "url": "https://github.com/TNOCS/csWeb/issues"

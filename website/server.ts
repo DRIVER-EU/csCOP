@@ -23,6 +23,8 @@ if (fs.existsSync('./config/dynamic-config.json')) {
     let configText = fs.readFileSync('./config/dynamic-config.json', {encoding: 'utf8'});
     DynamicTestBedConfig = JSON.parse(configText);
     console.warn('Using config/dynamic-config.json (overwrites default config)');
+} else {
+    console.log('Using default config.json');
 }
 const TestBedConfig = DynamicTestBedConfig || StaticTestBedConfig;
 

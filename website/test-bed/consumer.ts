@@ -63,9 +63,7 @@ export class Consumer {
         this.adapter.on('message', message => this.handleMessage(message));
         this.adapter.on('offsetOutOfRange', err => this.log.error(`Consumer received an error in subscribe(): ${_.isObject(err) ? JSON.stringify(err) : err}`));
         return this.adapter
-            .addConsumerTopics({
-                topic: TestBedAdapter.HeartbeatTopic, offset: Number.MAX_SAFE_INTEGER
-            }, true)
+            .addConsumerTopics()
             .catch(err => {
                 if (err) {
                     this.log.error(`Consumer received an error: ${err}`);
