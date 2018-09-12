@@ -1,5 +1,7 @@
 {
     "clientId": "csCOP-A",
+    "kafkaHost": "driver-testbed.eu:3501",
+    "schemaRegistry": "http://driver-testbed.eu:3502",
     "kafkaHost": "localhost:3501",
     "schemaRegistry": "http://localhost:3502",
     "wrapUnions": "auto",
@@ -23,16 +25,20 @@
             "topic": "teamcommunication"
         },
         {
-            "topic": "standard_geojson_sim_item"
+            "topic": "standard_geojson_sim_item",
+            "offset": -1
         },
         {
-            "topic": "standard_geojson_sim_unit"
+            "topic": "standard_geojson_sim_unit",
+            "offset": -1
         },
         {
-            "topic": "standard_geojson_sim_unitgroup"
+            "topic": "standard_geojson_sim_unitgroup",
+            "offset": -1
         },
         {
-            "topic": "standard_geojson_sim_station"
+            "topic": "standard_geojson_sim_station",
+            "offset": -1
         }
     ],
     "produce": ["cap", "teamcommunication", "css-demo-geojson", "standard_geojson_sim_unit", "standard_geojson_sim_item", "standard_geojson_sim_unitgroup", "standard_geojson_sim_station"]

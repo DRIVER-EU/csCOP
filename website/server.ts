@@ -9,7 +9,7 @@ import {ITestBedOptions, LogLevel} from 'node-test-bed-adapter';
 //import cors = require('cors');
 import * as csweb from 'csweb';
 import StaticTestBedConfig = require('./config/config.json');
-
+import {FeatureCacher} from './FeatureCacher';
 
 Winston.remove(Winston.transports.Console);
 Winston.add(Winston.transports.Console, <Winston.ConsoleTransportOptions>{
@@ -61,6 +61,8 @@ function sendFeatureUpdates(fts: any[], layerId: string) {
 }
 
 cs.start(() => {
+    const featureCacher = new FeatureCacher(sendFeatureUpdates);
+
     var testBedOptions: ITestBedOptions = <any>TestBedConfig;
     testBedOptions.logging = {
         logToConsole: LogLevel.Info,
@@ -69,7 +71,8 @@ cs.start(() => {
         logFile: 'log.txt'
     };
     var consumer = new Consumer(testBedOptions);
-    consumer.setCallback(sendFeatureUpdates);
+    consumer.setCallback((fts: any[], layerId: string) => featureCacher.sendFeatureUpdates(fts, layerId));
+    // consumer.setCallback(sendFeatureUpdates);
     var producer = new Producer(testBedOptions);
 
     cs.server.post(SEND_CAP_ENDPOINT, (req, res) => {
