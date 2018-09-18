@@ -36,7 +36,7 @@
         "title": "OpenStreetMap HOT",
         "subtitle": "Road",
         "url": "http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
-        "isDefault": true,
+        "isDefault": false,
         "minZoom": 0,
         "maxZoom": 19,
         "cesium_url": "http://c.tile.openstreetmap.fr/hot/",
@@ -62,6 +62,7 @@
         "url": "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
         "cesium_url": "http://tile.openstreetmap.org/",
         "cesium_maptype": "openstreetmap",
+        "isDefault": true,
         "minZoom": 0,
         "maxZoom": 18,
         "id": "osm.mapnik",
@@ -186,6 +187,11 @@
         "preview": "http://localhost:3344/styles/osm-bright/12/2117/1328.png"
     }],
     "projects": [{
+        "title": "Haaglanden",
+        "url": "data/projects/Haaglanden/project.json",
+        "dynamic": true
+    },
+	{
         "title": "Team A",
         "url": "data/projects/Roden/project-a.json",
         "dynamic": true
