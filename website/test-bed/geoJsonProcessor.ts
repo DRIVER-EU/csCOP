@@ -22,14 +22,22 @@ export class GeoJsonProcessor {
         var ftCollection;
         if (_.isObject(geojsonMessage) && geojsonMessage.hasOwnProperty('features')) {
             ftCollection = geojsonMessage as IGeoJson;
+        } else if (_.isObject(geojsonMessage) && geojsonMessage.hasOwnProperty('data')) {
+            ftCollection = this.tryParsing(geojsonMessage.data) as IGeoJson;
         } else if (typeof geojsonMessage === 'string') {
-            try {
-                ftCollection = JSON.parse(geojsonMessage) as IGeoJson;
-            } catch (error) {
-                this.log.error(`Error parsing geojson message: ${error}`);
-            }
+            ftCollection = this.tryParsing(geojsonMessage) as IGeoJson;
         }
         return ftCollection || {features: []};
+    }
+
+    private tryParsing(data: string) {
+        var ftCollection;
+        try {
+            ftCollection = JSON.parse(data) as IGeoJson;
+        } catch (error) {
+            this.log.error(`Error parsing geojson message: ${error}`);
+        }
+        return ftCollection;
     }
 
     private fixAvroMessage(ftCollection: IGeoJson): IGeoJson {

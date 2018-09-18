@@ -4,42 +4,17 @@
     "schemaRegistry": "http://driver-testbed.eu:3502",
     "kafkaHost": "localhost:3501",
     "schemaRegistry": "http://localhost:3502",
-    "wrapUnions": "auto",
+    "wrapUnions": true,
     "heartbeatInterval": 10000,
     "fetchAllSchemas": false,
     "fetchAllVersions": false,
-    "fromOffset": true,
-    "autoRegisterSchemas": true,
+    "fromOffset": false,
+    "autoRegisterSchemas": false,
     "schemaFolder": "./data/schemas",
-    "consume": [{
-            "topic": "system_heartbeat",
-            "offset": -1
-        },
+    "consume": [
         {
-            "topic": "cap"
-        },
-        {
-            "topic": "css-demo-geojson"
-        },
-        {
-            "topic": "teamcommunication"
-        },
-        {
-            "topic": "standard_geojson_sim_item",
-            "offset": -1
-        },
-        {
-            "topic": "standard_geojson_sim_unit",
-            "offset": -1
-        },
-        {
-            "topic": "standard_geojson_sim_unitgroup",
-            "offset": -1
-        },
-        {
-            "topic": "standard_geojson_sim_station",
-            "offset": -1
+            "topic": "chain"
         }
     ],
-    "produce": ["cap", "teamcommunication", "css-demo-geojson", "standard_geojson_sim_unit", "standard_geojson_sim_item", "standard_geojson_sim_unitgroup", "standard_geojson_sim_station"]
+    "produce": ["chain"]
 }

@@ -5,11 +5,12 @@ import fs = require('fs');
 import * as _ from 'underscore';
 import {Consumer} from './test-bed/consumer';
 import {Producer} from './test-bed/producer';
-import {ITestBedOptions, LogLevel} from 'node-test-bed-adapter';
+import {ITestBedOptions, LogLevel, clone} from 'node-test-bed-adapter';
 //import cors = require('cors');
 import * as csweb from 'csweb';
 import StaticTestBedConfig = require('./config/config.json');
 import {FeatureCacher} from './FeatureCacher';
+import {Layer} from 'csweb';
 
 Winston.remove(Winston.transports.Console);
 Winston.add(Winston.transports.Console, <Winston.ConsoleTransportOptions>{
@@ -36,10 +37,15 @@ var capLayerId: string = 'cap';
 var host = process.env.CSCOP_SERVER || 'http://localhost';
 var port = process.env.CSCOP_PORT || 8003;
 
+const featureCacher = new FeatureCacher(sendFeatureUpdates);
+
 var cs = new csweb.csServer(__dirname, <csweb.csServerOptions>{
     host: host,
     port: port,
-    swagger: false
+    swagger: false,
+    onSocketIOConnection: () => {
+        featureCacher.sendAllFeatures();
+    }
     //connectors: { mqtt: { server: 'localhost', port: 1883 }, mongo: { server : '127.0.0.1', port: 27017} }
 });
 
@@ -57,20 +63,28 @@ function sendFeatureUpdates(fts: any[], layerId: string) {
         });
         cs.api.addUpdateFeatureBatch(layerId, featuresUpdates, {}, r => {});
         console.log(`Updated ${fts.length} features`);
+    } else if (!_.isArray(fts)) {
+        cs.api.addUpdateLayer(<any>{id: layerId, data: fts, tags: []}, {}, r => {});
+        console.log(`Updated ${layerId} layer`);
     }
 }
 
 cs.start(() => {
-    const featureCacher = new FeatureCacher(sendFeatureUpdates);
-
     var testBedOptions: ITestBedOptions = <any>TestBedConfig;
+    const consumeTopics = clone(testBedOptions.consume);
+    // testBedOptions.consume = [];
     testBedOptions.logging = {
         logToConsole: LogLevel.Info,
         logToFile: LogLevel.Debug,
         logToKafka: LogLevel.Error,
         logFile: 'log.txt'
     };
-    var consumer = new Consumer(testBedOptions);
+    var consumer = new Consumer(testBedOptions, () => {
+        // setTimeout(() => {
+        //     console.log(`Start consuming ${JSON.stringify(consumeTopics)}`);
+        //     consumer.addConsumerTopics(consumeTopics, true);
+        // }, 10000);
+    });
     consumer.setCallback((fts: any[], layerId: string) => featureCacher.sendFeatureUpdates(fts, layerId));
     // consumer.setCallback(sendFeatureUpdates);
     var producer = new Producer(testBedOptions);

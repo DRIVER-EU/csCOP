@@ -20,12 +20,15 @@ export class FeatureCacher {
         this.apiFunction(fts, layerId);
     }
 
-    public sendAllFeatures(layerId: string) {
-        if (!this.cache || !this.cache.hasOwnProperty(layerId)) return;
-        this.apiFunction(this.cache[layerId], layerId);
+    public sendAllFeatures() {
+        if (!this.cache) return;
+        Object.keys(this.cache).forEach(layerId => {
+            this.apiFunction(this.cache[layerId], layerId);
+        });
     }
 
     private addToCache(fts: any[], layerId: string) {
+        if (!Array.isArray(fts)) return;
         if (!this.cache || !this.cache.hasOwnProperty(layerId)) this.cache[layerId] = [];
         var layerCache = this.cache[layerId];
         layerCache = layerCache.concat(fts);

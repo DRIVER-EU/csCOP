@@ -1,0 +1,426 @@
+{
+    "id": "haaglanden",
+    "title": "csCOP",
+    "logo": "images/brandweer48.png",
+    "isDynamic": true,
+    "menuPaddingTopLeft": {
+        "x": 400,
+        "y": 100
+    },
+    "timeLine": {
+        "enableLive": true,
+        "enablePlay": true,
+        "enableEvents": true,
+        "enableFocus": true,
+        "focus": 1519815600000,
+        "start": 1519512000000,
+        "end": 1520114800000,
+        "range": 172800000,
+        "zoomLevel": 3600000,
+        "zoomLevelName": "hours",
+        "expandHeight": 150
+    },
+    "mcas": [{
+        "userWeight": 1,
+        "criteria": [],
+        "isPlaUpdated": false,
+        "isPlaScaled": false,
+        "id": "99344f36-f75a-4fa7-26c0-6b68a159c7ca",
+        "userWeightMax": 5,
+        "featureIds": [
+            "api/resources/mcs#Default"
+        ],
+        "stringFormat": "{0:0.0}",
+        "title": "test",
+        "label": "mca_test",
+        "weight": 1
+    }],
+    "profile": {
+        "authenticationMethod": 1
+    },
+    "datasources": null,
+    "dashboards": [{
+            "id": "map",
+            "name": "Home",
+            "editMode": true,
+            "showMap": true,
+            "mapWidth": "100%",
+            "alignMapRight": false,
+            "showTimeline": true,
+            "showLeftmenu": false,
+            "showLegend": false,
+            "showRightmenu": false,
+            "showBackgroundImage": false,
+            "widgets": [{
+                "id": "af68187a-d425-4f36-9620-f3c7a4738e21",
+                "directive": "buttonwidget",
+                "enabled": true,
+                "style": "transparent",
+                "left": "27px",
+                "right": "",
+                "top": "90px",
+                "width": "220px",
+                "data": {
+                    "layerGroup": "chain",
+                    "buttons": []
+                }
+            }],
+            "mobile": true
+        },
+        {
+            "id": "datatable",
+            "name": "Table",
+            "editMode": false,
+            "showMap": false,
+            "mapWidth": "100%",
+            "alignMapRight": false,
+            "showTimeline": false,
+            "showLeftmenu": false,
+            "showLegend": false,
+            "showRightmenu": false,
+            "showBackgroundImage": false,
+            "widgets": [{
+                "id": "datatable_id",
+                "directive": "datatable",
+                "enabled": true,
+                "width": "100%",
+                "top": "100px",
+                "bottom": "2px"
+            }],
+            "mobile": true
+        }
+    ],
+    "viewBounds": {
+        "southWest": [
+            51.990,
+            4.279
+        ],
+        "northEast": [
+            52.105,
+            4.458
+        ]
+    },
+    "userPrivileges": {
+        "mca": {
+            "expertMode": true
+        }
+    },
+    "modeSelection": true,
+    "expertMode": 3,
+    "propertyTypeData": {},
+    "groups": [{
+            "id": "chain",
+            "title": "Chain-effect simulator",
+            "layers": [{
+                "id": "chain_waterheight",
+                "title": "Waterlevel",
+                "description": "Waterlevel",
+                "type": "grid",
+                "renderType": "gridlayer",
+                "url": "/api/layers/chain_waterheight",
+                "typeUrl": "data/resourceTypes/floodsimtypes.json",
+                "opacity": 75,
+                "isDynamic": true,
+                "dataSourceParameters": {
+                    "propertyName": "h",
+                    "gridType": "esri",
+                    "projection": "WGS84",
+                    "contourLevels": [
+                        0.1,
+                        0.5,
+                        1,
+                        3,
+                        4,
+                        5,
+                        6
+                    ],
+                    "maxThreshold": 5.25,
+                    "minThreshold": 0.001
+                },
+                "defaultFeatureType": "waterhoogte",
+                "defaultLegendProperty": "h",
+                "enabled": true,
+                "quickRefresh": false
+            }, {
+                "id": "chain_power",
+                "title": "Power stations",
+                "type": "dynamicgeojson",
+                "renderType": "geojson",
+                "url": "api/layers/chain_power",
+                "typeUrl": "data/resourceTypes/electrical_network.json",
+                "isDynamic": true,
+                "isEditable": true,
+                "tags": "presentation",
+                "timeAware": true,
+                "enabled": true
+            }, {
+                "id": "chain_care",
+                "title": "Care facilities",
+                "type": "dynamicgeojson",
+                "renderType": "geojson",
+                "url": "api/layers/chain_care",
+                "typeUrl": "data/resourceTypes/critical_objects.json",
+                "isDynamic": true,
+                "isEditable": true,
+                "tags": "presentation",
+                "timeAware": true,
+                "enabled": true
+            }],
+            "clustering": true,
+            "clusterLevel": 13
+        },
+        {
+            "id": "knoppen",
+            "title": "Knoppen",
+            "layers": [{
+                "id": "cap",
+                "title": "CAP",
+                "type": "dynamicgeojson",
+                "renderType": "geojson",
+                "url": "api/layers/cap",
+                "typeUrl": "data/resourceTypes/captypes.json",
+                "isDynamic": true,
+                "isEditable": true,
+                "tags": "presentation",
+                "timeAware": true,
+                "enabled": true
+            }]
+        },
+        {
+            "id": "livelocations",
+            "title": "Live locations",
+            "layers": [{
+                    "id": "mlp",
+                    "title": "MLP",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "url": "api/layers/mlp",
+                    "typeUrl": "data/resourceTypes/mlptypes.json",
+                    "defaultFeatureType": "MLPPoint",
+                    "isDynamic": true,
+                    "isEditable": false,
+                    "tags": "presentation",
+                    "timeAware": true,
+                    "enabled": true
+                },
+                {
+                    "id": "stations",
+                    "title": "Stations",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "url": "api/layers/stations",
+                    "typeUrl": "data/resourceTypes/mlptypes.json",
+                    "defaultFeatureType": "MLPPoint",
+                    "isDynamic": true,
+                    "isEditable": false,
+                    "tags": "presentation",
+                    "timeAware": true,
+                    "enabled": true
+                },
+                {
+                    "id": "unitgroups",
+                    "title": "Unitgroups",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "url": "api/layers/unitgroups",
+                    "typeUrl": "data/resourceTypes/mlptypes.json",
+                    "defaultFeatureType": "MLPPoint",
+                    "isDynamic": true,
+                    "isEditable": false,
+                    "tags": "presentation",
+                    "timeAware": true,
+                    "enabled": true
+                },
+                {
+                    "id": "units",
+                    "title": "Units",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "url": "api/layers/units",
+                    "typeUrl": "data/resourceTypes/mlptypes.json",
+                    "defaultFeatureType": "MLPPoint",
+                    "isDynamic": true,
+                    "isEditable": false,
+                    "tags": "presentation",
+                    "timeAware": true,
+                    "enabled": true
+                },
+                {
+                    "id": "items",
+                    "title": "Items",
+                    "type": "dynamicgeojson",
+                    "renderType": "geojson",
+                    "url": "api/layers/items",
+                    "typeUrl": "data/resourceTypes/mlptypes.json",
+                    "defaultFeatureType": "MLPPoint",
+                    "isDynamic": true,
+                    "isEditable": false,
+                    "tags": "presentation",
+                    "timeAware": true,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "id": "measurements",
+            "title": "Measurements",
+            "layers": [{
+                    "id": "measurements",
+                    "title": "Measurements",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "url": "data/layers/measurements.json",
+                    "typeUrl": "data/resourceTypes/measurement_types.json",
+                    "defaultFeatureType": "Measurement",
+                    "isDynamic": false,
+                    "isEditable": false,
+                    "tags": "presentation",
+                    "enabled": false
+                },
+                {
+                    "id": "measurement_positions",
+                    "title": "Measurement area",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "url": "data/layers/measurement_positions.json",
+                    "typeUrl": "data/resourceTypes/measurement_types.json",
+                    "defaultFeatureType": "MeasurementLocation",
+                    "isDynamic": false,
+                    "isEditable": false,
+                    "tags": "presentation",
+                    "enabled": false
+                },
+                {
+                    "id": "alarmareas",
+                    "title": "Alarm areas",
+                    "type": "geojson",
+                    "renderType": "geojson",
+                    "url": "data/layers/alarm_area.json",
+                    "typeUrl": "data/resourceTypes/measurement_types.json",
+                    "defaultFeatureType": "Area",
+                    "isDynamic": false,
+                    "isEditable": false,
+                    "tags": "presentation",
+                    "enabled": false
+                }
+            ]
+        },
+        {
+            "id": "haaglanden",
+            "title": "Haaglanden",
+            "layers": [{
+                    "id": "antenneregister",
+                    "title": "Antenneregister",
+                    "type": "geojson",
+                    "url": "data/projects/Haaglanden/capped_gsmmasten.json",
+                    "typeUrl": "data/resourceTypes/comm_objects.json",
+                    "opacity": 75,
+                    "isDynamic": false,
+                    "timeAware": false,
+                    "fitToMap": false
+                },
+                {
+                    "id": "c2000masten",
+                    "title": "C2000 masten",
+                    "description": "",
+                    "type": "geojson",
+                    "url": "data/projects/Haaglanden/comm_objects.json",
+                    "typeUrl": "data/resourceTypes/comm_objects.json",
+                    "opacity": 75,
+                    "isDynamic": false,
+                    "timeAware": false,
+                    "fitToMap": false
+                }, {
+                    "id": "buurt",
+                    "title": "Buurt",
+                    "description": "Bron: CBS Gemeente, Wijk en Buurtkaart 2015",
+                    "type": "geojson",
+                    "url": "data/projects/Haaglanden/capped_Buurt_2015.json",
+                    "typeUrl": "data/resourceTypes/buurt.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "buurt",
+                    "isDynamic": false,
+                    "timeAware": false,
+                    "fitToMap": false
+                }, {
+                    "id": "wijk",
+                    "title": "Wijk",
+                    "description": "Bron: CBS Gemeente, Wijk en Buurtkaart 2015",
+                    "type": "geojson",
+                    "url": "data/projects/Haaglanden/capped_Wijk_2015.json",
+                    "typeUrl": "data/resourceTypes/wijk.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "wijk",
+                    "isDynamic": false,
+                    "timeAware": false,
+                    "fitToMap": false
+                },
+                {
+                    "id": "ggz",
+                    "title": "GGZ",
+                    "description": "Bron: Ministerie van VWZ op www.zorgopdekaart.nl",
+                    "type": "geojson",
+                    "url": "data/projects/Haaglanden/ggz.json",
+                    "typeUrl": "data/resourceTypes/ggz.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "ggz",
+                    "isDynamic": false,
+                    "timeAware": false,
+                    "fitToMap": false
+                },
+                {
+                    "id": "ghz",
+                    "title": "GHZ",
+                    "description": "Bron: Ministerie van VWZ op www.zorgopdekaart.nl",
+                    "type": "geojson",
+                    "url": "data/projects/Haaglanden/ghz.json",
+                    "typeUrl": "data/resourceTypes/ghz.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "ghz",
+                    "isDynamic": false,
+                    "timeAware": false,
+                    "fitToMap": false
+                },
+                {
+                    "id": "vvt",
+                    "title": "VVT",
+                    "description": "Bron: Ministerie van VWZ op www.zorgopdekaart.nl",
+                    "type": "geojson",
+                    "url": "data/projects/Haaglanden/vvt.json",
+                    "typeUrl": "data/resourceTypes/vvt.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "vvt",
+                    "isDynamic": false,
+                    "timeAware": false,
+                    "fitToMap": false
+                },
+                {
+                    "id": "ambassades",
+                    "title": "Ambassades",
+                    "type": "geojson",
+                    "url": "data/projects/Haaglanden/Ambassades.json",
+                    "typeUrl": "data/resourceTypes/ambassades.json",
+                    "opacity": 75,
+                    "defaultFeatureType": "ambassades",
+                    "isDynamic": false,
+                    "timeAware": false,
+                    "fitToMap": false
+                }
+            ],
+            "clustering": true,
+            "clusterLevel": 13
+        }
+    ],
+    "layerDirectory": "/api/layers",
+    "eventTab": true,
+    "searchProviders": [{
+        "name": "bing",
+        "url": "http://dev.virtualearth.net/REST/v1/Locations",
+        "key": "Ao_jzI4xGuIlIOSimZmvzR4YV3QGlwSsYxNJ6R62X1fHEozjhqYwBYC1YMoC638z",
+        "data": {
+            "culture": "nl",
+            "userLocation": "52.077857,4.316639"
+        }
+    }],
+    "storage": "file"
+}
