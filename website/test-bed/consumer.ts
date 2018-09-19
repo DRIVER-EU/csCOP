@@ -3,7 +3,7 @@
 // const kafkaLogging = require('kafka-node/logging');
 // kafkaLogging.setLoggerProvider(consoleLoggerProvider);
 import {Message, OffsetFetchRequest} from 'kafka-node';
-import {TestBedAdapter, Logger, LogLevel, ITopicMetadataItem, ITestBedOptions, IAdapterMessage, IDefaultKey} from 'node-test-bed-adapter';
+import {TestBedAdapter, Logger, ITopicMetadataItem, ITestBedOptions, IAdapterMessage, IDefaultKey} from 'node-test-bed-adapter';
 import {CapProcessor} from './capProcessor';
 import {GeoJsonProcessor} from './geoJsonProcessor';
 import * as _ from 'underscore';

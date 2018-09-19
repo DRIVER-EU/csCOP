@@ -43,9 +43,9 @@ var cs = new csweb.csServer(__dirname, <csweb.csServerOptions>{
     host: host,
     port: port,
     swagger: false,
-    onSocketIOConnection: () => {
-        featureCacher.sendAllFeatures();
-    }
+    // onSocketIOConnection: () => {
+    //     featureCacher.sendAllFeatures();
+    // }
     //connectors: { mqtt: { server: 'localhost', port: 1883 }, mongo: { server : '127.0.0.1', port: 27017} }
 });
 

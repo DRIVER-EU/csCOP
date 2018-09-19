@@ -1,5 +1,5 @@
+import {ProduceRequest} from 'node-test-bed-adapter';
 import {Info, Alert} from './ICAP';
-import {ProduceRequest} from 'kafka-node';
 import {TestBedAdapter, Logger, LogLevel, ITestBedOptions, uuid4} from 'node-test-bed-adapter';
 import {setTimeout} from 'timers';
 import {Feature, Geometry} from 'csweb';
@@ -58,7 +58,7 @@ export class Producer {
                     dateTimeExpires: 0,
                     distributionStatus: 'Test',
                     distributionKind: 'Report'
-                  },
+                },
                 topic: topic,
                 messages: [feature],
                 attributes: 1 // Gzip
@@ -77,7 +77,9 @@ export class Producer {
 
     private mapProperties(props: _.Dictionary<any>) {
         //TODO: map correct variable type https://github.com/mtth/avsc/wiki/API#class-unwrappeduniontypeschema-opts
-        var result: _.Dictionary<any> = _.mapObject(props, (val, key) => {return {'string': val.toString()}; });
+        var result: _.Dictionary<any> = _.mapObject(props, (val, key) => {
+            return {string: val.toString()};
+        });
         return result;
     }
 
@@ -94,7 +96,7 @@ export class Producer {
                     dateTimeExpires: 0,
                     distributionStatus: 'Test',
                     distributionKind: 'Report'
-                  },
+                },
                 topic: 'cap',
                 messages: capAlert,
                 attributes: 1 // Gzip
